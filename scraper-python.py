@@ -5,34 +5,86 @@ import csv
 
 BASE_URL = 'https://avatar.fandom.com'
 
+season = 1
+episode_number = 0
+count = 0
+
 def scrape(url):
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
     return soup
 
+
 def episodeScrape(episode_soup, episode_title):
+    global season, episode_number, count 
+
+    
     tables = episode_soup.find_all('table', class_='wikitable')
     print(f"Scraping: {episode_title} | Found {len(tables)} wikitable(s)")
+    
+    index = 1 if len(tables) == 2 else 0
+    currentTable = tables[index]
 
-    index = 0
-    if len(tables) == 2:
-        index = 1
+    # getting the Main, Minor and Antagonists of each epidoe
+    context = {
+        'Main': [],
+        'Minor': [],
+        'Antagonists': []
+    }
 
+    for cat in context.keys():
+        span = episode_soup.find('span', id=cat)
+        if span:
+            h3 = span.find_parent('h3')
+            if h3:
+                ul = h3.find_next_sibling('ul')
+                if ul:
+                    context[cat] = [li.text.strip() for li in ul.find_all('li')]
+
+    # getting the location 
+    # TODO - Ill do it soon, but for now assume there is another column with locations for each episode
+
+    # getting dialogue from episdoe
     dialogue_data = []
 
-    for tr in tables[index].find_all('tr'):
+    for tr in currentTable.find_all('tr'):
         if tr.find('th'):
             character = tr.th.text.strip()
             dialogue = tr.text.replace(character, '', 1).strip()
-            dialogue_data.append([episode_title, character, dialogue])
+            dialogue_data.append([
+                season, episode_number, episode_title,
+                character, dialogue,
+                ', '.join(context['Main']),
+                ', '.join(context['Minor']),
+                ', '.join(context['Antagonists'])
+            ])
+
+    # Updating episode number and season 
+    if episode_number == 20 and count == 0:        
+        episode_number = 1
+        season = season + 1
+        count = count + 1
+    elif episode_number == 20 and count == 1:
+        episode_number = 0
+        count = count + 1
+        season = season + 1
+    elif episode_number == 20 and count == 2:
+        episode_number = episode_number + 1
+    else:
+        episode_number = episode_number + 1
+    
+    print('EPISODE NUMBER: ', episode_number)
 
     return dialogue_data
+
 
 if __name__ == '__main__':
     transcript_list_url = f'{BASE_URL}/wiki/Avatar_Wiki:Transcripts'
     soup = scrape(transcript_list_url)
     
     all_dialogues = []
+    episode_number = 0
+    season = 1
 
     for item in soup.find_all('a', href=True):
         href = item['href']
@@ -51,14 +103,18 @@ if __name__ == '__main__':
             if href == '/wiki/Transcript:Sozin%27s_Comet,_Part_4:_Avatar_Aang':
                 break
 
-    # Saving to CSV
-    with open('avatar_transcripts.csv', 'w', encoding='utf-8', newline='') as f:
-        writer = csv.writer(f)
-        writer.writerow(['Episode', 'Character', 'Dialogue'])  # header
-        writer.writerows(all_dialogues)
+# Saving to a CSV file
+with open('avatar_transcripts_with_context.csv', 'w', encoding='utf-8', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow([
+        'Season', 'Episode Number', 'Episode Title',
+        'Character', 'Dialogue',
+        'Main Characters', 'Minor Characters', 'Antagonists'
+    ])
+    writer.writerows(all_dialogues)
 
     print(f"\nScraping complete woooo.")
 
 # There is a small bug with i think 3 episodes where the data being scrapped is the deleted scene instead of the episode -  will fix this soon, but unitl then this should work 
 
-# Im thinking of adding another csv with season, episode, locations, main chars, antagonist, minor characters - will do that soon too
+# I added main, minor, and antagonist columns, I need to add another section for location, will do that soon!
