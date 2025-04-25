@@ -7,12 +7,13 @@ const btn = document.getElementById('openModalButton');
 // Get the <span> element that closes the modal
 const span = document.getElementsByClassName('close')[0];
 
-// Get the image button, background, and YouTube video container
+// Get the image button, background, YouTube video container, and info container
 const imageButton = document.getElementById('imageButton');
 const newButtonLeft = document.getElementById('newButtonLeft');
 const newButtonRight = document.getElementById('newButtonRight');
 const buttonText = document.getElementById('buttonText');
 const videoContainer = document.getElementById('videoContainer');
+const infoContainer = document.getElementById('infoContainer');
 
 // When the user clicks the button, open the modal
 btn.onclick = function() {
@@ -31,7 +32,19 @@ window.onclick = function(event) {
   }
 }
 
-// When the user clicks the current image button (logo), fade out the background and button, and show the YouTube video
+// When the user clicks the new left button, show the information
+newButtonLeft.onclick = function() {
+  infoContainer.style.display = 'block'; // Show the info container
+  videoContainer.style.display = 'none'; // Hide the video container if it's visible
+}
+
+// When the user clicks the new right button, show the information
+newButtonRight.onclick = function() {
+  infoContainer.style.display = 'block'; // Show the info container
+  videoContainer.style.display = 'none'; // Hide the video container if it's visible
+}
+
+// When the user clicks the image button, fade out the background and button, and show the YouTube video
 imageButton.onclick = function() {
   // Fade out the background to black and hide the button
   modal.classList.add('fade-out-background');
@@ -42,18 +55,4 @@ imageButton.onclick = function() {
     // Expand the modal content and show the video
     videoContainer.style.display = 'block'; // Show the video container
   }, 1000); // Wait for the fade-out animation to finish before showing the video
-}
-
-// When the user clicks the new left button, show text
-newButtonLeft.onclick = function() {
-  buttonText.style.display = 'block'; // Show the text
-  buttonText.innerText = 'You clicked the left new button!'; // Set the text
-  videoContainer.style.display = 'none'; // Hide the video container if it's visible
-}
-
-// When the user clicks the new right button, show text
-newButtonRight.onclick = function() {
-  buttonText.style.display = 'block'; // Show the text
-  buttonText.innerText = 'You clicked the right new button!'; // Set the text
-  videoContainer.style.display = 'none'; // Hide the video container if it's visible
 }
