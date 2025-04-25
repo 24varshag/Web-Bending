@@ -15,6 +15,7 @@ def scrape(url):
     return soup
 
 
+
 def episodeScrape(episode_soup, episode_title):
     global season, episode_number, count 
 
@@ -47,11 +48,33 @@ def episodeScrape(episode_soup, episode_title):
     if location_span:
         h2 = location_span.find_parent('h2')
         if h2:
-            ul =h2.find_next_sibling('ul')
+            ul = h2.find_next_sibling('ul')
             if ul:
-                locations = [li.text.strip() for li in ul.find_all('li')]
-
-
+                # loop only processes the direct children
+                for li in ul.find_all('li', recursive=False):  
+                    # Get all content elements in the li
+                    elements = []
+                    sub_locations = []
+                    
+                    for content in li.contents:
+                        # looping through ul if we find it
+                        if content.name == 'ul':
+                            sub_locations = [sub_li.get_text(strip=True) for sub_li in content.find_all('li')]
+                            break
+                        if isinstance(content, str):
+                            elements.append(content.strip())
+                        elif content.name:
+                            elements.append(content.get_text(strip=True))
+                    
+                    # Combine main location text
+                    main_location = ' '.join(elements).strip()
+                    
+                    # Formating mainlocation: sublocations, mainlocation...
+                    if main_location:
+                        if sub_locations:
+                            locations.append(f"{main_location}: {', '.join(sub_locations)}")
+                        else:
+                            locations.append(main_location)
 
 
     # getting dialogue from episdoe
