@@ -5,7 +5,7 @@
     right: 20px;
     width: 80px;
     height: 80px;
-    background-image: url('images/avatar-nations.png'); /* Path to your image */
+    background-image: url('public/avatar-nations.png'); /* Path to your image */
     background-size: cover;
     border: none;
     cursor: pointer;
@@ -31,7 +31,7 @@
   
   /* Modal Content Style */
   .modal-content {
-    background-image: url('images/Appa’s+Sunset+Flight+-+ATLA.jpeg'); /* Background image */
+    background-image: url('public/Appa’s+Sunset+Flight+-+ATLA.jpeg'); /* Background image */
     background-color: #f0f0f0; /* Light grey background */
     background-size: cover; /* Ensure the image covers the entire content area */
     background-position: center; /* Center the image */
