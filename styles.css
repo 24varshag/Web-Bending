@@ -47,16 +47,16 @@
     text-align: center; /* Center content */
     position: relative;
     transition: opacity 1s ease, transform 1s ease; /* Smooth transition */
-}
-
+  }
   
-  /* logo button */
+  /* Current image button (logo button) */
   .image-button {
     background-color: transparent;
     border: none;
     cursor: pointer;
   }
-
+  
+  /* New image buttons (centered horizontally) */
   .new-button {
     background-color: transparent;
     border: none;
@@ -74,7 +74,6 @@
     right: 10%; /* Position the right button to the right of the center */
   }
   
-  
   .image-btn-img {
     width: 260px; /* Adjust size */
     height: 100px; /* Adjust size */
@@ -86,9 +85,35 @@
     transform: scale(1.1); /* Scale up the image when hovered */
   }
   
+  /* Tooltip hover text */
+  .new-button:hover::after {
+    font-family: 'Rock Salt', cursive;
+    position: absolute;
+    top: -30px; /* Adjust the vertical position */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(226, 124, 124, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap; /* Ensure the text stays on one line */
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Specific text for each button */
+  #newButtonLeft:hover::after {
+    content: "Learn about the plot"; /* Text for left button */
+  }
+  
+  #newButtonRight:hover::after {
+    content: "Learn some show facts"; /* Text for right button */
+  }
+  
   /* YouTube Video Container */
   .video-container {
-   
     width: 100%;
     height: 100%;
     position: absolute;
@@ -117,5 +142,13 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+  }
+  
+  /* Text to display when new buttons are clicked */
+  .button-text {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
   }
   
