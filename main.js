@@ -9,9 +9,10 @@ const span = document.getElementsByClassName('close')[0];
 
 // Get the image button, background, and YouTube video container
 const imageButton = document.getElementById('imageButton');
+const newButtonLeft = document.getElementById('newButtonLeft');
+const newButtonRight = document.getElementById('newButtonRight');
+const buttonText = document.getElementById('buttonText');
 const videoContainer = document.getElementById('videoContainer');
-const modalContent = document.querySelector('.modal-content');
-const modalBackground = document.querySelector('.modal');
 
 // When the user clicks the button, open the modal
 btn.onclick = function() {
@@ -30,16 +31,29 @@ window.onclick = function(event) {
   }
 }
 
-// When the user clicks the image button, fade out the background and button, and show the YouTube video
+// When the user clicks the current image button (logo), fade out the background and button, and show the YouTube video
 imageButton.onclick = function() {
   // Fade out the background to black and hide the button
-  modalBackground.classList.add('fade-out-background');
+  modal.classList.add('fade-out-background');
   imageButton.style.display = 'none'; // Hide the image button
 
   // After the fade-out transition finishes, show the video
   setTimeout(function() {
     // Expand the modal content and show the video
-    modalContent.style.transform = 'scale(1.1)'; // Optional: slightly enlarge the content
     videoContainer.style.display = 'block'; // Show the video container
   }, 1000); // Wait for the fade-out animation to finish before showing the video
+}
+
+// When the user clicks the new left button, show text
+newButtonLeft.onclick = function() {
+  buttonText.style.display = 'block'; // Show the text
+  buttonText.innerText = 'You clicked the left new button!'; // Set the text
+  videoContainer.style.display = 'none'; // Hide the video container if it's visible
+}
+
+// When the user clicks the new right button, show text
+newButtonRight.onclick = function() {
+  buttonText.style.display = 'block'; // Show the text
+  buttonText.innerText = 'You clicked the right new button!'; // Set the text
+  videoContainer.style.display = 'none'; // Hide the video container if it's visible
 }

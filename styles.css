@@ -56,6 +56,24 @@
     border: none;
     cursor: pointer;
   }
+
+  .new-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the buttons */
+  }
+  
+  #newButtonLeft {
+    left: 10%; /* Position the left button to the left of the center */
+  }
+  
+  #newButtonRight {
+    right: 10%; /* Position the right button to the right of the center */
+  }
+  
   
   .image-btn-img {
     width: 260px; /* Adjust size */
