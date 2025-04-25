@@ -40,6 +40,24 @@
     color: #333; /* Text color */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow effect */
   }
+
+  /* logo button */
+.image-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .image-btn-img {
+    width: 260px; /* Adjust size */
+    height: 100px; /* Adjust size */
+    object-fit: cover; /* Ensures the image is properly contained */
+    transition: transform 0.3s ease;
+  }
+  
+  .image-btn-img:hover {
+    transform: scale(1.1); /* Scale up the image when hovered */
+  }
   
   .close {
     color: #aaa;
