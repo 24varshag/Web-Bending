@@ -15,6 +15,7 @@ def scrape(url):
     return soup
 
 
+
 def episodeScrape(episode_soup, episode_title):
     global season, episode_number, count 
 
@@ -42,7 +43,39 @@ def episodeScrape(episode_soup, episode_title):
                     context[cat] = [li.text.strip() for li in ul.find_all('li')]
 
     # getting the location 
-    # TODO - Ill do it soon, but for now assume there is another column with locations for each episode
+    locations = []
+    location_span = episode_soup.find('span', id='Locations')
+    if location_span:
+        h2 = location_span.find_parent('h2')
+        if h2:
+            ul = h2.find_next_sibling('ul')
+            if ul:
+                # loop only processes the direct children
+                for li in ul.find_all('li', recursive=False):  
+                    # Get all content elements in the li
+                    elements = []
+                    sub_locations = []
+                    
+                    for content in li.contents:
+                        # looping through ul if we find it
+                        if content.name == 'ul':
+                            sub_locations = [sub_li.get_text(strip=True) for sub_li in content.find_all('li')]
+                            break
+                        if isinstance(content, str):
+                            elements.append(content.strip())
+                        elif content.name:
+                            elements.append(content.get_text(strip=True))
+                    
+                    # Combine main location text
+                    main_location = ' '.join(elements).strip()
+                    
+                    # Formating mainlocation: sublocations, mainlocation...
+                    if main_location:
+                        if sub_locations:
+                            locations.append(f"{main_location}: {', '.join(sub_locations)}")
+                        else:
+                            locations.append(main_location)
+
 
     # getting dialogue from episdoe
     dialogue_data = []
@@ -56,7 +89,10 @@ def episodeScrape(episode_soup, episode_title):
                 character, dialogue,
                 ', '.join(context['Main']),
                 ', '.join(context['Minor']),
-                ', '.join(context['Antagonists'])
+                ', '.join(context['Antagonists']),
+                ', '.join(locations)
+            
+
             ])
 
     # Updating episode number and season 
@@ -107,10 +143,11 @@ if __name__ == '__main__':
 with open('avatar_transcripts_with_context.csv', 'w', encoding='utf-8', newline='') as f:
     writer = csv.writer(f)
     writer.writerow([
-        'Season', 'Episode Number', 'Episode Title',
-        'Character', 'Dialogue',
-        'Main Characters', 'Minor Characters', 'Antagonists'
-    ])
+    'Season', 'Episode Number', 'Episode Title',
+    'Character', 'Dialogue',
+    'Main Characters', 'Minor Characters', 'Antagonists', 'Locations'  # <-- Add this
+])
+
     writer.writerows(all_dialogues)
 
     print(f"\nScraping complete woooo.")
