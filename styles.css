@@ -105,11 +105,11 @@
   
   /* Specific text for each button */
   #newButtonLeft:hover::after {
-    content: "Learn about the plot"; /* Text for left button */
+    content: "Learn some show facts!"; /* Text for left button */
   }
   
   #newButtonRight:hover::after {
-    content: "Learn some show facts"; /* Text for right button */
+    content: "Learn about the show plot!"; /* Text for right button */
   }
   
   /* YouTube Video Container */
