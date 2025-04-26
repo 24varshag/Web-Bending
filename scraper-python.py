@@ -69,7 +69,7 @@ def episodeScrape(episode_soup, episode_title):
                     # Combine main location text
                     main_location = ' '.join(elements).strip()
                     
-                    # Formating mainlocation: sublocations, mainlocation...
+                    # Formating in this way: [mainlocation: sublocations, mainlocation...]
                     if main_location:
                         if sub_locations:
                             locations.append(f"{main_location}: {', '.join(sub_locations)}")
