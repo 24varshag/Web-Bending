@@ -1,0 +1,195 @@
+/* Button Style */
+.open-modal-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    background-image: url('public/avatar-nations.png'); /* Path to your image */
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    outline: none;
+    transition: opacity 1s ease; /* Smooth fade out effect */
+  }
+  
+  /* Modal Style */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0); /* Initially transparent background */
+    transition: background-color 1s ease; /* Background fade effect */
+  }
+  
+  /* Modal Content Style */
+  .modal-content {
+    background-image: url('public/Appa’s+Sunset+Flight+-+ATLA.jpeg'); /* Background image */
+    background-color: #f0f0f0; /* Light grey background */
+    background-size: cover; /* Ensure the image covers the entire content area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling of the image */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Adjust the width as needed */
+    height: 70vh; /* Use viewport height to fill the screen proportionally */
+    border-radius: 10px; /* Optional: rounded corners */
+    color: #333; /* Text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow effect */
+    text-align: center; /* Center content */
+    position: relative;
+    transition: opacity 1s ease, transform 1s ease; /* Smooth transition */
+    overflow: hidden; /* Ensure no overflow from the modal */
+  }
+  
+  /* New image buttons (centered horizontally) */
+  .new-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the buttons */
+  }
+  
+  #newButtonLeft {
+    left: 10%; /* Position the left button to the left of the center */
+  }
+  
+  #newButtonRight {
+    right: 10%; /* Position the right button to the right of the center */
+  }
+
+  .image-button {
+    background-color: transparent; /* Make sure the button background is transparent */
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .image-btn-img {
+    
+    width: 260px; /* Adjust size */
+    height: 100px; /* Adjust size */
+    object-fit: cover; /* Ensures the image is properly contained */
+    transition: transform 0.3s ease;
+  }
+  
+  .image-btn-img:hover {
+    transform: scale(1.1); /* Scale up the image when hovered */
+  }
+  
+  /* Tooltip hover text */
+  .new-button:hover::after {
+    position: absolute;
+    top: -30px; /* Adjust the vertical position */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(226, 124, 124, 0.7); /* Semi-transparent background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap; /* Ensure the text stays on one line */
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Specific text for each button */
+  #newButtonLeft:hover::after {
+    content: "Learn some show facts!"; /* Text for left button */
+  }
+  
+  #newButtonRight:hover::after {
+    content: "Learn about the show plot!"; /* Text for right button */
+  }
+  
+  /* YouTube Video Container */
+  .video-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none; /* Hidden initially */
+    background-color: black; /* Full screen black background */
+  }
+  
+  /* Fade-out animation for background */
+  .fade-out-background {
+    background-color: rgba(0, 0, 0, 1); /* Fade to black */
+    opacity: 1;
+  }
+  
+  /* Close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Text to display when new buttons are clicked */
+  .button-text {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Info Container */
+  .info-container {
+    display: none;
+    margin-top: 30px;
+
+    justify-content: center;  /* Vertically center */
+    align-items: center;  /* Horizontally center */
+    position: center;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 50%;
+    max-height: 70%; /* Limit height to ensure it fits in the modal */
+    overflow-y: auto; /* Scroll if content exceeds the height */
+    padding-right: 10px; /* Add some right padding to prevent content from touching the edge */
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+  }
+  
+  h3 {
+    font-size: 1.6em;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+  }
+  
