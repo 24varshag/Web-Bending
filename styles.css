@@ -73,6 +73,7 @@
     border: none;
     cursor: pointer;
     padding: 0;
+    margin-bottom: 20px;
   }
   
   .image-btn-img {
@@ -161,7 +162,7 @@
     align-items: center;  /* Horizontally center */
     position: center;
     text-align: center;
-    font-size: 16px;
+    font-size: 25px;
     color: white;
     padding: 20px;
     border: 1px solid #888;

@@ -32,37 +32,32 @@ window.onclick = function(event) {
   }
 }
 
-// When the user clicks the new left button, show the left button information
+// Function to show the content for the left button
+function showLeftContent() {
+  // Update the content of infoContainer for the left button
+  document.getElementById('leftContent').style.display = 'block'; // Show the left content
+  document.getElementById('rightContent').style.display = 'none'; // Hide the right content
+  infoContainer.style.display = 'block'; // Show the info container
+}
+
+// Function to show the content for the right button
+function showRightContent() {
+  // Update the content of infoContainer for the right button
+  document.getElementById('rightContent').style.display = 'block'; // Show the right content
+  document.getElementById('leftContent').style.display = 'none'; // Hide the left content
+  infoContainer.style.display = 'block'; // Show the info container
+}
+
 // When the user clicks the new left button, show the left button information
 newButtonLeft.onclick = function() {
-    // Set the inner HTML of the info container with left button specific information
-    document.querySelector('.info-container h2').textContent = 'Left Button Information';
-    document.querySelector('.info-container p').textContent = 'This is the content shown when you click the left button.';
-    document.querySelector('.info-container ul').innerHTML = `
-      <li>Fact 1 about the left button</li>
-      <li>Fact 2 about the left button</li>
-    `;
-  
-    // Make sure the info container is visible
-    infoContainer.style.display = 'block'; 
-    videoContainer.style.display = 'none'; // Hide the video container if it's visible
-  }
-  
-  // When the user clicks the new right button, show the right button information
-  newButtonRight.onclick = function() {
-    // Set the inner HTML of the info container with right button specific information
-    document.querySelector('.info-container h2').textContent = 'Right Button Information';
-    document.querySelector('.info-container p').textContent = 'This is the content shown when you click the right button.';
-    document.querySelector('.info-container ul').innerHTML = `
-      <li>Fact 1 about the right button</li>
-      <li>Fact 2 about the right button</li>
-    `;
-  
-    // Make sure the info container is visible
-    infoContainer.style.display = 'block';
-    videoContainer.style.display = 'none'; // Hide the video container if it's visible
-  }
-  
+  showLeftContent(); // Call the function to show left content
+}
+
+// When the user clicks the new right button, show the right button information
+newButtonRight.onclick = function() {
+  showRightContent(); // Call the function to show right content
+}
+
 // When the user clicks the image button, fade out the background and button, and show the YouTube video
 imageButton.onclick = function() {
   // Fade out the background to black and hide the button
