@@ -155,20 +155,24 @@
   /* Info Container */
   .info-container {
     display: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+
+    justify-content: center;  /* Vertically center */
+    align-items: center;  /* Horizontally center */
     position: center;
-    text-align: left;
+    text-align: center;
     font-size: 16px;
+    color: white;
     padding: 20px;
     border: 1px solid #888;
     border-radius: 10px;
-    background-color: white;
+    background-color: transparent;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 50vh;
-    max-height: 50vh; /* Limit height to ensure it fits in the modal */
+    max-width: 50%;
+    max-height: 70%; /* Limit height to ensure it fits in the modal */
     overflow-y: auto; /* Scroll if content exceeds the height */
     padding-right: 10px; /* Add some right padding to prevent content from touching the edge */
+    margin: 0 auto;
   }
   
   h2 {
