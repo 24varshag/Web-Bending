@@ -4,11 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    Avatar Text Analysis
+    <div class="mainBody">
+      <div class="TopCards"></div>
+      <div class="TabsHolder">
+        <div id="content">
+          <div class="tab-container">
+            <ul class="tabs">
+              <a data-tab="tabf0-1" class="active">Episodes</a>
+              <a data-tab="tabf0-2">Phrases</a>
+              <a data-tab="tabf0-3">Cloud</a>
+              <a data-tab="tabf0-4">Map</a>
+            </ul>
+
+            <div class="tab-content">
+              <div id="tabf0-1">Episodes content goes here</div>
+              <div id="tabf0-2">Phrases content goes here</div>
+              <div id="tabf0-3">Cloud content goes here</div>
+              <div id="tabf0-4">Map content goes here</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/d3.v6.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      document.querySelectorAll(".tabs a").forEach((tab) => {
+        tab.addEventListener("click", function () {
+          // Remove 'active' from all tabs
+          document
+            .querySelectorAll(".tabs a")
+            .forEach((t) => t.classList.remove("active"));
+          // Hide all content divs
+          document
+            .querySelectorAll(".tab-content > div")
+            .forEach((div) => (div.style.display = "none"));
+
+          // Add 'active' to clicked tab
+          this.classList.add("active");
+          // Show corresponding content
+          const tabId = this.getAttribute("data-tab");
+          document.getElementById(tabId).style.display = "block";
+        });
+      });
+    </script>
   </body>
 </html>
