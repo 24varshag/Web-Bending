@@ -30,27 +30,114 @@
       </div>
     </div>
 
+    <!-- Button to open the modal -->
+    <button id="openModalButton" class="open-modal-btn"></button>
+
+    <!-- Modal Popup -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <button id="imageButton" class="image-button">
+          <img src="images/logo-atla.png" alt="Image Button" class="image-btn-img">
+        </button>
+
+        <!-- New Image Buttons (centered horizontally) -->
+        <button id="newButtonLeft" class="image-button new-button">
+          <img src="images/cloud1.png" alt="Left Image Button" class="image-btn-img">
+        </button>
+        <button id="newButtonRight" class="image-button new-button">
+          <img src="images/cloud2.png" alt="Right Image Button" class="image-btn-img">
+        </button>
+
+        <!-- Text that will appear when new buttons are clicked -->
+        <div id="buttonText" class="button-text" style="display: none;">You clicked one of the new buttons!</div>
+
+        <!-- Container for the production information -->
+        <div id="infoContainer" class="info-container" style="display: none;">
+          <!-- Left Button Content -->
+          <div id="leftContent" style="display: none;">
+            <h2>Avatar: The Last Airbender Showtime Information</h2>
+            <p>
+              Avatar: The Last Airbender originally aired from February 21, 2005, to July 19, 2008, on Nickelodeon. 
+              The show consists of three seasons, often referred to as "Books," each corresponding to one of the elements—Water, Earth, and Fire. 
+              In total, there are 61 episodes.
+            </p>
+            <!-- Additional content here -->
+          </div>
+
+          <!-- Right Button Content -->
+          <div id="rightContent" style="display: none;">
+            <h2>Premise of Avatar: The Last Airbender</h2>
+            <p>
+              Avatar: The Last Airbender takes place in a fantasy world that is home to humans, fantastic animals, and spirits...
+            </p>
+            <!-- Additional content here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="js/d3.v6.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-      document.querySelectorAll(".tabs a").forEach((tab) => {
-        tab.addEventListener("click", function () {
-          // Remove 'active' from all tabs
-          document
-            .querySelectorAll(".tabs a")
-            .forEach((t) => t.classList.remove("active"));
-          // Hide all content divs
-          document
-            .querySelectorAll(".tab-content > div")
-            .forEach((div) => (div.style.display = "none"));
+      // Modal related JavaScript
+      const modal = document.getElementById('myModal');
+      const btn = document.getElementById('openModalButton');
+      const span = document.getElementsByClassName('close')[0];
+      const imageButton = document.getElementById('imageButton');
+      const newButtonLeft = document.getElementById('newButtonLeft');
+      const newButtonRight = document.getElementById('newButtonRight');
+      const videoContainer = document.getElementById('videoContainer');
+      const infoContainer = document.getElementById('infoContainer');
 
-          // Add 'active' to clicked tab
-          this.classList.add("active");
-          // Show corresponding content
-          const tabId = this.getAttribute("data-tab");
-          document.getElementById(tabId).style.display = "block";
-        });
-      });
+      // Open modal
+      btn.onclick = function() {
+        modal.style.display = 'block';
+      }
+
+      // Close modal
+      span.onclick = function() {
+        modal.style.display = 'none';
+      }
+
+      // Close modal if clicked outside
+      window.onclick = function(event) {
+        if (event.target === modal) {
+          modal.style.display = 'none';
+        }
+      }
+
+      // Show left content
+      function showLeftContent() {
+        document.getElementById('leftContent').style.display = 'block';
+        document.getElementById('rightContent').style.display = 'none';
+        infoContainer.style.display = 'block';
+      }
+
+      // Show right content
+      function showRightContent() {
+        document.getElementById('rightContent').style.display = 'block';
+        document.getElementById('leftContent').style.display = 'none';
+        infoContainer.style.display = 'block';
+      }
+
+      // Button click actions
+      newButtonLeft.onclick = function() {
+        showLeftContent();
+      }
+
+      newButtonRight.onclick = function() {
+        showRightContent();
+      }
+
+      // Video transition
+      imageButton.onclick = function() {
+        modal.classList.add('fade-out-background');
+        imageButton.style.display = 'none';
+        setTimeout(function() {
+          videoContainer.style.display = 'block';
+        }, 1000);
+      }
     </script>
   </body>
 </html>
