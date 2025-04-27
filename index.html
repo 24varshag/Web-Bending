@@ -35,6 +35,7 @@
               <a data-tab="tabf0-2">Phrases</a>
               <a data-tab="tabf0-3">Cloud</a>
               <a data-tab="tabf0-4">Map</a>
+              <a data-tab="tabf0-5">Network</a>
             </ul>
 
             <div class="tab-content">
@@ -107,6 +108,15 @@
                     step="1"
                   />
                 </div>
+              </div>
+              <div id="tabf0-5">
+                <div class="dropdown-container">
+                  Season:
+                  <select id="seasonDropdown"></select>
+                  Episode:
+                  <select id="episodeDropdown"></select>
+                </div>
+                <svg width="400" height="400"></svg>
               </div>
             </div>
           </div>
@@ -397,6 +407,7 @@
     <script src="d3.v6.min.js"></script>
     <script src="main.js"></script>
     <script src="map-popup.js"></script>
+    <script src="CharacterDialouge.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
       const modal = document.getElementById("myModal");

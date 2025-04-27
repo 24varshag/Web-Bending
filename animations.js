@@ -1,7 +1,7 @@
-window.onload = function () {
-  on(); // Show overlay
-  setTimeout(slideDoors, 500); // Slide doors after a delay
-};
+// window.onload = function () {
+//   on(); // Show overlay
+//   setTimeout(slideDoors, 500); // Slide doors after a delay
+// };
 
 document.querySelectorAll(".tabs a").forEach((tab) => {
   tab.addEventListener("click", function () {
@@ -31,9 +31,21 @@ function off() {
 }
 
 function slideDoors() {
-  // moving left door
-  document.getElementById("leftImg").style.animation = "shakeThenSlide 5s";
-  // moving right door
-  document.getElementById("rightImg").style.animation = "rightSlide 5s";
+  const leftImg = document.getElementById("leftImg");
+  const rightImg = document.getElementById("rightImg");
+
+  // Animate doors sliding
+  leftImg.style.animation = "shakeThenSlide 5s forwards";
+  rightImg.style.animation = "rightSlide 5s forwards";
+
+  // After sliding is done (after 5 seconds), start fading out
+  setTimeout(() => {
+    leftImg.style.transition = "opacity 1s";
+    rightImg.style.transition = "opacity 1s";
+    leftImg.style.opacity = "0";
+    rightImg.style.opacity = "0";
+  }, 4000); // start fade after sliding animation finishes
+
+  // After fading is done, remove the overlay completely
   setTimeout(off, 5000);
 }
