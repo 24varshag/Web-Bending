@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
   </head>
   <body>
     <div class="mainBody">
@@ -23,7 +24,44 @@
               <div id="tabf0-1">Episodes content goes here</div>
               <div id="tabf0-2">Phrases content goes here</div>
               <div id="tabf0-3">Cloud content goes here</div>
-              <div id="tabf0-4">Map content goes here</div>
+              <div id="tabf0-4">
+
+                <!-- MAP + FILTERS WRAPPER -->
+                <div class="map-and-filter">
+                  
+                  <!-- Map -->
+                  <div id="map-container"></div>
+  
+                  <!-- Filter Sidebar -->
+                  <div id="filter-menu">
+                    <button id="filter-toggle">☰   Filters</button>
+  
+                    <div id="filter-options" class="hidden">
+                      
+                      <!-- Marker Filters -->
+                      <h3>Book Filters</h3>
+                      <label><input type="checkbox" id="select-all" checked> <strong>Select All</strong></label><br>
+                      <label><input type="checkbox" value="1" checked><span class="marker-icon" style="background:#98a4be;"></span> Book One: Water</label><br>
+                      <label><input type="checkbox" value="2" checked><span class="marker-icon" style="background:#8fb768;"></span> Book Two: Earth</label><br>
+                      <label><input type="checkbox" value="3" checked><span class="marker-icon" style="background:#ce9f88;"></span> Book Three: Fire</label><br>
+                      <label><input type="checkbox" value="7" checked><span class="marker-icon" style="background:#fcf6e3;"></span> Other Mentioned Locations</label>
+  
+                      <!-- Character Filters -->
+                      <h3 style="margin-top: 20px;">Character Filters</h3>
+                      <div id="character-select-menu"></div> <!-- character checkboxes will be injected here -->
+  
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <!-- Timeline (stays under map and filter) -->
+                <div id="timeline">
+                  <label id="episode-label">Episode: 0</label>
+                  <input type="range" id="episode-slider" min="1" max="61" value="1" step="1">
+                </div>
+  
+              </div>
             </div>
           </div>
         </div>
@@ -218,6 +256,8 @@
 
     <script src="js/d3.v6.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="map-popup.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
       const modal = document.getElementById('myModal');
       const btn = document.getElementById('openModalButton');
