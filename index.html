@@ -282,5 +282,31 @@
         }, 1000); // Wait for fade-out animation to finish before showing video
       }
     </script>
+    <script>
+      let mapLoaded = false;
+    
+      document.querySelectorAll(".tabs a").forEach((tab) => {
+        tab.addEventListener("click", async function () {
+          document.querySelectorAll(".tabs a").forEach((t) => t.classList.remove("active"));
+          document.querySelectorAll(".tab-content > div").forEach((div) => (div.style.display = "none"));
+          this.classList.add("active");
+          const tabId = this.getAttribute("data-tab");
+          const contentDiv = document.getElementById(tabId);
+          contentDiv.style.display = "block";
+    
+          if (tabId === "tabf0-4" && !mapLoaded) {
+            await initializeMap();
+            mapLoaded = true;
+          }
+    
+          if (tabId === "tabf0-4" && mapLoaded) {
+            map.invalidateSize();
+          }
+        });
+      });
+    
+      document.getElementById("tabf0-1").style.display = "block";
+    </script>
+    
   </body>
 </html>
