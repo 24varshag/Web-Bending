@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
-    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      crossorigin=""
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div id="overlay" onclick="">
+      <img src="images/left.jpg" id="leftImg" onclick="slideDoors()" />
+      <img src="images/right.jpg" id="rightImg" onclick="slideDoors()" />
+    </div>
+
     <div class="mainBody">
       <div class="TopCards"></div>
       <div class="TabsHolder">
@@ -20,6 +35,7 @@
               <a data-tab="tabf0-2">Phrases</a>
               <a data-tab="tabf0-3">Cloud</a>
               <a data-tab="tabf0-4">Map</a>
+              <a data-tab="tabf0-5">Network</a>
             </ul>
 
             <div class="tab-content">
@@ -27,42 +43,80 @@
               <div id="tabf0-2">Phrases content goes here</div>
               <div id="tabf0-3">Cloud content goes here</div>
               <div id="tabf0-4">
-
                 <!-- MAP + FILTERS WRAPPER -->
                 <div class="map-and-filter">
-                  
                   <!-- Map -->
                   <div id="map-container"></div>
-  
+
                   <!-- Filter Sidebar -->
                   <div id="filter-menu">
                     <button id="filter-toggle">Filters</button>
-  
+
                     <div id="filter-options" class="hidden">
-                      
                       <!-- Marker Filters -->
                       <h3>Book Filters</h3>
-                      <label><input type="checkbox" id="select-all" checked> <strong>Select All</strong></label><br>
-                      <label><input type="checkbox" value="1" checked><span class="marker-icon" style="background:#98a4be;"></span> Book One: Water</label><br>
-                      <label><input type="checkbox" value="2" checked><span class="marker-icon" style="background:#8fb768;"></span> Book Two: Earth</label><br>
-                      <label><input type="checkbox" value="3" checked><span class="marker-icon" style="background:#ce9f88;"></span> Book Three: Fire</label><br>
-                      <label><input type="checkbox" value="7" checked><span class="marker-icon" style="background:#fcf6e3;"></span> Other Mentioned Locations</label>
-  
+                      <label
+                        ><input type="checkbox" id="select-all" checked />
+                        <strong>Select All</strong></label
+                      ><br />
+                      <label
+                        ><input type="checkbox" value="1" checked /><span
+                          class="marker-icon"
+                          style="background: #98a4be"
+                        ></span>
+                        Book One: Water</label
+                      ><br />
+                      <label
+                        ><input type="checkbox" value="2" checked /><span
+                          class="marker-icon"
+                          style="background: #8fb768"
+                        ></span>
+                        Book Two: Earth</label
+                      ><br />
+                      <label
+                        ><input type="checkbox" value="3" checked /><span
+                          class="marker-icon"
+                          style="background: #ce9f88"
+                        ></span>
+                        Book Three: Fire</label
+                      ><br />
+                      <label
+                        ><input type="checkbox" value="7" checked /><span
+                          class="marker-icon"
+                          style="background: #fcf6e3"
+                        ></span>
+                        Other Mentioned Locations</label
+                      >
+
                       <!-- Character Filters -->
-                      <h3 style="margin-top: 20px;">Character Filters</h3>
-                      <div id="character-select-menu"></div> <!-- character checkboxes will be injected here -->
-  
+                      <h3 style="margin-top: 20px">Character Filters</h3>
+                      <div id="character-select-menu"></div>
+                      <!-- character checkboxes will be injected here -->
                     </div>
-  
                   </div>
                 </div>
-  
+
                 <!-- Timeline (stays under map and filter) -->
                 <div id="timeline">
                   <label id="episode-label">Episode: 0</label>
-                  <input type="range" id="episode-slider" min="1" max="61" value="1" step="1">
+                  <input
+                    type="range"
+                    id="episode-slider"
+                    min="1"
+                    max="61"
+                    value="1"
+                    step="1"
+                  />
                 </div>
-  
+              </div>
+              <div id="tabf0-5">
+                <div class="dropdown-container">
+                  Season:
+                  <select id="seasonDropdown"></select>
+                  Episode:
+                  <select id="episodeDropdown"></select>
+                </div>
+                <svg width="400" height="400"></svg>
               </div>
             </div>
           </div>
@@ -78,171 +132,256 @@
       <div class="modal-content">
         <span class="close">&times;</span>
         <button id="imageButton" class="image-button">
-          <img src="images/logo-atla.png" alt="Image Button" class="image-btn-img-logo">
+          <img
+            src="images/logo-atla.png"
+            alt="Image Button"
+            class="image-btn-img-logo"
+          />
         </button>
 
         <!-- New Image Buttons (centered horizontally) -->
         <button id="newButtonLeft" class="image-button new-button">
-          <img src="images/cloud5.png" alt="Left Image Button" class="image-btn-img">
+          <img
+            src="images/cloud5.png"
+            alt="Left Image Button"
+            class="image-btn-img"
+          />
         </button>
         <button id="newButtonRight" class="image-button new-button">
-          <img src="images/cloud4.png" alt="Right Image Button" class="image-btn-img">
+          <img
+            src="images/cloud4.png"
+            alt="Right Image Button"
+            class="image-btn-img"
+          />
         </button>
 
         <!-- Text that will appear when new buttons are clicked -->
-        <div id="buttonText" class="button-text" style="display: none;">You clicked one of the new buttons!</div>
+        <div id="buttonText" class="button-text" style="display: none">
+          You clicked one of the new buttons!
+        </div>
 
         <!-- Container for the production information -->
-        <div id="infoContainer" class="info-container" style="display: none;">
+        <div id="infoContainer" class="info-container" style="display: none">
           <!-- Left Button Content -->
-          <div id="leftContent" style="display: none;">
+          <div id="leftContent" style="display: none">
             <div class="content-section">
               <div class="content-section">
                 <h2>Avatar: The Last Airbender Showtime Information</h2>
-                
+
                 <h3>Aired:</h3>
-                <p>Avatar: The Last Airbender originally aired from February 21, 2005, to July 19, 2008, on Nickelodeon.</p>
-            
+                <p>
+                  Avatar: The Last Airbender originally aired from February 21,
+                  2005, to July 19, 2008, on Nickelodeon.
+                </p>
+
                 <h3>Seasons:</h3>
-                <p>The show consists of three seasons, often referred to as "Books," each corresponding to one of the elements—Water, Earth, and Fire. In total, there are 61 episodes.</p>
-            
+                <p>
+                  The show consists of three seasons, often referred to as
+                  "Books," each corresponding to one of the elements—Water,
+                  Earth, and Fire. In total, there are 61 episodes.
+                </p>
+
                 <h3>Genres:</h3>
-                <p>The series belongs to the action-adventure and fantasy genres, with elements of martial arts, steampunk, and Eastern philosophy. The combination of engaging storytelling, deep character development, and unique world-building has earned it a dedicated fanbase and critical acclaim over the years.</p>
-            
+                <p>
+                  The series belongs to the action-adventure and fantasy genres,
+                  with elements of martial arts, steampunk, and Eastern
+                  philosophy. The combination of engaging storytelling, deep
+                  character development, and unique world-building has earned it
+                  a dedicated fanbase and critical acclaim over the years.
+                </p>
+
                 <h2>Production Information</h2>
-            
+
                 <h3>Created by:</h3>
                 <p>Michael Dante DiMartino, Bryan Konietzko</p>
-            
+
                 <h3>Written by:</h3>
-                <p>Michael Dante DiMartino, Bryan Konietzko, Aaron Ehasz, John O'Bryan, James Eagan, Matthew Hubbard, Ian Wilcox, Nick Malis, Tim Hedrick, Elizabeth Welch Ehasz, Joshua Hamilton, Katie Mattila, May Chan</p>
-            
+                <p>
+                  Michael Dante DiMartino, Bryan Konietzko, Aaron Ehasz, John
+                  O'Bryan, James Eagan, Matthew Hubbard, Ian Wilcox, Nick Malis,
+                  Tim Hedrick, Elizabeth Welch Ehasz, Joshua Hamilton, Katie
+                  Mattila, May Chan
+                </p>
+
                 <h3>Directed by:</h3>
-                <p>Dave Filoni, Lauren MacMullan, Giancarlo Volpe, Anthony Lioi, Ethan Spaulding, Joaquim Dos Santos, Michael Dante DiMartino</p>
-            
+                <p>
+                  Dave Filoni, Lauren MacMullan, Giancarlo Volpe, Anthony Lioi,
+                  Ethan Spaulding, Joaquim Dos Santos, Michael Dante DiMartino
+                </p>
+
                 <h3>Music by:</h3>
                 <p>Jeremy Zuckerman, Benjamin Wynn</p>
-            
+
                 <h3>Episodes:</h3>
                 <p>61 (series completed)</p>
-            
+
                 <h3>Produced by:</h3>
-                <p>Michael Dante DiMartino (executive), Bryan Konietzko (executive), Aaron Ehasz (co-executive), Eric Coleman (executive for Nickelodeon), Jenna Luttrell (executive in-charge for Nickelodeon)</p>
-            
+                <p>
+                  Michael Dante DiMartino (executive), Bryan Konietzko
+                  (executive), Aaron Ehasz (co-executive), Eric Coleman
+                  (executive for Nickelodeon), Jenna Luttrell (executive
+                  in-charge for Nickelodeon)
+                </p>
+
                 <h3>Rated:</h3>
                 <p>TV-Y7-FV</p>
-            
+
                 <h3>Channel:</h3>
                 <p>Nickelodeon (2005-2008)</p>
-            
+
                 <h3>Original run:</h3>
                 <p>February 21, 2005 - July 19, 2008</p>
-            
+
                 <h3>Status:</h3>
                 <p>Completed</p>
-            
+
                 <h3>Chronology:</h3>
                 <p>Followed by: Republic City Hustle, The Legend of Korra</p>
               </div>
-            
             </div>
           </div>
 
           <!-- Right Button Content -->
-          <div id="rightContent" style="display: none;">
+          <div id="rightContent" style="display: none">
             <div class="content-section">
               <div class="content-section">
                 <h2>Premise of Avatar: The Last Airbender</h2>
                 <p>
-                  Avatar: The Last Airbender takes place in a fantasy world that is home to humans, fantastic animals, and spirits. 
-                  Human civilization is divided into four nations: the Water Tribes, the Earth Kingdom, the Fire Nation, and the Air Nomads.
+                  Avatar: The Last Airbender takes place in a fantasy world that
+                  is home to humans, fantastic animals, and spirits. Human
+                  civilization is divided into four nations: the Water Tribes,
+                  the Earth Kingdom, the Fire Nation, and the Air Nomads.
                 </p>
-            
+
                 <p>
-                  Each nation has its own natural element, on which it bases its society, and within each nation exist people known as "benders" who have the innate power and ability to control and manipulate the eponymous element of their nation.
+                  Each nation has its own natural element, on which it bases its
+                  society, and within each nation exist people known as
+                  "benders" who have the innate power and ability to control and
+                  manipulate the eponymous element of their nation.
                 </p>
-            
+
                 <p>
-                  The show’s creators assigned each bending art its own style of martial arts, causing it to inherit the advantages and weaknesses of the martial arts it was assigned. 
-                  The four types of bending arts are:
+                  The show’s creators assigned each bending art its own style of
+                  martial arts, causing it to inherit the advantages and
+                  weaknesses of the martial arts it was assigned. The four types
+                  of bending arts are:
                 </p>
-            
+
                 <ul>
                   <li>Waterbending</li>
                   <li>Earthbending</li>
                   <li>Firebending</li>
                   <li>Airbending</li>
                 </ul>
-            
+
                 <h3>The Avatar</h3>
                 <p>
-                  Each generation yields one person who is capable of controlling and manipulating all four elements, the Avatar. 
-                  When an Avatar dies, they are reincarnated into the next nation in the Avatar Cycle.
+                  Each generation yields one person who is capable of
+                  controlling and manipulating all four elements, the Avatar.
+                  When an Avatar dies, they are reincarnated into the next
+                  nation in the Avatar Cycle.
                 </p>
-            
+
                 <p>
-                  The Avatar Cycle parallels the seasons: autumn for the Air Nomads, winter for the Water Tribe, spring for the Earth Kingdom, and summer for the Fire Nation.
+                  The Avatar Cycle parallels the seasons: autumn for the Air
+                  Nomads, winter for the Water Tribe, spring for the Earth
+                  Kingdom, and summer for the Fire Nation.
                 </p>
-            
+
                 <p>
-                  Legend holds that the Avatar must master each bending art in order, starting with his or her native element. This can sometimes be compromised when the situation requires it, as Aang demonstrates in the show.
+                  Legend holds that the Avatar must master each bending art in
+                  order, starting with his or her native element. This can
+                  sometimes be compromised when the situation requires it, as
+                  Aang demonstrates in the show.
                 </p>
-            
+
                 <p>
-                  For the Avatar, learning to bend the element opposite his native element can be extremely challenging and difficult. This is because opposing bending arts are based on opposing fighting styles and disciplines.
+                  For the Avatar, learning to bend the element opposite his
+                  native element can be extremely challenging and difficult.
+                  This is because opposing bending arts are based on opposing
+                  fighting styles and disciplines.
                 </p>
-            
+
                 <h3>Opposing Elements</h3>
                 <ul>
                   <li>Firebending and waterbending are opposites</li>
                   <li>Earthbending and airbending are opposites</li>
                 </ul>
-            
+
                 <h3>Avatar State</h3>
                 <p>
-                  The Avatar possesses a unique power and ability called the Avatar State. This is a defense mechanism that endows the Avatar with all of the knowledge, powers, and abilities of all the past Avatars. 
-                  It acts as a self-triggering defense mechanism, although it can be made subject to the will if the user opens his bodily chakras.
+                  The Avatar possesses a unique power and ability called the
+                  Avatar State. This is a defense mechanism that endows the
+                  Avatar with all of the knowledge, powers, and abilities of all
+                  the past Avatars. It acts as a self-triggering defense
+                  mechanism, although it can be made subject to the will if the
+                  user opens his bodily chakras.
                 </p>
-            
+
                 <p>
-                  If an Avatar is killed in the Avatar State, the reincarnation cycle will be broken, and the Avatar will cease to exist.
+                  If an Avatar is killed in the Avatar State, the reincarnation
+                  cycle will be broken, and the Avatar will cease to exist.
                 </p>
-            
+
                 <p>
-                  Through the ages, countless incarnations of the Avatar have served to keep the four nations in harmony and maintain world peace and order. 
-                  The Avatar also serves as the bridge between the physical world and the Spirit World, allowing them to solve problems that normal benders cannot.
+                  Through the ages, countless incarnations of the Avatar have
+                  served to keep the four nations in harmony and maintain world
+                  peace and order. The Avatar also serves as the bridge between
+                  the physical world and the Spirit World, allowing them to
+                  solve problems that normal benders cannot.
                 </p>
-            
+
                 <p>
-                  Another ability that only the Avatar can use is energybending, which Aang demonstrates in the fight with Fire Lord Ozai at Wulong Forest.
+                  Another ability that only the Avatar can use is energybending,
+                  which Aang demonstrates in the fight with Fire Lord Ozai at
+                  Wulong Forest.
                 </p>
-            
+
                 <h2>Plot Overview of Avatar: The Last Airbender</h2>
                 <p>
-                  Avatar: The Last Airbender is an animated series set in a world where people can bend (control) the elements of water, earth, fire, and air. 
-                  The story follows a young boy named Aang, the last surviving Airbender and the current incarnation of the Avatar, a powerful being who can bend all four elements and maintain balance in the world.
+                  Avatar: The Last Airbender is an animated series set in a
+                  world where people can bend (control) the elements of water,
+                  earth, fire, and air. The story follows a young boy named
+                  Aang, the last surviving Airbender and the current incarnation
+                  of the Avatar, a powerful being who can bend all four elements
+                  and maintain balance in the world.
                 </p>
-            
+
                 <p>
-                  The world is divided into four nations: the Water Tribes, the Earth Kingdom, the Fire Nation, and the Air Nomads.
+                  The world is divided into four nations: the Water Tribes, the
+                  Earth Kingdom, the Fire Nation, and the Air Nomads.
                 </p>
-            
+
                 <p>
-                  Aang, who was raised in the Air Nomads, disappeared for 100 years after he ran away from his responsibilities as the Avatar. In his absence, the Fire Nation waged war on the other nations, seeking to dominate the world.
+                  Aang, who was raised in the Air Nomads, disappeared for 100
+                  years after he ran away from his responsibilities as the
+                  Avatar. In his absence, the Fire Nation waged war on the other
+                  nations, seeking to dominate the world.
                 </p>
-            
+
                 <p>
-                  When Aang is accidentally discovered by two Water Tribe siblings, Katara and Sokka, he is awakened from his long slumber and learns about the state of the world. 
-                  He embarks on a journey with Katara, Sokka, and later other friends like Toph and Zuko, to stop the Fire Nation’s reign of terror and restore peace.
+                  When Aang is accidentally discovered by two Water Tribe
+                  siblings, Katara and Sokka, he is awakened from his long
+                  slumber and learns about the state of the world. He embarks on
+                  a journey with Katara, Sokka, and later other friends like
+                  Toph and Zuko, to stop the Fire Nation’s reign of terror and
+                  restore peace.
                 </p>
-            
+
                 <p>
-                  Aang must master all four elements and defeat Fire Lord Ozai, the ruler of the Fire Nation, before the next comet arrives, which will significantly boost the Fire Nation’s power.
+                  Aang must master all four elements and defeat Fire Lord Ozai,
+                  the ruler of the Fire Nation, before the next comet arrives,
+                  which will significantly boost the Fire Nation’s power.
                 </p>
-            
+
                 <p>
-                  Along the way, Aang struggles with his duty as the Avatar, his reluctance to fight, and his deep connection to his friends and the world. 
-                  The series explores themes of friendship, responsibility, redemption, and the impact of war, while following Aang’s growth from a carefree and reluctant hero into a wise leader capable of bringing balance back to the world.
+                  Along the way, Aang struggles with his duty as the Avatar, his
+                  reluctance to fight, and his deep connection to his friends
+                  and the world. The series explores themes of friendship,
+                  responsibility, redemption, and the impact of war, while
+                  following Aang’s growth from a carefree and reluctant hero
+                  into a wise leader capable of bringing balance back to the
+                  world.
                 </p>
               </div>
             </div>
@@ -250,105 +389,119 @@
         </div>
 
         <!-- YouTube video iframe (hidden initially) -->
-        <div id="videoContainer" class="video-container" style="display: none;">
-          <iframe id="youtubeVideo" width="100%" height="100%" src="https://www.youtube.com/embed/qRopqDexOvY?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="videoContainer" class="video-container" style="display: none">
+          <iframe
+            id="youtubeVideo"
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/qRopqDexOvY?autoplay=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </div>
 
-    <script src="js/d3.v6.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="animations.js"></script>
+    <script src="d3.v6.min.js"></script>
+    <script src="main.js"></script>
     <script src="map-popup.js"></script>
+    <script src="CharacterDialouge.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-      const modal = document.getElementById('myModal');
-      const btn = document.getElementById('openModalButton');
-      const span = document.getElementsByClassName('close')[0];
-      const imageButton = document.getElementById('imageButton');
-      const newButtonLeft = document.getElementById('newButtonLeft');
-      const newButtonRight = document.getElementById('newButtonRight');
-      const videoContainer = document.getElementById('videoContainer');
-      const infoContainer = document.getElementById('infoContainer');
+      const modal = document.getElementById("myModal");
+      const btn = document.getElementById("openModalButton");
+      const span = document.getElementsByClassName("close")[0];
+      const imageButton = document.getElementById("imageButton");
+      const newButtonLeft = document.getElementById("newButtonLeft");
+      const newButtonRight = document.getElementById("newButtonRight");
+      const videoContainer = document.getElementById("videoContainer");
+      const infoContainer = document.getElementById("infoContainer");
 
       // Open modal
-      btn.onclick = function() {
-        modal.style.display = 'block';
-      }
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
 
       // Close modal
-      span.onclick = function() {
-        modal.style.display = 'none';
-        videoContainer.style.display = 'none'; // Hide the video container
-        document.getElementById('youtubeVideo').src = ''; // Stop the video
-      }
+      span.onclick = function () {
+        modal.style.display = "none";
+        videoContainer.style.display = "none"; // Hide the video container
+        document.getElementById("youtubeVideo").src = ""; // Stop the video
+      };
 
       // Close modal if clicked outside
-      window.onclick = function(event) {
+      window.onclick = function (event) {
         if (event.target === modal) {
-          modal.style.display = 'none';
-          videoContainer.style.display = 'none'; // Hide the video container
-          document.getElementById('youtubeVideo').src = ''; // Stop the video
+          modal.style.display = "none";
+          videoContainer.style.display = "none"; // Hide the video container
+          document.getElementById("youtubeVideo").src = ""; // Stop the video
         }
-      }
+      };
 
       // Show left content
       function showLeftContent() {
-        document.getElementById('leftContent').style.display = 'block';
-        document.getElementById('rightContent').style.display = 'none';
-        infoContainer.style.display = 'block';
+        document.getElementById("leftContent").style.display = "block";
+        document.getElementById("rightContent").style.display = "none";
+        infoContainer.style.display = "block";
       }
 
       // Show right content
       function showRightContent() {
-        document.getElementById('rightContent').style.display = 'block';
-        document.getElementById('leftContent').style.display = 'none';
-        infoContainer.style.display = 'block';
+        document.getElementById("rightContent").style.display = "block";
+        document.getElementById("leftContent").style.display = "none";
+        infoContainer.style.display = "block";
       }
 
       // Button click actions
-      newButtonLeft.onclick = function() {
+      newButtonLeft.onclick = function () {
         showLeftContent();
-      }
+      };
 
-      newButtonRight.onclick = function() {
+      newButtonRight.onclick = function () {
         showRightContent();
-      }
+      };
 
       // Show video after the fade-out effect
-      imageButton.onclick = function() {
-        modal.classList.add('fade-out-background');
-        imageButton.style.display = 'none';
-        setTimeout(function() {
-          videoContainer.style.display = 'block'; // Show the video container
-          document.getElementById('youtubeVideo').src = 'https://www.youtube.com/embed/qRopqDexOvY?autoplay=1'; // Start video
+      imageButton.onclick = function () {
+        modal.classList.add("fade-out-background");
+        imageButton.style.display = "none";
+        setTimeout(function () {
+          videoContainer.style.display = "block"; // Show the video container
+          document.getElementById("youtubeVideo").src =
+            "https://www.youtube.com/embed/qRopqDexOvY?autoplay=1"; // Start video
         }, 1000); // Wait for fade-out animation to finish before showing video
-      }
+      };
     </script>
     <script>
       let mapLoaded = false;
-    
+
       document.querySelectorAll(".tabs a").forEach((tab) => {
         tab.addEventListener("click", async function () {
-          document.querySelectorAll(".tabs a").forEach((t) => t.classList.remove("active"));
-          document.querySelectorAll(".tab-content > div").forEach((div) => (div.style.display = "none"));
+          document
+            .querySelectorAll(".tabs a")
+            .forEach((t) => t.classList.remove("active"));
+          document
+            .querySelectorAll(".tab-content > div")
+            .forEach((div) => (div.style.display = "none"));
           this.classList.add("active");
           const tabId = this.getAttribute("data-tab");
           const contentDiv = document.getElementById(tabId);
           contentDiv.style.display = "block";
-    
+
           if (tabId === "tabf0-4" && !mapLoaded) {
             await initializeMap();
             mapLoaded = true;
           }
-    
+
           if (tabId === "tabf0-4" && mapLoaded) {
             map.invalidateSize();
           }
         });
       });
-    
+
       document.getElementById("tabf0-1").style.display = "block";
     </script>
-    
   </body>
 </html>

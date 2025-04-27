@@ -2,6 +2,11 @@ html,
 body {
   height: 100%;
   margin: 0;
+  background-image: url("images/avatar_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Optional: keeps image fixed during scrolling */
 }
 
 .mainBody {
@@ -11,15 +16,15 @@ body {
 }
 
 .TopCards {
-  height: 30%;
-  border: 2px solid black;
+  height: 20%;
+  border: 2px solid rgb(255, 255, 255);
   padding: 10px;
   margin: 10px;
 }
 
 .TabsHolder {
-  height: 70%;
-  border: 2px solid red;
+  height: 80%;
+  border: 2px solid rgb(238, 233, 233);
   padding: 10px;
   margin: 0px 10px;
   /* background-color: #ddd; */
@@ -78,6 +83,75 @@ ul.tabs a.active {
   color: #333;
 }
 
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+#leftImg,
+#rightImg {
+  opacity: 1;
+  transition: transform 5s;
+}
+
+@keyframes shakeThenSlide {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-2%);
+  }
+  20% {
+    transform: translateX(2%);
+  }
+  30% {
+    transform: translateX(-5%);
+  }
+  40% {
+    transform: translateX(10%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes rightSlide {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-2%);
+  }
+  20% {
+    transform: translateX(2%);
+  }
+  30% {
+    transform: translateX(-5%);
+  }
+  40% {
+    transform: translateX(10%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
 
 /* Button Style */
 .open-modal-btn {
@@ -86,7 +160,7 @@ ul.tabs a.active {
   right: 20px;
   width: 80px;
   height: 80px;
-  background-image: url('images/avatar-nations.png'); /* Path to your image */
+  background-image: url("images/avatar-nations.png"); /* Path to your image */
   background-size: cover;
   border: none;
   cursor: pointer;
@@ -112,7 +186,7 @@ ul.tabs a.active {
 
 /* Modal Content Style */
 .modal-content {
-  background-image: url('images/Appa’s+Sunset+Flight+-+ATLA-1.jpeg'); /* Background image */
+  background-image: url("images/Appa’s+Sunset+Flight+-+ATLA-1.jpeg"); /* Background image */
   background-color: #f0f0f0; /* Light grey background */
   background-size: cover; /* Ensure the image covers the entire content area */
   background-position: center; /* Center the image */
@@ -280,7 +354,7 @@ ul li {
 }
 body {
   margin: 0;
-  font-family: 'Skia', 'Forum', sans-serif;
+  font-family: "Skia", "Forum", sans-serif;
 }
 
 #map-container {
@@ -289,8 +363,6 @@ body {
   margin-left: 20px;
   position: relative; /* ✅ make it relative */
 }
-
-
 
 /* Marker Styles */
 .avatar-marker-wrapper {
@@ -335,7 +407,7 @@ body {
   padding: 10px;
   border-radius: 8px;
   font-size: 14px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 #character-icon {
@@ -381,7 +453,6 @@ body {
   padding-top: 10px;
 }
 
-
 #timeline {
   position: absolute;
   width: 60%; /* same width as map */
@@ -390,20 +461,20 @@ body {
   background: rgba(255, 255, 255, 0.9);
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   z-index: 1002;
 }
 .map-and-filter {
   display: flex;
   width: 100%;
   height: 700px;
-  gap:5%;
+  gap: 5%;
   position: right;
 }
 
 #filter-menu {
   width: 20%;
-  right:5%;
+  right: 5%;
   background-color: #5b2c06; /* brown */
   color: white;
   padding: 20px;
@@ -421,7 +492,7 @@ body {
   border-radius: 8px;
   margin-bottom: 10px;
   cursor: pointer;
-  font-family: 'Aboreto';
+  font-family: "Aboreto";
   font-weight: bold;
 }
 
@@ -438,7 +509,7 @@ body {
   font-size: 24px;
   border-bottom: 1px solid white;
   padding-bottom: 4px;
-  font-family: 'Aboreto';
+  font-family: "Aboreto";
 }
 
 #filter-options label {
@@ -447,5 +518,17 @@ body {
   gap: 8px;
   margin: 2px 0;
   font-size: 24px;
-  font-family: 'Forum';
+  font-family: "Forum";
+}
+
+.dropdown-container {
+  margin-bottom: 20px;
+}
+.sparkline {
+  fill: none;
+  stroke-width: 2px;
+}
+.character-label {
+  font-size: 12px;
+  text-anchor: start;
 }
