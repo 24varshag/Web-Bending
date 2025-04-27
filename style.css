@@ -273,7 +273,7 @@ ul li {
 }
 body {
   margin: 0;
-  font-family: 'Skia', 'Poppins', sans-serif;
+  font-family: 'Skia', 'Forum', sans-serif;
 }
 
 #map-container {
@@ -410,10 +410,12 @@ body {
   border: none;
   color: white;
   padding: 8px 12px;
-  font-size: 20px;
+  font-size: 25px;
   border-radius: 8px;
   margin-bottom: 10px;
   cursor: pointer;
+  font-family: 'Aboreto';
+  font-weight: bold;
 }
 
 #filter-options {
@@ -426,18 +428,17 @@ body {
 
 #filter-options h3 {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 24px;
   border-bottom: 1px solid white;
   padding-bottom: 4px;
+  font-family: 'Aboreto';
 }
 
 #filter-options label {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin: 8px 0;
-  font-size: 14px;
-}
-#filter-options label {
-  font-size: 18px;
+  margin: 2px 0;
+  font-size: 24px;
+  font-family: 'Forum';
 }
