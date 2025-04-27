@@ -158,8 +158,15 @@ ul.tabs a.active {
 }
 
 .image-btn-img {
-  width: 260px; /* Adjust size */
-  height: 100px; /* Adjust size */
+  width: 100%; /* Adjust size */
+  height: 100%; /* Adjust size */
+  object-fit: cover; /* Ensures the image is properly contained */
+  transition: transform 0.3s ease;
+}
+
+.image-btn-img-logo {
+  width: 360px; /* Adjust size */
+  height: 140px; /* Adjust size */
   object-fit: cover; /* Ensures the image is properly contained */
   transition: transform 0.3s ease;
 }
