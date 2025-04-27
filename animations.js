@@ -1,11 +1,11 @@
 window.onload = function () {
   on(); // Show overlay
-  setTimeout(slideDoors, 500); // Slide doors after a short delay (optional)
+  setTimeout(slideDoors, 500); // Slide doors after a delay
 };
 
 document.querySelectorAll(".tabs a").forEach((tab) => {
   tab.addEventListener("click", function () {
-    // Remove 'active' from all tabs
+    // Removes classname active from all tabs
     document
       .querySelectorAll(".tabs a")
       .forEach((t) => t.classList.remove("active"));
@@ -14,7 +14,7 @@ document.querySelectorAll(".tabs a").forEach((tab) => {
       .querySelectorAll(".tab-content > div")
       .forEach((div) => (div.style.display = "none"));
 
-    // Add 'active' to clicked tab
+    // Adds classname active to clicked tab
     this.classList.add("active");
     // Show corresponding content
     const tabId = this.getAttribute("data-tab");
