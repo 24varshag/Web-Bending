@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="overlay" onclick="">
+      <img src="images/left.jpg" id="leftImg" onclick="slideDoors()" />
+      <img src="images/right.jpg" id="rightImg" onclick="slideDoors()" />
+    </div>
+    <button onclick="on()">Turn on overlay effect</button>
+
     <div class="mainBody">
       <div class="TopCards"></div>
       <div class="TabsHolder">
@@ -30,27 +36,8 @@
       </div>
     </div>
 
-    <script src="js/d3.v6.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-      document.querySelectorAll(".tabs a").forEach((tab) => {
-        tab.addEventListener("click", function () {
-          // Remove 'active' from all tabs
-          document
-            .querySelectorAll(".tabs a")
-            .forEach((t) => t.classList.remove("active"));
-          // Hide all content divs
-          document
-            .querySelectorAll(".tab-content > div")
-            .forEach((div) => (div.style.display = "none"));
-
-          // Add 'active' to clicked tab
-          this.classList.add("active");
-          // Show corresponding content
-          const tabId = this.getAttribute("data-tab");
-          document.getElementById(tabId).style.display = "block";
-        });
-      });
-    </script>
+    <script src="d3.v6.min.js"></script>
+    <script src="main.js"></script>
+    <script src="animations.js"></script>
   </body>
 </html>
