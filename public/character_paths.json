@@ -1,0 +1,3902 @@
+[
+  {
+    "id": "Aang-Episode-1",
+    "character": "Aang",
+    "episode": "1",
+    "position": [
+      1719,
+      489
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 1 - Southern Water Tribe"
+    }
+  },
+  {
+    "id": "Aang-Episode-2",
+    "character": "Aang",
+    "episode": "2",
+    "position": [
+      1719,
+      489
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 2 - Southern Water Tribe"
+    }
+  },
+  {
+    "id": "Aang-Episode-3",
+    "character": "Aang",
+    "episode": "3",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 3 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Aang-Episode-4",
+    "character": "Aang",
+    "episode": "4",
+    "position": [
+      2007,
+      801
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 4 - Kyoshi Island"
+    }
+  },
+  {
+    "id": "Aang-Episode-5",
+    "character": "Aang",
+    "episode": "5",
+    "position": [
+      2063.3375875023457,
+      1020.5318619474848
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 5 - Omashu"
+    }
+  },
+  {
+    "id": "Aang-Episode-6",
+    "character": "Aang",
+    "episode": "6",
+    "position": [
+      1923,
+      1073
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 6 - Mining village"
+    }
+  },
+  {
+    "id": "Aang-Episode-7",
+    "character": "Aang",
+    "episode": "7",
+    "position": [
+      1868,
+      1162
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 7 - Senlin Village"
+    }
+  },
+  {
+    "id": "Aang-Episode-8",
+    "character": "Aang",
+    "episode": "8",
+    "position": [
+      1868,
+      1162
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 8 - Senlin Village"
+    }
+  },
+  {
+    "id": "Aang-Episode-9",
+    "character": "Aang",
+    "episode": "9",
+    "position": [
+      1891,
+      1231
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 9 - Seedy merchants pier"
+    }
+  },
+  {
+    "id": "Aang-Episode-10",
+    "character": "Aang",
+    "episode": "10",
+    "position": [
+      1984,
+      1287
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 10 - Gaipan"
+    }
+  },
+  {
+    "id": "Aang-Episode-11",
+    "character": "Aang",
+    "episode": "11",
+    "position": [
+      2061,
+      1250
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 11 - Great Divide"
+    }
+  },
+  {
+    "id": "Aang-Episode-12",
+    "character": "Aang",
+    "episode": "12",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 12 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Aang-Episode-13",
+    "character": "Aang",
+    "episode": "13",
+    "position": [
+      1938,
+      1345
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 13 - Taku"
+    }
+  },
+  {
+    "id": "Aang-Episode-14",
+    "character": "Aang",
+    "episode": "14",
+    "position": [
+      1824,
+      1331
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 14 - Makapu Village"
+    }
+  },
+  {
+    "id": "Aang-Episode-15",
+    "character": "Aang",
+    "episode": "15",
+    "position": [
+      1938,
+      1345
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 15 - Taku"
+    }
+  },
+  {
+    "id": "Aang-Episode-16",
+    "character": "Aang",
+    "episode": "16",
+    "position": [
+      1897,
+      1394
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 16 - Fire Nation colonial village"
+    }
+  },
+  {
+    "id": "Aang-Episode-17",
+    "character": "Aang",
+    "episode": "17",
+    "position": [
+      2097,
+      1592
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 17 - Northern Air Temple"
+    }
+  },
+  {
+    "id": "Aang-Episode-18",
+    "character": "Aang",
+    "episode": "18",
+    "position": [
+      1925,
+      1701
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 18 - Northern Water Tribe"
+    }
+  },
+  {
+    "id": "Aang-Episode-19",
+    "character": "Aang",
+    "episode": "19",
+    "position": [
+      1925,
+      1701
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 19 - Northern Water Tribe"
+    }
+  },
+  {
+    "id": "Aang-Episode-20",
+    "character": "Aang",
+    "episode": "20",
+    "position": [
+      1925,
+      1701
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 1 Episode 20 - Northern Water Tribe"
+    }
+  },
+  {
+    "id": "Aang-Episode-21",
+    "character": "Aang",
+    "episode": "21",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 2 Episode 1 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Aang-Episode-22",
+    "character": "Aang",
+    "episode": "22",
+    "position": [
+      2063.3375875023457,
+      1020.5318619474848
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 2 Episode 2 - Omashu"
+    }
+  },
+  {
+    "id": "Aang-Episode-23",
+    "character": "Aang",
+    "episode": "23",
+    "position": [
+      2063.3375875023457,
+      1020.5318619474848
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 2 Episode 3 - Omashu"
+    }
+  },
+  {
+    "id": "Aang-Episode-24",
+    "character": "Aang",
+    "episode": "24",
+    "position": [
+      2151,
+      960
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 2 Episode 4 - Foggy Swamp"
+    }
+  },
+  {
+    "id": "Aang-Episode-25",
+    "character": "Aang",
+    "episode": "25",
+    "position": [
+      2007,
+      801
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 2 Episode 5 - Kyoshi Island"
+    }
+  },
+  {
+    "id": "Aang-Episode-26",
+    "character": "Aang",
+    "episode": "26",
+    "position": [
+      2174,
+      886
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 2 Episode 6 - Gaoling"
+    }
+  },
+  {
+    "id": "Aang-Episode-28",
+    "character": "Aang",
+    "episode": "28",
+    "position": [
+      2310,
+      915
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 2 Episode 8 - Tu Zin"
+    }
+  },
+  {
+    "id": "Aang-Episode-29",
+    "character": "Aang",
+    "episode": "29",
+    "position": [
+      2310,
+      915
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 2 Episode 9 - Tu Zin"
+    }
+  },
+  {
+    "id": "Aang-Episode-30",
+    "character": "Aang",
+    "episode": "30",
+    "position": [
+      2345,
+      1144
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 2 Episode 10 - Wan Shi Tong's Library"
+    }
+  },
+  {
+    "id": "Aang-Episode-31",
+    "character": "Aang",
+    "episode": "31",
+    "position": [
+      2247,
+      1045
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 2 Episode 11 - Si Wong Desert"
+    }
+  },
+  {
+    "id": "Aang-Episode-32",
+    "character": "Aang",
+    "episode": "32",
+    "position": [
+      2210,
+      1204
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 2 Episode 12 - Full Moon Bay"
+    }
+  },
+  {
+    "id": "Aang-Episode-33",
+    "character": "Aang",
+    "episode": "33",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 2 Episode 13 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Aang-Episode-34",
+    "character": "Aang",
+    "episode": "34",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 2 Episode 14 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Aang-Episode-36",
+    "character": "Aang",
+    "episode": "36",
+    "position": [
+      2345,
+      1144
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 2 Episode 16 - Wan Shi Tong's Library"
+    }
+  },
+  {
+    "id": "Aang-Episode-37",
+    "character": "Aang",
+    "episode": "37",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 2 Episode 17 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Aang-Episode-38",
+    "character": "Aang",
+    "episode": "38",
+    "position": [
+      2459,
+      1351
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 2 Episode 18 - Lake Laogai"
+    }
+  },
+  {
+    "id": "Aang-Episode-39",
+    "character": "Aang",
+    "episode": "39",
+    "position": [
+      2467,
+      1172
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 2 Episode 19 - Chameleon Bay"
+    }
+  },
+  {
+    "id": "Aang-Episode-40",
+    "character": "Aang",
+    "episode": "40",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 2 Episode 20 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Aang-Episode-41",
+    "character": "Aang",
+    "episode": "41",
+    "position": [
+      1771,
+      1182
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 1 - Crescent Island"
+    }
+  },
+  {
+    "id": "Aang-Episode-42",
+    "character": "Aang",
+    "episode": "42",
+    "position": [
+      1198.5,
+      1090.5
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 2 - Fire Nation Royal Palace"
+    }
+  },
+  {
+    "id": "Aang-Episode-43",
+    "character": "Aang",
+    "episode": "43",
+    "position": [
+      1756.6300211627,
+      1202.7886347983
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 3 - Jang Hui"
+    }
+  },
+  {
+    "id": "Aang-Episode-44",
+    "character": "Aang",
+    "episode": "44",
+    "position": [
+      1717.9159248927,
+      1194.1265767288
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 4 - Shu Jing"
+    }
+  },
+  {
+    "id": "Aang-Episode-45",
+    "character": "Aang",
+    "episode": "45",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 5 - Ember Island"
+    }
+  },
+  {
+    "id": "Aang-Episode-46",
+    "character": "Aang",
+    "episode": "46",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 6 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Aang-Episode-47",
+    "character": "Aang",
+    "episode": "47",
+    "position": [
+      1538.6643558619,
+      1067.7312395917
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 7 - Fire Fountain City"
+    }
+  },
+  {
+    "id": "Aang-Episode-48",
+    "character": "Aang",
+    "episode": "48",
+    "position": [
+      1719,
+      489
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 8 - Southern Water Tribe"
+    }
+  },
+  {
+    "id": "Aang-Episode-49",
+    "character": "Aang",
+    "episode": "49",
+    "position": [
+      1387,
+      1048
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 9 - Black Cliffs"
+    }
+  },
+  {
+    "id": "Aang-Episode-50",
+    "character": "Aang",
+    "episode": "50",
+    "position": [
+      1387,
+      1048
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 10 - Black Cliffs"
+    }
+  },
+  {
+    "id": "Aang-Episode-51",
+    "character": "Aang",
+    "episode": "51",
+    "position": [
+      1242.7401679354,
+      1081.8733752154
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 11 - Fire Nation Capital"
+    }
+  },
+  {
+    "id": "Aang-Episode-52",
+    "character": "Aang",
+    "episode": "52",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 12 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Aang-Episode-53",
+    "character": "Aang",
+    "episode": "53",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 13 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Aang-Episode-54",
+    "character": "Aang",
+    "episode": "54",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 14 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Aang-Episode-55",
+    "character": "Aang",
+    "episode": "55",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 15 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Aang-Episode-56",
+    "character": "Aang",
+    "episode": "56",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 16 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Aang-Episode-57",
+    "character": "Aang",
+    "episode": "57",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 17 - Ember Island"
+    }
+  },
+  {
+    "id": "Aang-Episode-58",
+    "character": "Aang",
+    "episode": "58",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 18 - Ember Island"
+    }
+  },
+  {
+    "id": "Aang-Episode-59",
+    "character": "Aang",
+    "episode": "59",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 19 - Ember Island"
+    }
+  },
+  {
+    "id": "Aang-Episode-60",
+    "character": "Aang",
+    "episode": "60",
+    "position": [
+      1242.7401679354,
+      1081.8733752154
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 20 - Fire Nation Capital"
+    }
+  },
+  {
+    "id": "Aang-Episode-61",
+    "character": "Aang",
+    "episode": "61",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Aang",
+      "description": "Book 3 Episode 21 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Katara-Episode-1",
+    "character": "Katara",
+    "episode": "1",
+    "position": [
+      1719,
+      489
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 1 - Southern Water Tribe"
+    }
+  },
+  {
+    "id": "Katara-Episode-2",
+    "character": "Katara",
+    "episode": "2",
+    "position": [
+      1719,
+      489
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 2 - Southern Water Tribe"
+    }
+  },
+  {
+    "id": "Katara-Episode-3",
+    "character": "Katara",
+    "episode": "3",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 3 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Katara-Episode-4",
+    "character": "Katara",
+    "episode": "4",
+    "position": [
+      2007,
+      801
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 4 - Kyoshi Island"
+    }
+  },
+  {
+    "id": "Katara-Episode-5",
+    "character": "Katara",
+    "episode": "5",
+    "position": [
+      2063.3375875023457,
+      1020.5318619474848
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 5 - Omashu"
+    }
+  },
+  {
+    "id": "Katara-Episode-6",
+    "character": "Katara",
+    "episode": "6",
+    "position": [
+      1923,
+      1073
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 6 - Mining village"
+    }
+  },
+  {
+    "id": "Katara-Episode-7",
+    "character": "Katara",
+    "episode": "7",
+    "position": [
+      1868,
+      1162
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 7 - Senlin Village"
+    }
+  },
+  {
+    "id": "Katara-Episode-8",
+    "character": "Katara",
+    "episode": "8",
+    "position": [
+      1868,
+      1162
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 8 - Senlin Village"
+    }
+  },
+  {
+    "id": "Katara-Episode-9",
+    "character": "Katara",
+    "episode": "9",
+    "position": [
+      1891,
+      1231
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 9 - Seedy merchants pier"
+    }
+  },
+  {
+    "id": "Katara-Episode-10",
+    "character": "Katara",
+    "episode": "10",
+    "position": [
+      1984,
+      1287
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 10 - Gaipan"
+    }
+  },
+  {
+    "id": "Katara-Episode-11",
+    "character": "Katara",
+    "episode": "11",
+    "position": [
+      2061,
+      1250
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 11 - Great Divide"
+    }
+  },
+  {
+    "id": "Katara-Episode-12",
+    "character": "Katara",
+    "episode": "12",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 12 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Katara-Episode-13",
+    "character": "Katara",
+    "episode": "13",
+    "position": [
+      1938,
+      1345
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 13 - Taku"
+    }
+  },
+  {
+    "id": "Katara-Episode-14",
+    "character": "Katara",
+    "episode": "14",
+    "position": [
+      1824,
+      1331
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 14 - Makapu Village"
+    }
+  },
+  {
+    "id": "Katara-Episode-15",
+    "character": "Katara",
+    "episode": "15",
+    "position": [
+      1938,
+      1345
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 15 - Taku"
+    }
+  },
+  {
+    "id": "Katara-Episode-16",
+    "character": "Katara",
+    "episode": "16",
+    "position": [
+      1897,
+      1394
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 16 - Fire Nation colonial village"
+    }
+  },
+  {
+    "id": "Katara-Episode-17",
+    "character": "Katara",
+    "episode": "17",
+    "position": [
+      2097,
+      1592
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 17 - Northern Air Temple"
+    }
+  },
+  {
+    "id": "Katara-Episode-18",
+    "character": "Katara",
+    "episode": "18",
+    "position": [
+      1925,
+      1701
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 18 - Northern Water Tribe"
+    }
+  },
+  {
+    "id": "Katara-Episode-19",
+    "character": "Katara",
+    "episode": "19",
+    "position": [
+      1925,
+      1701
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 19 - Northern Water Tribe"
+    }
+  },
+  {
+    "id": "Katara-Episode-20",
+    "character": "Katara",
+    "episode": "20",
+    "position": [
+      1925,
+      1701
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 1 Episode 20 - Northern Water Tribe"
+    }
+  },
+  {
+    "id": "Katara-Episode-21",
+    "character": "Katara",
+    "episode": "21",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 2 Episode 1 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Katara-Episode-22",
+    "character": "Katara",
+    "episode": "22",
+    "position": [
+      2063.3375875023457,
+      1020.5318619474848
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 2 Episode 2 - Omashu"
+    }
+  },
+  {
+    "id": "Katara-Episode-23",
+    "character": "Katara",
+    "episode": "23",
+    "position": [
+      2063.3375875023457,
+      1020.5318619474848
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 2 Episode 3 - Omashu"
+    }
+  },
+  {
+    "id": "Katara-Episode-24",
+    "character": "Katara",
+    "episode": "24",
+    "position": [
+      2151,
+      960
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 2 Episode 4 - Foggy Swamp"
+    }
+  },
+  {
+    "id": "Katara-Episode-25",
+    "character": "Katara",
+    "episode": "25",
+    "position": [
+      2007,
+      801
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 2 Episode 5 - Kyoshi Island"
+    }
+  },
+  {
+    "id": "Katara-Episode-26",
+    "character": "Katara",
+    "episode": "26",
+    "position": [
+      2174,
+      886
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 2 Episode 6 - Gaoling"
+    }
+  },
+  {
+    "id": "Katara-Episode-28",
+    "character": "Katara",
+    "episode": "28",
+    "position": [
+      2310,
+      915
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 2 Episode 8 - Tu Zin"
+    }
+  },
+  {
+    "id": "Katara-Episode-29",
+    "character": "Katara",
+    "episode": "29",
+    "position": [
+      2310,
+      915
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 2 Episode 9 - Tu Zin"
+    }
+  },
+  {
+    "id": "Katara-Episode-30",
+    "character": "Katara",
+    "episode": "30",
+    "position": [
+      2345,
+      1144
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 2 Episode 10 - Wan Shi Tong's Library"
+    }
+  },
+  {
+    "id": "Katara-Episode-31",
+    "character": "Katara",
+    "episode": "31",
+    "position": [
+      2247,
+      1045
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 2 Episode 11 - Si Wong Desert"
+    }
+  },
+  {
+    "id": "Katara-Episode-32",
+    "character": "Katara",
+    "episode": "32",
+    "position": [
+      2210,
+      1204
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 2 Episode 12 - Full Moon Bay"
+    }
+  },
+  {
+    "id": "Katara-Episode-33",
+    "character": "Katara",
+    "episode": "33",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 2 Episode 13 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Katara-Episode-34",
+    "character": "Katara",
+    "episode": "34",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 2 Episode 14 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Katara-Episode-35",
+    "character": "Katara",
+    "episode": "35",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 2 Episode 15 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Katara-Episode-37",
+    "character": "Katara",
+    "episode": "37",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 2 Episode 17 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Katara-Episode-38",
+    "character": "Katara",
+    "episode": "38",
+    "position": [
+      2459,
+      1351
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 2 Episode 18 - Lake Laogai"
+    }
+  },
+  {
+    "id": "Katara-Episode-39",
+    "character": "Katara",
+    "episode": "39",
+    "position": [
+      2467,
+      1172
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 2 Episode 19 - Chameleon Bay"
+    }
+  },
+  {
+    "id": "Katara-Episode-40",
+    "character": "Katara",
+    "episode": "40",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 2 Episode 20 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Katara-Episode-41",
+    "character": "Katara",
+    "episode": "41",
+    "position": [
+      1771,
+      1182
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 1 - Crescent Island"
+    }
+  },
+  {
+    "id": "Katara-Episode-42",
+    "character": "Katara",
+    "episode": "42",
+    "position": [
+      1198.5,
+      1090.5
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 2 - Fire Nation Royal Palace"
+    }
+  },
+  {
+    "id": "Katara-Episode-43",
+    "character": "Katara",
+    "episode": "43",
+    "position": [
+      1756.6300211627,
+      1202.7886347983
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 3 - Jang Hui"
+    }
+  },
+  {
+    "id": "Katara-Episode-44",
+    "character": "Katara",
+    "episode": "44",
+    "position": [
+      1717.9159248927,
+      1194.1265767288
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 4 - Shu Jing"
+    }
+  },
+  {
+    "id": "Katara-Episode-45",
+    "character": "Katara",
+    "episode": "45",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 5 - Ember Island"
+    }
+  },
+  {
+    "id": "Katara-Episode-46",
+    "character": "Katara",
+    "episode": "46",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 6 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Katara-Episode-47",
+    "character": "Katara",
+    "episode": "47",
+    "position": [
+      1538.6643558619,
+      1067.7312395917
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 7 - Fire Fountain City"
+    }
+  },
+  {
+    "id": "Katara-Episode-48",
+    "character": "Katara",
+    "episode": "48",
+    "position": [
+      1719,
+      489
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 8 - Southern Water Tribe"
+    }
+  },
+  {
+    "id": "Katara-Episode-49",
+    "character": "Katara",
+    "episode": "49",
+    "position": [
+      1387,
+      1048
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 9 - Black Cliffs"
+    }
+  },
+  {
+    "id": "Katara-Episode-50",
+    "character": "Katara",
+    "episode": "50",
+    "position": [
+      1387,
+      1048
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 10 - Black Cliffs"
+    }
+  },
+  {
+    "id": "Katara-Episode-51",
+    "character": "Katara",
+    "episode": "51",
+    "position": [
+      1242.7401679354,
+      1081.8733752154
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 11 - Fire Nation Capital"
+    }
+  },
+  {
+    "id": "Katara-Episode-52",
+    "character": "Katara",
+    "episode": "52",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 12 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Katara-Episode-53",
+    "character": "Katara",
+    "episode": "53",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 13 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Katara-Episode-54",
+    "character": "Katara",
+    "episode": "54",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 14 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Katara-Episode-55",
+    "character": "Katara",
+    "episode": "55",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 15 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Katara-Episode-56",
+    "character": "Katara",
+    "episode": "56",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 16 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Katara-Episode-57",
+    "character": "Katara",
+    "episode": "57",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 17 - Ember Island"
+    }
+  },
+  {
+    "id": "Katara-Episode-58",
+    "character": "Katara",
+    "episode": "58",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 18 - Ember Island"
+    }
+  },
+  {
+    "id": "Katara-Episode-59",
+    "character": "Katara",
+    "episode": "59",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 19 - Ember Island"
+    }
+  },
+  {
+    "id": "Katara-Episode-60",
+    "character": "Katara",
+    "episode": "60",
+    "position": [
+      1242.7401679354,
+      1081.8733752154
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 20 - Fire Nation Capital"
+    }
+  },
+  {
+    "id": "Katara-Episode-61",
+    "character": "Katara",
+    "episode": "61",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Katara",
+      "description": "Book 3 Episode 21 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Sokka-Episode-1",
+    "character": "Sokka",
+    "episode": "1",
+    "position": [
+      1719,
+      489
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 1 - Southern Water Tribe"
+    }
+  },
+  {
+    "id": "Sokka-Episode-2",
+    "character": "Sokka",
+    "episode": "2",
+    "position": [
+      1719,
+      489
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 2 - Southern Water Tribe"
+    }
+  },
+  {
+    "id": "Sokka-Episode-3",
+    "character": "Sokka",
+    "episode": "3",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 3 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Sokka-Episode-4",
+    "character": "Sokka",
+    "episode": "4",
+    "position": [
+      2007,
+      801
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 4 - Kyoshi Island"
+    }
+  },
+  {
+    "id": "Sokka-Episode-5",
+    "character": "Sokka",
+    "episode": "5",
+    "position": [
+      2063.3375875023457,
+      1020.5318619474848
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 5 - Omashu"
+    }
+  },
+  {
+    "id": "Sokka-Episode-6",
+    "character": "Sokka",
+    "episode": "6",
+    "position": [
+      1923,
+      1073
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 6 - Mining village"
+    }
+  },
+  {
+    "id": "Sokka-Episode-7",
+    "character": "Sokka",
+    "episode": "7",
+    "position": [
+      1868,
+      1162
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 7 - Senlin Village"
+    }
+  },
+  {
+    "id": "Sokka-Episode-8",
+    "character": "Sokka",
+    "episode": "8",
+    "position": [
+      1868,
+      1162
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 8 - Senlin Village"
+    }
+  },
+  {
+    "id": "Sokka-Episode-9",
+    "character": "Sokka",
+    "episode": "9",
+    "position": [
+      1891,
+      1231
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 9 - Seedy merchants pier"
+    }
+  },
+  {
+    "id": "Sokka-Episode-10",
+    "character": "Sokka",
+    "episode": "10",
+    "position": [
+      1984,
+      1287
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 10 - Gaipan"
+    }
+  },
+  {
+    "id": "Sokka-Episode-11",
+    "character": "Sokka",
+    "episode": "11",
+    "position": [
+      2061,
+      1250
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 11 - Great Divide"
+    }
+  },
+  {
+    "id": "Sokka-Episode-12",
+    "character": "Sokka",
+    "episode": "12",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 12 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Sokka-Episode-13",
+    "character": "Sokka",
+    "episode": "13",
+    "position": [
+      1938,
+      1345
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 13 - Taku"
+    }
+  },
+  {
+    "id": "Sokka-Episode-14",
+    "character": "Sokka",
+    "episode": "14",
+    "position": [
+      1824,
+      1331
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 14 - Makapu Village"
+    }
+  },
+  {
+    "id": "Sokka-Episode-15",
+    "character": "Sokka",
+    "episode": "15",
+    "position": [
+      1938,
+      1345
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 15 - Taku"
+    }
+  },
+  {
+    "id": "Sokka-Episode-16",
+    "character": "Sokka",
+    "episode": "16",
+    "position": [
+      1897,
+      1394
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 16 - Fire Nation colonial village"
+    }
+  },
+  {
+    "id": "Sokka-Episode-17",
+    "character": "Sokka",
+    "episode": "17",
+    "position": [
+      2097,
+      1592
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 17 - Northern Air Temple"
+    }
+  },
+  {
+    "id": "Sokka-Episode-18",
+    "character": "Sokka",
+    "episode": "18",
+    "position": [
+      1925,
+      1701
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 18 - Northern Water Tribe"
+    }
+  },
+  {
+    "id": "Sokka-Episode-19",
+    "character": "Sokka",
+    "episode": "19",
+    "position": [
+      1925,
+      1701
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 19 - Northern Water Tribe"
+    }
+  },
+  {
+    "id": "Sokka-Episode-20",
+    "character": "Sokka",
+    "episode": "20",
+    "position": [
+      1925,
+      1701
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 1 Episode 20 - Northern Water Tribe"
+    }
+  },
+  {
+    "id": "Sokka-Episode-21",
+    "character": "Sokka",
+    "episode": "21",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 2 Episode 1 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Sokka-Episode-22",
+    "character": "Sokka",
+    "episode": "22",
+    "position": [
+      2063.3375875023457,
+      1020.5318619474848
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 2 Episode 2 - Omashu"
+    }
+  },
+  {
+    "id": "Sokka-Episode-23",
+    "character": "Sokka",
+    "episode": "23",
+    "position": [
+      2063.3375875023457,
+      1020.5318619474848
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 2 Episode 3 - Omashu"
+    }
+  },
+  {
+    "id": "Sokka-Episode-24",
+    "character": "Sokka",
+    "episode": "24",
+    "position": [
+      2151,
+      960
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 2 Episode 4 - Foggy Swamp"
+    }
+  },
+  {
+    "id": "Sokka-Episode-25",
+    "character": "Sokka",
+    "episode": "25",
+    "position": [
+      2007,
+      801
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 2 Episode 5 - Kyoshi Island"
+    }
+  },
+  {
+    "id": "Sokka-Episode-26",
+    "character": "Sokka",
+    "episode": "26",
+    "position": [
+      2174,
+      886
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 2 Episode 6 - Gaoling"
+    }
+  },
+  {
+    "id": "Sokka-Episode-28",
+    "character": "Sokka",
+    "episode": "28",
+    "position": [
+      2310,
+      915
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 2 Episode 8 - Tu Zin"
+    }
+  },
+  {
+    "id": "Sokka-Episode-29",
+    "character": "Sokka",
+    "episode": "29",
+    "position": [
+      2310,
+      915
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 2 Episode 9 - Tu Zin"
+    }
+  },
+  {
+    "id": "Sokka-Episode-30",
+    "character": "Sokka",
+    "episode": "30",
+    "position": [
+      2345,
+      1144
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 2 Episode 10 - Wan Shi Tong's Library"
+    }
+  },
+  {
+    "id": "Sokka-Episode-31",
+    "character": "Sokka",
+    "episode": "31",
+    "position": [
+      2247,
+      1045
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 2 Episode 11 - Si Wong Desert"
+    }
+  },
+  {
+    "id": "Sokka-Episode-32",
+    "character": "Sokka",
+    "episode": "32",
+    "position": [
+      2210,
+      1204
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 2 Episode 12 - Full Moon Bay"
+    }
+  },
+  {
+    "id": "Sokka-Episode-33",
+    "character": "Sokka",
+    "episode": "33",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 2 Episode 13 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Sokka-Episode-34",
+    "character": "Sokka",
+    "episode": "34",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 2 Episode 14 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Sokka-Episode-36",
+    "character": "Sokka",
+    "episode": "36",
+    "position": [
+      2345,
+      1144
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 2 Episode 16 - Wan Shi Tong's Library"
+    }
+  },
+  {
+    "id": "Sokka-Episode-37",
+    "character": "Sokka",
+    "episode": "37",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 2 Episode 17 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Sokka-Episode-38",
+    "character": "Sokka",
+    "episode": "38",
+    "position": [
+      2459,
+      1351
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 2 Episode 18 - Lake Laogai"
+    }
+  },
+  {
+    "id": "Sokka-Episode-39",
+    "character": "Sokka",
+    "episode": "39",
+    "position": [
+      2467,
+      1172
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 2 Episode 19 - Chameleon Bay"
+    }
+  },
+  {
+    "id": "Sokka-Episode-40",
+    "character": "Sokka",
+    "episode": "40",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 2 Episode 20 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Sokka-Episode-41",
+    "character": "Sokka",
+    "episode": "41",
+    "position": [
+      1771,
+      1182
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 1 - Crescent Island"
+    }
+  },
+  {
+    "id": "Sokka-Episode-42",
+    "character": "Sokka",
+    "episode": "42",
+    "position": [
+      1198.5,
+      1090.5
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 2 - Fire Nation Royal Palace"
+    }
+  },
+  {
+    "id": "Sokka-Episode-43",
+    "character": "Sokka",
+    "episode": "43",
+    "position": [
+      1756.6300211627,
+      1202.7886347983
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 3 - Jang Hui"
+    }
+  },
+  {
+    "id": "Sokka-Episode-44",
+    "character": "Sokka",
+    "episode": "44",
+    "position": [
+      1717.9159248927,
+      1194.1265767288
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 4 - Shu Jing"
+    }
+  },
+  {
+    "id": "Sokka-Episode-45",
+    "character": "Sokka",
+    "episode": "45",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 5 - Ember Island"
+    }
+  },
+  {
+    "id": "Sokka-Episode-46",
+    "character": "Sokka",
+    "episode": "46",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 6 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Sokka-Episode-47",
+    "character": "Sokka",
+    "episode": "47",
+    "position": [
+      1538.6643558619,
+      1067.7312395917
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 7 - Fire Fountain City"
+    }
+  },
+  {
+    "id": "Sokka-Episode-48",
+    "character": "Sokka",
+    "episode": "48",
+    "position": [
+      1719,
+      489
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 8 - Southern Water Tribe"
+    }
+  },
+  {
+    "id": "Sokka-Episode-49",
+    "character": "Sokka",
+    "episode": "49",
+    "position": [
+      1387,
+      1048
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 9 - Black Cliffs"
+    }
+  },
+  {
+    "id": "Sokka-Episode-50",
+    "character": "Sokka",
+    "episode": "50",
+    "position": [
+      1387,
+      1048
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 10 - Black Cliffs"
+    }
+  },
+  {
+    "id": "Sokka-Episode-51",
+    "character": "Sokka",
+    "episode": "51",
+    "position": [
+      1242.7401679354,
+      1081.8733752154
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 11 - Fire Nation Capital"
+    }
+  },
+  {
+    "id": "Sokka-Episode-52",
+    "character": "Sokka",
+    "episode": "52",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 12 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Sokka-Episode-53",
+    "character": "Sokka",
+    "episode": "53",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 13 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Sokka-Episode-54",
+    "character": "Sokka",
+    "episode": "54",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 14 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Sokka-Episode-55",
+    "character": "Sokka",
+    "episode": "55",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 15 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Sokka-Episode-56",
+    "character": "Sokka",
+    "episode": "56",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 16 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Sokka-Episode-57",
+    "character": "Sokka",
+    "episode": "57",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 17 - Ember Island"
+    }
+  },
+  {
+    "id": "Sokka-Episode-58",
+    "character": "Sokka",
+    "episode": "58",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 18 - Ember Island"
+    }
+  },
+  {
+    "id": "Sokka-Episode-59",
+    "character": "Sokka",
+    "episode": "59",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 19 - Ember Island"
+    }
+  },
+  {
+    "id": "Sokka-Episode-60",
+    "character": "Sokka",
+    "episode": "60",
+    "position": [
+      1242.7401679354,
+      1081.8733752154
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 20 - Fire Nation Capital"
+    }
+  },
+  {
+    "id": "Sokka-Episode-61",
+    "character": "Sokka",
+    "episode": "61",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Sokka",
+      "description": "Book 3 Episode 21 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Zuko-Episode-1",
+    "character": "Zuko",
+    "episode": "1",
+    "position": [
+      1719,
+      489
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 1 Episode 1 - Southern Water Tribe"
+    }
+  },
+  {
+    "id": "Zuko-Episode-2",
+    "character": "Zuko",
+    "episode": "2",
+    "position": [
+      1719,
+      489
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 1 Episode 2 - Southern Water Tribe"
+    }
+  },
+  {
+    "id": "Zuko-Episode-3",
+    "character": "Zuko",
+    "episode": "3",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 1 Episode 3 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Zuko-Episode-4",
+    "character": "Zuko",
+    "episode": "4",
+    "position": [
+      2007,
+      801
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 1 Episode 4 - Kyoshi Island"
+    }
+  },
+  {
+    "id": "Zuko-Episode-7",
+    "character": "Zuko",
+    "episode": "7",
+    "position": [
+      1868,
+      1162
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 1 Episode 7 - Senlin Village"
+    }
+  },
+  {
+    "id": "Zuko-Episode-8",
+    "character": "Zuko",
+    "episode": "8",
+    "position": [
+      1868,
+      1162
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 1 Episode 8 - Senlin Village"
+    }
+  },
+  {
+    "id": "Zuko-Episode-9",
+    "character": "Zuko",
+    "episode": "9",
+    "position": [
+      1891,
+      1231
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 1 Episode 9 - Seedy merchants pier"
+    }
+  },
+  {
+    "id": "Zuko-Episode-10",
+    "character": "Zuko",
+    "episode": "10",
+    "position": [
+      1984,
+      1287
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 1 Episode 10 - Gaipan"
+    }
+  },
+  {
+    "id": "Zuko-Episode-12",
+    "character": "Zuko",
+    "episode": "12",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 1 Episode 12 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Zuko-Episode-13",
+    "character": "Zuko",
+    "episode": "13",
+    "position": [
+      1938,
+      1345
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 1 Episode 13 - Taku"
+    }
+  },
+  {
+    "id": "Zuko-Episode-16",
+    "character": "Zuko",
+    "episode": "16",
+    "position": [
+      1897,
+      1394
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 1 Episode 16 - Fire Nation colonial village"
+    }
+  },
+  {
+    "id": "Zuko-Episode-18",
+    "character": "Zuko",
+    "episode": "18",
+    "position": [
+      1925,
+      1701
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 1 Episode 18 - Northern Water Tribe"
+    }
+  },
+  {
+    "id": "Zuko-Episode-19",
+    "character": "Zuko",
+    "episode": "19",
+    "position": [
+      1925,
+      1701
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 1 Episode 19 - Northern Water Tribe"
+    }
+  },
+  {
+    "id": "Zuko-Episode-20",
+    "character": "Zuko",
+    "episode": "20",
+    "position": [
+      1925,
+      1701
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 1 Episode 20 - Northern Water Tribe"
+    }
+  },
+  {
+    "id": "Zuko-Episode-21",
+    "character": "Zuko",
+    "episode": "21",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 2 Episode 1 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Zuko-Episode-22",
+    "character": "Zuko",
+    "episode": "22",
+    "position": [
+      2063.3375875023457,
+      1020.5318619474848
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 2 Episode 2 - Omashu"
+    }
+  },
+  {
+    "id": "Zuko-Episode-23",
+    "character": "Zuko",
+    "episode": "23",
+    "position": [
+      2063.3375875023457,
+      1020.5318619474848
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 2 Episode 3 - Omashu"
+    }
+  },
+  {
+    "id": "Zuko-Episode-24",
+    "character": "Zuko",
+    "episode": "24",
+    "position": [
+      2151,
+      960
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 2 Episode 4 - Foggy Swamp"
+    }
+  },
+  {
+    "id": "Zuko-Episode-25",
+    "character": "Zuko",
+    "episode": "25",
+    "position": [
+      2007,
+      801
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 2 Episode 5 - Kyoshi Island"
+    }
+  },
+  {
+    "id": "Zuko-Episode-27",
+    "character": "Zuko",
+    "episode": "27",
+    "position": [
+      2219,
+      935
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 2 Episode 7 - Plains village"
+    }
+  },
+  {
+    "id": "Zuko-Episode-28",
+    "character": "Zuko",
+    "episode": "28",
+    "position": [
+      2310,
+      915
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 2 Episode 8 - Tu Zin"
+    }
+  },
+  {
+    "id": "Zuko-Episode-29",
+    "character": "Zuko",
+    "episode": "29",
+    "position": [
+      2310,
+      915
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 2 Episode 9 - Tu Zin"
+    }
+  },
+  {
+    "id": "Zuko-Episode-31",
+    "character": "Zuko",
+    "episode": "31",
+    "position": [
+      2247,
+      1045
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 2 Episode 11 - Si Wong Desert"
+    }
+  },
+  {
+    "id": "Zuko-Episode-32",
+    "character": "Zuko",
+    "episode": "32",
+    "position": [
+      2210,
+      1204
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 2 Episode 12 - Full Moon Bay"
+    }
+  },
+  {
+    "id": "Zuko-Episode-33",
+    "character": "Zuko",
+    "episode": "33",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 2 Episode 13 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Zuko-Episode-34",
+    "character": "Zuko",
+    "episode": "34",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 2 Episode 14 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Zuko-Episode-36",
+    "character": "Zuko",
+    "episode": "36",
+    "position": [
+      2345,
+      1144
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 2 Episode 16 - Wan Shi Tong's Library"
+    }
+  },
+  {
+    "id": "Zuko-Episode-37",
+    "character": "Zuko",
+    "episode": "37",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 2 Episode 17 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Zuko-Episode-38",
+    "character": "Zuko",
+    "episode": "38",
+    "position": [
+      2459,
+      1351
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 2 Episode 18 - Lake Laogai"
+    }
+  },
+  {
+    "id": "Zuko-Episode-39",
+    "character": "Zuko",
+    "episode": "39",
+    "position": [
+      2467,
+      1172
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 2 Episode 19 - Chameleon Bay"
+    }
+  },
+  {
+    "id": "Zuko-Episode-40",
+    "character": "Zuko",
+    "episode": "40",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 2 Episode 20 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Zuko-Episode-41",
+    "character": "Zuko",
+    "episode": "41",
+    "position": [
+      1771,
+      1182
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 3 Episode 1 - Crescent Island"
+    }
+  },
+  {
+    "id": "Zuko-Episode-42",
+    "character": "Zuko",
+    "episode": "42",
+    "position": [
+      1198.5,
+      1090.5
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 3 Episode 2 - Fire Nation Royal Palace"
+    }
+  },
+  {
+    "id": "Zuko-Episode-45",
+    "character": "Zuko",
+    "episode": "45",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 3 Episode 5 - Ember Island"
+    }
+  },
+  {
+    "id": "Zuko-Episode-46",
+    "character": "Zuko",
+    "episode": "46",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 3 Episode 6 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Zuko-Episode-49",
+    "character": "Zuko",
+    "episode": "49",
+    "position": [
+      1387,
+      1048
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 3 Episode 9 - Black Cliffs"
+    }
+  },
+  {
+    "id": "Zuko-Episode-50",
+    "character": "Zuko",
+    "episode": "50",
+    "position": [
+      1387,
+      1048
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 3 Episode 10 - Black Cliffs"
+    }
+  },
+  {
+    "id": "Zuko-Episode-51",
+    "character": "Zuko",
+    "episode": "51",
+    "position": [
+      1242.7401679354,
+      1081.8733752154
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 3 Episode 11 - Fire Nation Capital"
+    }
+  },
+  {
+    "id": "Zuko-Episode-52",
+    "character": "Zuko",
+    "episode": "52",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 3 Episode 12 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Zuko-Episode-53",
+    "character": "Zuko",
+    "episode": "53",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 3 Episode 13 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Zuko-Episode-54",
+    "character": "Zuko",
+    "episode": "54",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 3 Episode 14 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Zuko-Episode-55",
+    "character": "Zuko",
+    "episode": "55",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 3 Episode 15 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Zuko-Episode-56",
+    "character": "Zuko",
+    "episode": "56",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 3 Episode 16 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Zuko-Episode-57",
+    "character": "Zuko",
+    "episode": "57",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 3 Episode 17 - Ember Island"
+    }
+  },
+  {
+    "id": "Zuko-Episode-58",
+    "character": "Zuko",
+    "episode": "58",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 3 Episode 18 - Ember Island"
+    }
+  },
+  {
+    "id": "Zuko-Episode-59",
+    "character": "Zuko",
+    "episode": "59",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 3 Episode 19 - Ember Island"
+    }
+  },
+  {
+    "id": "Zuko-Episode-60",
+    "character": "Zuko",
+    "episode": "60",
+    "position": [
+      1242.7401679354,
+      1081.8733752154
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 3 Episode 20 - Fire Nation Capital"
+    }
+  },
+  {
+    "id": "Zuko-Episode-61",
+    "character": "Zuko",
+    "episode": "61",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Zuko",
+      "description": "Book 3 Episode 21 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Toph-Episode-26",
+    "character": "Toph",
+    "episode": "26",
+    "position": [
+      2174,
+      886
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 2 Episode 6 - Gaoling"
+    }
+  },
+  {
+    "id": "Toph-Episode-28",
+    "character": "Toph",
+    "episode": "28",
+    "position": [
+      2310,
+      915
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 2 Episode 8 - Tu Zin"
+    }
+  },
+  {
+    "id": "Toph-Episode-29",
+    "character": "Toph",
+    "episode": "29",
+    "position": [
+      2310,
+      915
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 2 Episode 9 - Tu Zin"
+    }
+  },
+  {
+    "id": "Toph-Episode-30",
+    "character": "Toph",
+    "episode": "30",
+    "position": [
+      2345,
+      1144
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 2 Episode 10 - Wan Shi Tong's Library"
+    }
+  },
+  {
+    "id": "Toph-Episode-31",
+    "character": "Toph",
+    "episode": "31",
+    "position": [
+      2247,
+      1045
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 2 Episode 11 - Si Wong Desert"
+    }
+  },
+  {
+    "id": "Toph-Episode-32",
+    "character": "Toph",
+    "episode": "32",
+    "position": [
+      2210,
+      1204
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 2 Episode 12 - Full Moon Bay"
+    }
+  },
+  {
+    "id": "Toph-Episode-33",
+    "character": "Toph",
+    "episode": "33",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 2 Episode 13 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Toph-Episode-34",
+    "character": "Toph",
+    "episode": "34",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 2 Episode 14 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Toph-Episode-35",
+    "character": "Toph",
+    "episode": "35",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 2 Episode 15 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Toph-Episode-36",
+    "character": "Toph",
+    "episode": "36",
+    "position": [
+      2345,
+      1144
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 2 Episode 16 - Wan Shi Tong's Library"
+    }
+  },
+  {
+    "id": "Toph-Episode-37",
+    "character": "Toph",
+    "episode": "37",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 2 Episode 17 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Toph-Episode-38",
+    "character": "Toph",
+    "episode": "38",
+    "position": [
+      2459,
+      1351
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 2 Episode 18 - Lake Laogai"
+    }
+  },
+  {
+    "id": "Toph-Episode-39",
+    "character": "Toph",
+    "episode": "39",
+    "position": [
+      2467,
+      1172
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 2 Episode 19 - Chameleon Bay"
+    }
+  },
+  {
+    "id": "Toph-Episode-40",
+    "character": "Toph",
+    "episode": "40",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 2 Episode 20 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Toph-Episode-41",
+    "character": "Toph",
+    "episode": "41",
+    "position": [
+      1771,
+      1182
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 1 - Crescent Island"
+    }
+  },
+  {
+    "id": "Toph-Episode-42",
+    "character": "Toph",
+    "episode": "42",
+    "position": [
+      1198.5,
+      1090.5
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 2 - Fire Nation Royal Palace"
+    }
+  },
+  {
+    "id": "Toph-Episode-43",
+    "character": "Toph",
+    "episode": "43",
+    "position": [
+      1756.6300211627,
+      1202.7886347983
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 3 - Jang Hui"
+    }
+  },
+  {
+    "id": "Toph-Episode-44",
+    "character": "Toph",
+    "episode": "44",
+    "position": [
+      1717.9159248927,
+      1194.1265767288
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 4 - Shu Jing"
+    }
+  },
+  {
+    "id": "Toph-Episode-45",
+    "character": "Toph",
+    "episode": "45",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 5 - Ember Island"
+    }
+  },
+  {
+    "id": "Toph-Episode-46",
+    "character": "Toph",
+    "episode": "46",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 6 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Toph-Episode-47",
+    "character": "Toph",
+    "episode": "47",
+    "position": [
+      1538.6643558619,
+      1067.7312395917
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 7 - Fire Fountain City"
+    }
+  },
+  {
+    "id": "Toph-Episode-48",
+    "character": "Toph",
+    "episode": "48",
+    "position": [
+      1719,
+      489
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 8 - Southern Water Tribe"
+    }
+  },
+  {
+    "id": "Toph-Episode-49",
+    "character": "Toph",
+    "episode": "49",
+    "position": [
+      1387,
+      1048
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 9 - Black Cliffs"
+    }
+  },
+  {
+    "id": "Toph-Episode-50",
+    "character": "Toph",
+    "episode": "50",
+    "position": [
+      1387,
+      1048
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 10 - Black Cliffs"
+    }
+  },
+  {
+    "id": "Toph-Episode-51",
+    "character": "Toph",
+    "episode": "51",
+    "position": [
+      1242.7401679354,
+      1081.8733752154
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 11 - Fire Nation Capital"
+    }
+  },
+  {
+    "id": "Toph-Episode-52",
+    "character": "Toph",
+    "episode": "52",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 12 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Toph-Episode-53",
+    "character": "Toph",
+    "episode": "53",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 13 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Toph-Episode-54",
+    "character": "Toph",
+    "episode": "54",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 14 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Toph-Episode-55",
+    "character": "Toph",
+    "episode": "55",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 15 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Toph-Episode-56",
+    "character": "Toph",
+    "episode": "56",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 16 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Toph-Episode-57",
+    "character": "Toph",
+    "episode": "57",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 17 - Ember Island"
+    }
+  },
+  {
+    "id": "Toph-Episode-58",
+    "character": "Toph",
+    "episode": "58",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 18 - Ember Island"
+    }
+  },
+  {
+    "id": "Toph-Episode-59",
+    "character": "Toph",
+    "episode": "59",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 19 - Ember Island"
+    }
+  },
+  {
+    "id": "Toph-Episode-60",
+    "character": "Toph",
+    "episode": "60",
+    "position": [
+      1242.7401679354,
+      1081.8733752154
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 20 - Fire Nation Capital"
+    }
+  },
+  {
+    "id": "Toph-Episode-61",
+    "character": "Toph",
+    "episode": "61",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Toph",
+      "description": "Book 3 Episode 21 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Iroh-Episode-1",
+    "character": "Iroh",
+    "episode": "1",
+    "position": [
+      1719,
+      489
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 1 Episode 1 - Southern Water Tribe"
+    }
+  },
+  {
+    "id": "Iroh-Episode-2",
+    "character": "Iroh",
+    "episode": "2",
+    "position": [
+      1719,
+      489
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 1 Episode 2 - Southern Water Tribe"
+    }
+  },
+  {
+    "id": "Iroh-Episode-3",
+    "character": "Iroh",
+    "episode": "3",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 1 Episode 3 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Iroh-Episode-4",
+    "character": "Iroh",
+    "episode": "4",
+    "position": [
+      2007,
+      801
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 1 Episode 4 - Kyoshi Island"
+    }
+  },
+  {
+    "id": "Iroh-Episode-7",
+    "character": "Iroh",
+    "episode": "7",
+    "position": [
+      1868,
+      1162
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 1 Episode 7 - Senlin Village"
+    }
+  },
+  {
+    "id": "Iroh-Episode-8",
+    "character": "Iroh",
+    "episode": "8",
+    "position": [
+      1868,
+      1162
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 1 Episode 8 - Senlin Village"
+    }
+  },
+  {
+    "id": "Iroh-Episode-9",
+    "character": "Iroh",
+    "episode": "9",
+    "position": [
+      1891,
+      1231
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 1 Episode 9 - Seedy merchants pier"
+    }
+  },
+  {
+    "id": "Iroh-Episode-12",
+    "character": "Iroh",
+    "episode": "12",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 1 Episode 12 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Iroh-Episode-13",
+    "character": "Iroh",
+    "episode": "13",
+    "position": [
+      1938,
+      1345
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 1 Episode 13 - Taku"
+    }
+  },
+  {
+    "id": "Iroh-Episode-18",
+    "character": "Iroh",
+    "episode": "18",
+    "position": [
+      1925,
+      1701
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 1 Episode 18 - Northern Water Tribe"
+    }
+  },
+  {
+    "id": "Iroh-Episode-19",
+    "character": "Iroh",
+    "episode": "19",
+    "position": [
+      1925,
+      1701
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 1 Episode 19 - Northern Water Tribe"
+    }
+  },
+  {
+    "id": "Iroh-Episode-20",
+    "character": "Iroh",
+    "episode": "20",
+    "position": [
+      1925,
+      1701
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 1 Episode 20 - Northern Water Tribe"
+    }
+  },
+  {
+    "id": "Iroh-Episode-21",
+    "character": "Iroh",
+    "episode": "21",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 2 Episode 1 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Iroh-Episode-22",
+    "character": "Iroh",
+    "episode": "22",
+    "position": [
+      2063.3375875023457,
+      1020.5318619474848
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 2 Episode 2 - Omashu"
+    }
+  },
+  {
+    "id": "Iroh-Episode-23",
+    "character": "Iroh",
+    "episode": "23",
+    "position": [
+      2063.3375875023457,
+      1020.5318619474848
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 2 Episode 3 - Omashu"
+    }
+  },
+  {
+    "id": "Iroh-Episode-24",
+    "character": "Iroh",
+    "episode": "24",
+    "position": [
+      2151,
+      960
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 2 Episode 4 - Foggy Swamp"
+    }
+  },
+  {
+    "id": "Iroh-Episode-25",
+    "character": "Iroh",
+    "episode": "25",
+    "position": [
+      2007,
+      801
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 2 Episode 5 - Kyoshi Island"
+    }
+  },
+  {
+    "id": "Iroh-Episode-27",
+    "character": "Iroh",
+    "episode": "27",
+    "position": [
+      2219,
+      935
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 2 Episode 7 - Plains village"
+    }
+  },
+  {
+    "id": "Iroh-Episode-28",
+    "character": "Iroh",
+    "episode": "28",
+    "position": [
+      2310,
+      915
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 2 Episode 8 - Tu Zin"
+    }
+  },
+  {
+    "id": "Iroh-Episode-29",
+    "character": "Iroh",
+    "episode": "29",
+    "position": [
+      2310,
+      915
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 2 Episode 9 - Tu Zin"
+    }
+  },
+  {
+    "id": "Iroh-Episode-31",
+    "character": "Iroh",
+    "episode": "31",
+    "position": [
+      2247,
+      1045
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 2 Episode 11 - Si Wong Desert"
+    }
+  },
+  {
+    "id": "Iroh-Episode-32",
+    "character": "Iroh",
+    "episode": "32",
+    "position": [
+      2210,
+      1204
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 2 Episode 12 - Full Moon Bay"
+    }
+  },
+  {
+    "id": "Iroh-Episode-33",
+    "character": "Iroh",
+    "episode": "33",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 2 Episode 13 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Iroh-Episode-34",
+    "character": "Iroh",
+    "episode": "34",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 2 Episode 14 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Iroh-Episode-36",
+    "character": "Iroh",
+    "episode": "36",
+    "position": [
+      2345,
+      1144
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 2 Episode 16 - Wan Shi Tong's Library"
+    }
+  },
+  {
+    "id": "Iroh-Episode-37",
+    "character": "Iroh",
+    "episode": "37",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 2 Episode 17 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Iroh-Episode-38",
+    "character": "Iroh",
+    "episode": "38",
+    "position": [
+      2459,
+      1351
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 2 Episode 18 - Lake Laogai"
+    }
+  },
+  {
+    "id": "Iroh-Episode-39",
+    "character": "Iroh",
+    "episode": "39",
+    "position": [
+      2467,
+      1172
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 2 Episode 19 - Chameleon Bay"
+    }
+  },
+  {
+    "id": "Iroh-Episode-40",
+    "character": "Iroh",
+    "episode": "40",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 2 Episode 20 - Ba Sing Se"
+    }
+  },
+  {
+    "id": "Iroh-Episode-42",
+    "character": "Iroh",
+    "episode": "42",
+    "position": [
+      1198.5,
+      1090.5
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 3 Episode 2 - Fire Nation Royal Palace"
+    }
+  },
+  {
+    "id": "Iroh-Episode-44",
+    "character": "Iroh",
+    "episode": "44",
+    "position": [
+      1717.9159248927,
+      1194.1265767288
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 3 Episode 4 - Shu Jing"
+    }
+  },
+  {
+    "id": "Iroh-Episode-46",
+    "character": "Iroh",
+    "episode": "46",
+    "position": [
+      1753,
+      731
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 3 Episode 6 - Southern Air Temple"
+    }
+  },
+  {
+    "id": "Iroh-Episode-50",
+    "character": "Iroh",
+    "episode": "50",
+    "position": [
+      1387,
+      1048
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 3 Episode 10 - Black Cliffs"
+    }
+  },
+  {
+    "id": "Iroh-Episode-51",
+    "character": "Iroh",
+    "episode": "51",
+    "position": [
+      1242.7401679354,
+      1081.8733752154
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 3 Episode 11 - Fire Nation Capital"
+    }
+  },
+  {
+    "id": "Iroh-Episode-52",
+    "character": "Iroh",
+    "episode": "52",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 3 Episode 12 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Iroh-Episode-53",
+    "character": "Iroh",
+    "episode": "53",
+    "position": [
+      1469,
+      1421
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 3 Episode 13 - Western Air Temple"
+    }
+  },
+  {
+    "id": "Iroh-Episode-57",
+    "character": "Iroh",
+    "episode": "57",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 3 Episode 17 - Ember Island"
+    }
+  },
+  {
+    "id": "Iroh-Episode-59",
+    "character": "Iroh",
+    "episode": "59",
+    "position": [
+      1429.062804778,
+      1146.9271990846
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 3 Episode 19 - Ember Island"
+    }
+  },
+  {
+    "id": "Iroh-Episode-60",
+    "character": "Iroh",
+    "episode": "60",
+    "position": [
+      1242.7401679354,
+      1081.8733752154
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 3 Episode 20 - Fire Nation Capital"
+    }
+  },
+  {
+    "id": "Iroh-Episode-61",
+    "character": "Iroh",
+    "episode": "61",
+    "position": [
+      2403,
+      1372
+    ],
+    "popup": {
+      "title": "Iroh",
+      "description": "Book 3 Episode 21 - Ba Sing Se"
+    }
+  }
+]

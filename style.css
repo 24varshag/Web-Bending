@@ -146,3 +146,364 @@ ul.tabs a.active {
     transform: translateX(50%);
   }
 }
+
+/* Button Style */
+.open-modal-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background-image: url("images/avatar-nations.png"); /* Path to your image */
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  outline: none;
+  transition: opacity 1s ease; /* Smooth fade out effect */
+}
+
+/* Modal Style */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0); /* Initially transparent background */
+  transition: background-color 1s ease; /* Background fade effect */
+}
+
+/* Modal Content Style */
+.modal-content {
+  background-image: url("images/Appa’s+Sunset+Flight+-+ATLA-1.jpeg"); /* Background image */
+  background-color: #f0f0f0; /* Light grey background */
+  background-size: cover; /* Ensure the image covers the entire content area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling of the image */
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Adjust the width as needed */
+  height: 70vh; /* Use viewport height to fill the screen proportionally */
+  border-radius: 10px; /* Optional: rounded corners */
+  color: #333; /* Text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a shadow effect */
+  text-align: center; /* Center content */
+  position: relative;
+  transition: opacity 1s ease, transform 1s ease; /* Smooth transition */
+  overflow: hidden; /* Ensure no overflow from the modal */
+}
+
+/* New image buttons (centered horizontally) */
+.new-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the buttons */
+}
+
+#newButtonLeft {
+  left: 10%; /* Position the left button to the left of the center */
+}
+
+#newButtonRight {
+  right: 10%; /* Position the right button to the right of the center */
+}
+
+.image-button {
+  background-color: transparent; /* Make sure the button background is transparent */
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.image-btn-img {
+  width: 260px; /* Adjust size */
+  height: 100px; /* Adjust size */
+  object-fit: cover; /* Ensures the image is properly contained */
+  transition: transform 0.3s ease;
+}
+
+.image-btn-img:hover {
+  transform: scale(1.1); /* Scale up the image when hovered */
+}
+
+/* Tooltip hover text */
+.new-button:hover::after {
+  position: absolute;
+  top: -30px; /* Adjust the vertical position */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(226, 124, 124, 0.7); /* Semi-transparent background */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap; /* Ensure the text stays on one line */
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Specific text for each button */
+#newButtonLeft:hover::after {
+  content: "Learn some show facts!"; /* Text for left button */
+}
+
+#newButtonRight:hover::after {
+  content: "Learn about the show plot!"; /* Text for right button */
+}
+
+/* YouTube Video Container */
+.video-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none; /* Hidden initially */
+  background-color: black; /* Full screen black background */
+}
+
+/* Fade-out animation for background */
+.fade-out-background {
+  background-color: rgba(0, 0, 0, 1); /* Fade to black */
+  opacity: 1;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Text to display when new buttons are clicked */
+.button-text {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Info Container */
+.info-container {
+  display: none;
+  margin-top: 30px;
+  justify-content: center; /* Vertically center */
+  align-items: center; /* Horizontally center */
+  position: center;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 50%;
+  max-height: 70%; /* Limit height to ensure it fits in the modal */
+  overflow-y: auto; /* Scroll if content exceeds the height */
+  padding-right: 10px; /* Add some right padding to prevent content from touching the edge */
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+body {
+  margin: 0;
+  font-family: "Skia", "Forum", sans-serif;
+}
+
+#map-container {
+  width: 70%;
+  height: 700px;
+  margin-left: 20px;
+  position: relative; /* ✅ make it relative */
+}
+
+/* Marker Styles */
+.avatar-marker-wrapper {
+  position: relative;
+}
+
+.avatar-marker {
+  width: 20px;
+  height: 20px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  border: 2px solid #f6f5f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-marker-inner {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgb(148, 148, 148); /* This will be overwritten by inline style */
+}
+
+.marker-icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #4d4d4d;
+}
+
+#character-select {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #f7ecd4;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#character-icon {
+  border-radius: 50%;
+}
+#timeline {
+  position: relative;
+  bottom: 20px;
+  left: 10px;
+  transform: translateX(-50%);
+  width: 90%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1003;
+}
+
+#timeline input[type="range"] {
+  width: 90%;
+  margin-top: 10px;
+}
+
+#episode-label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#character-select-menu {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+#character-select-menu label {
+  cursor: pointer;
+}
+.tabf0-4 {
+  height: 700px; /* make this taller overall */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+#timeline {
+  position: absolute;
+  width: 60%; /* same width as map */
+  left: 35%; /* same left margin as map */
+  bottom: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  z-index: 1002;
+}
+.map-and-filter {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  gap: 5%;
+  position: right;
+}
+
+#filter-menu {
+  width: 20%;
+  right: 5%;
+  background-color: #5b2c06; /* brown */
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+#filter-toggle {
+  background-color: #7a4118;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  font-size: 25px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-family: "Aboreto";
+  font-weight: bold;
+}
+
+#filter-options {
+  background-color: #8b5a2b;
+  padding: 10px;
+  border-radius: 8px;
+  padding-bottom: 10px;
+  height: 90%;
+}
+
+#filter-options h3 {
+  margin-top: 10px;
+  font-size: 24px;
+  border-bottom: 1px solid white;
+  padding-bottom: 4px;
+  font-family: "Aboreto";
+}
+
+#filter-options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 2px 0;
+  font-size: 24px;
+  font-family: "Forum";
+}
