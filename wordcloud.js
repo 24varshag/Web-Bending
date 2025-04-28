@@ -1,7 +1,7 @@
 // wordcloud.js
 
-export async function createWordCloud(jsonPath, svgSelector) {
-    const data = await d3.json(jsonPath);
+export async function createWordCloud(jsonPath, svgSelector, externalData = null) {
+    const data = externalData ? externalData : await d3.json(jsonPath);
 
     const width = 800;
     const height = 600;
@@ -38,8 +38,8 @@ export async function createWordCloud(jsonPath, svgSelector) {
             .style("border-radius", "5px")
             .style("pointer-events", "none")
             .style("font-size", "14px");
-    
-            svg.selectAll("text")
+
+        svg.selectAll("text")
             .data(words)
             .enter().append("text")
             .style("font-size", d => `${d.size}px`)

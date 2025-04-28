@@ -1,8 +1,3 @@
-// window.onload = function () {
-//   on(); // Show overlay
-//   setTimeout(slideDoors, 500); // Slide doors after a delay
-// };
-
 document.querySelectorAll(".tabs a").forEach((tab) => {
   tab.addEventListener("click", function () {
     // Removes classname active from all tabs

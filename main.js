@@ -1,9 +1,56 @@
 // main.js
 import { createWordCloud } from './wordcloud.js';
+let selectedCharacters = new Set();
+let characterData = {};
 
-window.onload = () => {
+window.onload = async () => {
+  on(); // Show overlay
+  setTimeout(slideDoors, 500); // Slide doors after a delay
+  characterData = await d3.json('character_top_words.json');
+  initializeCharacterButtons();
   createWordCloud('top_global_words.json', '#wordcloud');
 };
+// Get character selection
+function initializeCharacterButtons() {
+  d3.selectAll(".char-btn").on("click", function() {
+      const character = d3.select(this).attr("data-character");
+      
+      if (selectedCharacters.has(character)) {
+          selectedCharacters.delete(character);
+          d3.select(this).classed("active", false);
+      } else {
+          selectedCharacters.add(character);
+          d3.select(this).classed("active", true);
+      }
+
+      updateWordCloud();
+  });
+}
+
+function updateWordCloud() {
+  if (selectedCharacters.size === 0) {
+      createWordCloud('top_global_words.json', '#wordcloud');
+      return;
+  }
+
+  const mergedWords = {};
+
+  selectedCharacters.forEach(character => {
+      const topWords = characterData[character];
+      if (topWords) {
+          for (const [word, count] of topWords) {
+              mergedWords[word] = (mergedWords[word] || 0) + count;
+          }
+      }
+  });
+
+  const mergedData = Object.entries(mergedWords).map(([word, count]) => ({
+      text: word,
+      value: count
+  }));
+
+  createWordCloud(null, '#wordcloud', mergedData);
+}
 // Get the modal
 const modal = document.getElementById('myModal');
 

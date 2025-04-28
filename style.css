@@ -532,3 +532,27 @@ body {
   font-size: 12px;
   text-anchor: start;
 }
+
+/* Wordcloud styling rules */
+
+#character-toggle-buttons {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.char-btn {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.char-btn.active {
+  background-color: #4CAF50; /* Green when active */
+  color: white;
+  transform: scale(1.1);
+}
