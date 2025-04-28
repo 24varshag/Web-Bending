@@ -1,3 +1,9 @@
+// main.js
+import { createWordCloud } from './wordcloud.js';
+
+window.onload = () => {
+  createWordCloud('top_global_words.json', '#wordcloud');
+};
 // Get the modal
 const modal = document.getElementById('myModal');
 

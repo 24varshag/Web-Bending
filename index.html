@@ -33,7 +33,7 @@
             <ul class="tabs">
               <a data-tab="tabf0-1" class="active">Episodes</a>
               <a data-tab="tabf0-2">Phrases</a>
-              <a data-tab="tabf0-3">Cloud</a>
+              <a data-tab="tabf0-3">Cloud</a>     
               <a data-tab="tabf0-4">Map</a>
               <a data-tab="tabf0-5">Network</a>
             </ul>
@@ -41,7 +41,11 @@
             <div class="tab-content">
               <div id="tabf0-1">Episodes content goes here</div>
               <div id="tabf0-2">Phrases content goes here</div>
-              <div id="tabf0-3">Cloud content goes here</div>
+              <div id="tabf0-3">              
+                <div id="tabf0-3">
+                  <svg id="wordcloud"></svg> <!-- THIS is where the cloud will render -->
+                </div>
+              </div> 
               <div id="tabf0-4">
                 <!-- MAP + FILTERS WRAPPER -->
                 <div class="map-and-filter">
@@ -406,6 +410,8 @@
     <script src="animations.js"></script>
     <script src="d3.v6.min.js"></script>
     <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script>
+    <script type="module" src="main.js"></script>
     <script src="map-popup.js"></script>
     <script src="CharacterDialouge.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
