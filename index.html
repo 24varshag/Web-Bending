@@ -33,7 +33,7 @@
             <ul class="tabs">
               <a data-tab="tabf0-1" class="active">Episodes</a>
               <a data-tab="tabf0-2">Phrases</a>
-              <a data-tab="tabf0-3">Cloud</a>     
+              <a data-tab="tabf0-3">Cloud</a>
               <a data-tab="tabf0-4">Map</a>
               <a data-tab="tabf0-5">Network</a>
             </ul>
@@ -41,7 +41,7 @@
             <div class="tab-content">
               <div id="tabf0-1">Episodes content goes here</div>
               <div id="tabf0-2">Phrases content goes here</div>
-              <div id="tabf0-3">              
+              <div id="tabf0-3">
                 <div id="character-toggle-buttons">
                   <button class="char-btn" data-character="Aang">Aang</button>
                   <button class="char-btn" data-character="Zuko">Zuko</button>
@@ -51,7 +51,7 @@
                   <button class="char-btn" data-character="Iroh">Iroh</button>
                 </div>
                 <svg id="wordcloud"></svg>
-              </div> 
+              </div>
               <div id="tabf0-4">
                 <!-- MAP + FILTERS WRAPPER -->
                 <div class="map-and-filter">
@@ -120,13 +120,13 @@
                 </div>
               </div>
               <div id="tabf0-5">
-                <div class="dropdown-container">
-                  Season:
-                  <select id="seasonDropdown"></select>
-                  Episode:
-                  <select id="episodeDropdown"></select>
-                </div>
-                <svg width="400" height="400"></svg>
+                <label for="season-select">Select Season:</label>
+                <select id="season-select"></select>
+
+                <label for="episode-select">Select Episode:</label>
+                <select id="episode-select"></select>
+
+                <div id="chart"></div>
               </div>
             </div>
           </div>
