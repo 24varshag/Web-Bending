@@ -4,8 +4,8 @@ let selectedCharacters = new Set();
 let characterData = {};
 
 window.onload = async () => {
-  on(); // Show overlay
-  setTimeout(slideDoors, 500); // Slide doors after a delay
+  //on(); // Show overlay
+  //setTimeout(slideDoors, 500); // Slide doors after a delay
   characterData = await d3.json('character_top_words.json');
   initializeCharacterButtons();
   createWordCloud('top_global_words.json', '#wordcloud');
