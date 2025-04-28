@@ -1,5 +1,6 @@
 // main.js
 import { createWordCloud } from './wordcloud.js';
+import { initializePhrases } from './phrases.js';
 let selectedCharacters = new Set();
 let characterData = {};
 
@@ -7,6 +8,7 @@ window.onload = async () => {
   //on(); // Show overlay
   //setTimeout(slideDoors, 500); // Slide doors after a delay
   characterData = await d3.json('character_top_words.json');
+  initializePhrases();
   initializeCharacterButtons();
   createWordCloud('top_global_words.json', '#wordcloud');
 };
