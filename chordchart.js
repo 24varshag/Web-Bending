@@ -150,15 +150,21 @@ function drawChordDiagram(season, episode) {
         group.append("text")
         .each(d => { d.angle = (d.startAngle + d.endAngle) / 2; })
         .attr("dy", ".35em")
-        .attr("transform", d => `
-            rotate(${(d.angle * 180 / Math.PI - 90)})
-            translate(${(outerRadius + innerRadius) / 2})
-            ${d.angle > Math.PI ? "rotate(180)" : ""}
-        `)
+        .attr("transform", d => {
+            const angle = (d.angle * 180 / Math.PI - 90);
+            return `
+                rotate(${angle})
+                translate(${outerRadius + 10})
+                rotate(90)
+            `;
+        })
         .attr("text-anchor", "middle")
+        .style("font-weight", "bold")
         .text(d => nameByIndex.get(d.index))
         .style("font-family", "Forum")
-        .style("font-size", "12px");
+        .style("fill", "white") // SVG uses 'fill', not 'color'
+        .style("font-size", "16px");
+    
     
 }
 
