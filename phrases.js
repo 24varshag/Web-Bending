@@ -18,11 +18,7 @@ function setupDropdowns() {
   const controls = d3.select("#phrases-controls");
   controls.html(""); // Clear previous
 
-  controls
-    .append("label")
-    .text("Season: ")
-    .style("margin", "10px")
-    .style("font-size", "large");
+  controls.append("label").text("Season: ").style("margin-right", "5px");
 
   const seasonDropdown = controls
     .append("select")
