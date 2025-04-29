@@ -247,6 +247,7 @@ function updatePhrasesGraph() {
       .style("fill", "white")
       .style("pointer-events", "none");
 
+
     function ticked() {
       node.attr("transform", (d) => `translate(${d.x},${d.y})`);
     }
