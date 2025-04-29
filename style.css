@@ -647,32 +647,13 @@ body {
   height: 30px;
 }
 
-#tooltip {
-  position: absolute;
-  display: none; /* Initially hidden */
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-  color: white;
-  border-radius: 8px;
-  font-size: 14px;
-  max-width: 200px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-  z-index: 1000; /* Ensure it's on top of other elements */
-  transition: opacity 0.3s ease-in-out;
-}
-
-
 .dot {
-  position: relative;
   background-color: red;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   margin: 0 auto;
-  cursor: pointer;
 }
-
-
 
 .charFace {
   width: 40px;
