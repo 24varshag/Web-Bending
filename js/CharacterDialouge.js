@@ -136,6 +136,38 @@ function drawChart() {
         .attr("stroke-dasharray", "2,2")
     ); // this makes dashed grid lines
 
+  // Title
+  svg
+    .append("text")
+    .attr("x", width / 2)
+    .attr("y", margin.top / 2)
+    .attr("text-anchor", "middle")
+    .attr("font-size", "18px")
+    .attr("font-weight", "bold")
+    .attr("fill", "white")
+    .text("Character Dialogue Distribution Throughout Episode");
+
+  // Y-axis label
+  svg
+    .append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", margin.left / 3)
+    .attr("x", -height / 2)
+    .attr("text-anchor", "middle")
+    .attr("font-size", "16px")
+    .attr("fill", "white")
+    .text("Episode Progress - from start (0%) to end (100%)");
+
+  // X-axis label
+  svg
+    .append("text")
+    .attr("x", width / 2)
+    .attr("y", height - 10)
+    .attr("text-anchor", "middle")
+    .attr("font-size", "16px")
+    .attr("fill", "white")
+    .text("Characters");
+
   // x-axis forr  6 characterss
   const xAxis = d3.axisBottom(xScale);
   svg
@@ -143,6 +175,59 @@ function drawChart() {
     .attr("transform", `translate(0,${height - margin.bottom})`)
     .call(xAxis)
     .attr("class", "axis");
+
+  // Tooltip setup
+  const tooltip = d3
+    .select("#chart")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("position", "absolute")
+    .style("background", "#f9f9f9")
+    .style("padding", "6px")
+    .style("border", "1px solid #ccc")
+    .style("border-radius", "4px")
+    .style("pointer-events", "none")
+    .style("opacity", 0)
+    .style("color", "black");
+
+  // Add invisible overlay to detect mouse
+  svg
+    .append("rect")
+    .attr("x", margin.left)
+    .attr("y", margin.top)
+    .attr("width", width - margin.left - margin.right)
+    .attr("height", height - margin.top - margin.bottom)
+    .attr("fill", "transparent")
+    .on("mousemove", function (event) {
+      const [_, mouseY] = d3.pointer(event);
+      const hoveredPercent = Math.floor(yScale.invert(mouseY) / 10) * 10;
+      const lowerBound = hoveredPercent;
+      const upperBound = hoveredPercent + 10;
+
+      tooltip
+        .style("opacity", 1)
+
+        .style("left", event.pageX + 5 + "px")
+        .style("top", event.pageY - 250 + "px")
+        .html(`Range: ${lowerBound}% - ${upperBound}%`);
+
+      svg
+        .selectAll("circle")
+        .attr("opacity", (d) =>
+          d.y >= lowerBound && d.y < upperBound ? 1 : 0.3
+        )
+        .attr("r", (d) => (d.y >= lowerBound && d.y < upperBound ? 6 : 4))
+        .attr("stroke", (d) =>
+          d.y >= lowerBound && d.y < upperBound ? "white" : "none"
+        )
+        .attr("stroke-width", (d) =>
+          d.y >= lowerBound && d.y < upperBound ? 1.5 : 0
+        );
+    })
+    .on("mouseout", () => {
+      tooltip.style("opacity", 0);
+      svg.selectAll("circle").attr("opacity", 1).attr("r", 4);
+    });
 
   // Line generator for each character
   const line = d3
