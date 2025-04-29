@@ -3,7 +3,7 @@ const characters = ["Aang", "Katara", "Sokka", "Toph", "Zuko", "Iroh"];
 const colorScale = d3
   .scaleOrdinal()
   .domain(characters)
-  .range(["#1f77b4", "#9467bd", "#ff7f0e", "#2ca02c", "#d62728", "#8c564b"]);
+  .range(["#ff7f0e", "#9467bd", "#1f77b4", "#2ca02c", "#d62728", "#8c564b"]);
 
 let allData = [];
 
@@ -31,7 +31,7 @@ d3.csv("avatar_transcripts_with_context.csv").then((data) => {
 
 // Update Episodes dropdown based on Season
 function updateEpisodes() {
-  const selectedSeason = d3.select("#season-select").property("value");
+  const selectedSeason = d3.select("#season-select").property("value").replace("Season ", "");
 
   const filteredEpisodes = allData.filter((d) => d.Season === selectedSeason);
   const episodes = Array.from(
@@ -55,8 +55,24 @@ function updateEpisodes() {
 
 // Draw Chart
 function drawChart() {
-  const selectedSeason = d3.select("#season-select").property("value");
+  const selectedSeason = d3.select("#season-select").property("value").replace("Season ", "");
   const selectedEpisode = d3.select("#episode-select").property("value");
+
+  // Clear chart container first
+  d3.select("#chart").html("");
+
+  // Handle "All" gracefully
+  if (selectedEpisode === "All") {
+    d3.select("#chart")
+      .append("div")
+      .attr("class", "dot-warning")
+      .style("font-family", "Forum")
+      .style("font-size", "16px")
+      .style("color", "#888")
+      .style("margin", "20px")
+      .text("Dot plot is only available when a single episode is selected.");
+    return;
+  }
 
   const episodeData = allData.filter(
     (d) => d.Season === selectedSeason && d["Episode Title"] === selectedEpisode
