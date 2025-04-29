@@ -1,6 +1,8 @@
 .networksVis {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 select#season-select,
@@ -20,4 +22,8 @@ select#episode-select {
 .label {
   margin: 10px;
   font-size: large;
+}
+#chart, #chordDiagram {
+  flex: 1;
+  max-width: 48%;
 }
