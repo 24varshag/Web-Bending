@@ -649,16 +649,16 @@ body {
 
 #tooltip {
   position: absolute;
-  display: none;  /* Initially hidden */
+  display: none; /* Initially hidden */
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
   color: white;
   border-radius: 8px;
   font-size: 14px;
   max-width: 200px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-  z-index: 9999;  /* Make sure it's on top */
-  pointer-events: none;  /* Prevent the tooltip from blocking mouse events */
+  z-index: 1000; /* Ensure it's on top of other elements */
+  transition: opacity 0.3s ease-in-out;
 }
 
 
