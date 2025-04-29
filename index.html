@@ -153,8 +153,8 @@
 
                 <div class="networksVis">
                   <div id="chart"></div>
-                  <div>Neha's Option 2 Network Data Vis Goes here</div>
-                </div>
+                  <svg id="chordDiagram" width="700" height="700"></svg>
+                </div>                
               </div>
             </div>
           </div>
@@ -449,6 +449,9 @@
     <script src="map-popup.js"></script>
     <script src="CharacterDialouge.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="module" src="chordchart.js"></script>
+
+
     <script>
       const modal = document.getElementById("myModal");
       const btn = document.getElementById("openModalButton");
