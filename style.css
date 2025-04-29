@@ -18,10 +18,13 @@ body {
 
 .TopCards {
   height: 20vh;
-  border: 2px solid rgb(255, 255, 255);
-  padding: 10px;
+  /* border: 2px solid rgb(255, 255, 255); */
+  padding: 20px;
   margin: 10px;
   display: flex;
+  background-color: #b6d7f446;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .faces {
@@ -37,6 +40,9 @@ body {
   border: 1px solid white;
 }
 
+.charFace {
+  filter: drop-shadow(5px 5px 5px #222);
+}
 .charFace:hover {
   transform: scale(1.1);
 }
@@ -74,9 +80,14 @@ ul.tabs a {
   color: #7f7f7f;
   cursor: pointer;
   margin: 0;
-  padding: 5px 25px 5px 15px;
-  -webkit-clip-path: polygon(100% 0, 90% 0, 100% 100%, 0 100%, 0.5% 0);
-  clip-path: polygon(100% 0, 90% 0, 100% 100%, 0 100%, 0.5% 0);
+  padding: 10px 40px;
+  font-size: large;
+  text-align: center;
+  /* -webkit-clip-path: polygon(100% 0, 90% 0, 100% 100%, 0 100%, 0.5% 0); */
+  /* clip-path: polygon(100% 0, 90% 0, 100% 100%, 0 100%, 0.5% 0); */
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-right: 1px;
 }
 
 .tab-content {
@@ -92,10 +103,14 @@ ul.tabs a {
   padding: 10px;
   text-align: left;
   min-height: 400px;
-  background: rgba(30, 33, 65, 0.589);
+  /* background: rgba(30, 33, 65, 0.721); */
+  background-color: #b6d7f446;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
   -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 ul.tabs a.active {
   background: rgb(255, 233, 162);

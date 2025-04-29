@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="networkTab.css" />
+
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -137,13 +139,22 @@
                 </div>
               </div>
               <div id="tabf0-5">
-                <label for="season-select">Select Season:</label>
-                <select id="season-select"></select>
+                <div class="dropdownDiv">
+                  <label class="label" for="season-select"
+                    >Select Season:</label
+                  >
+                  <select id="season-select"></select>
 
-                <label for="episode-select">Select Episode:</label>
-                <select id="episode-select"></select>
+                  <label class="label" for="episode-select"
+                    >Select Episode:</label
+                  >
+                  <select id="episode-select"></select>
+                </div>
 
-                <div id="chart"></div>
+                <div class="networksVis">
+                  <div id="chart"></div>
+                  <div>Neha's Option 2 Network Data Vis Goes here</div>
+                </div>
               </div>
             </div>
           </div>

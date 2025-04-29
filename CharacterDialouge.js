@@ -80,7 +80,7 @@ function drawChart() {
   // Clear previous chart
   d3.select("#chart").html("");
 
-  const width = 800;
+  const width = 700;
   const height = 500;
   const margin = { top: 50, right: 20, bottom: 50, left: 70 };
 

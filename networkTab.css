@@ -1,0 +1,23 @@
+.networksVis {
+  display: flex;
+  flex-direction: row;
+}
+
+select#season-select,
+select#episode-select {
+  background-color: #f9efe3;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.dropdownDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.label {
+  margin: 10px;
+  font-size: large;
+}
