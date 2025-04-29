@@ -1,0 +1,7 @@
+select#seasonDropdownPhrases,
+select#episodeDropdownPhrases,
+select#characterDropdownPhrases {
+  background-color: #f9efe3;
+  padding: 10px;
+  border-radius: 10px;
+}
