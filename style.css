@@ -7,6 +7,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Optional: keeps image fixed during scrolling */
+  color: white;
 }
 
 .mainBody {
@@ -16,16 +17,34 @@ body {
 }
 
 .TopCards {
-  height: 20%;
+  height: 20vh;
   border: 2px solid rgb(255, 255, 255);
   padding: 10px;
   margin: 10px;
+  display: flex;
+}
+
+.faces {
+  width: 60%;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+
+.charCard {
+  width: 40%;
+  border: 1px solid white;
+}
+
+.charFace:hover {
+  transform: scale(1.1);
 }
 
 .TabsHolder {
-  height: 80%;
-  border: 2px solid rgb(238, 233, 233);
-  padding: 10px;
+  height: 80vh;
+  /* border: 2px solid rgb(238, 233, 233); */
+  /* padding: 10px; */
   margin: 0px 10px;
   /* background-color: #ddd; */
 }
@@ -73,7 +92,7 @@ ul.tabs a {
   padding: 10px;
   text-align: left;
   min-height: 400px;
-  background: rgb(255, 233, 162);
+  background: rgba(30, 33, 65, 0.589);
   -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -552,7 +571,7 @@ body {
 }
 
 .char-btn.active {
-  background-color: #4CAF50; /* Green when active */
+  background-color: #4caf50; /* Green when active */
   color: white;
   transform: scale(1.1);
 }
