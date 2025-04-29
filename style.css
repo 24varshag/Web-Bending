@@ -41,10 +41,46 @@ body {
 }
 
 .charFace {
-  filter: drop-shadow(5px 5px 5px #222);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 .charFace:hover {
   transform: scale(1.1);
+}
+/* Increase size of character face buttons */
+.char-btn {
+  display: inline-block;
+  background-color: transparent; /* Ensure the button has no background */
+  border: none;
+  border-radius: 50%; /* Keep the button circular */
+  padding: 0; /* Remove padding to avoid extra space around the image */
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  width: 170px; /* Increase the button size */
+  height: 170px;
+  background-size: cover; /* Ensure background image is properly sized */
+  background-position: center; /* Center the background image */
+}
+
+/* Ensure images fill the button without white background */
+.char-btn img {
+  width: 100%; /* Fill the entire button */
+  height: 100%; /* Fill the entire button */
+  border-radius: 50%; /* Keep the image circular */
+  background-color: transparent; /* Remove any white background from the image itself */
+}
+
+/* Hover effect for character buttons */
+.char-btn:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+}
+
+
+.char-btn:active {
+  background-color: transparent; /* Slight background change on click */
 }
 
 .TabsHolder {
