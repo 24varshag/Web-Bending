@@ -61,8 +61,9 @@ function initializeCharacterFaces() {
         // Failsafe: if all deselected, reselect all
         if (selectedCharacters.size === 0) {
           selectedCharacters = new Set(["Aang", "Katara", "Sokka", "Toph", "Zuko", "Iroh"]);
+          updateWordCloud();
         }
-        updateWordCloud();
+
         // Re-apply glow state to all faces
         d3.selectAll(".charFace").each(function () {
           const char = d3.select(this).attr("data-character");
@@ -89,7 +90,6 @@ function initializeCharacterFaces() {
 
       case "tabf0-5": // Network
         // Do absolutely nothing
-        console.log("Face interaction disabled in Network tab.");
         break;
     }
   });
