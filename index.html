@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="networkTab.css" />
     <link rel="stylesheet" href="phrasesTab.css" />
     <link rel="stylesheet" href="chart.css" />
+    <link rel="stylesheet" href="episodeChart.css" />
+
 
     <link
       rel="stylesheet"
@@ -54,10 +56,26 @@
               <a data-tab="tabf0-3">Cloud</a>
               <a data-tab="tabf0-4">Map</a>
               <a data-tab="tabf0-5">Network</a>
+              <a data-tab="tabf0-6">Character Importance</a>
             </ul>
 
             <div class="tab-content">
-              <div id="tabf0-1">Episodes content goes here</div>
+              <!-- tabf0-1 -->
+              <div id="tabf0-1">
+                <div class="chart-header">
+                  <h2 style="color: white; margin-bottom: 4px;">Character Dialogue per Episode</h2>
+                  <p style="color: #ccc; font-size: 20px; margin-bottom: 10px;">
+                    This grid shows how much each main character speaks across every episode of Avatar: The Last Airbender.
+                    Each cell represents an episode, and each colored dot inside corresponds to a main character. 
+                    The <strong>size of the dot</strong> reflects how much that character spoke in that episode 
+                    (based on word count). Hover over a dot to see detailed information.
+                  </p>
+                </div>                
+                <div id="character-legend" class="character-legend"></div>
+                <div id="episode-character-grid" class="episode-chart">
+                </div>
+              </div>          
+
               <div id="tabf0-2">
                 <!--PHRASES (Alex's marker to easily search for da tab) -->
                 <div
@@ -165,6 +183,18 @@
                   <div id="chart"></div>
                   <svg id="chordDiagram" width="700" height="700"></svg>
                 </div>
+              </div>
+              <div id="tabf0-6">
+                <div style="margin-bottom: 10px;">
+                  <label for="importance-select">Select Season: </label>
+                  <select id="importance-select">
+                    <option value="Overall">Overall</option>
+                    <option value="Season 1">Season 1</option>
+                    <option value="Season 2">Season 2</option>
+                    <option value="Season 3">Season 3</option>
+                  </select>
+                </div>
+                <svg id="importanceChart" width="800" height="400"></svg>
               </div>
             </div>
           </div>
@@ -461,7 +491,32 @@
     <script src="js/CharacterDialouge.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script type="module" src="chordchart.js"></script>
+    <script type="module" src="js/gridChart.js"></script>
+    <script type="module" src="js/episodeChart.js"></script>
 
+
+    <script type="module">
+      import { drawCharacterImportanceChart } from '/js/characterImportanceChart.js';
+    
+      fetch('public/all_character_stats_over_5_episodes.json')
+        .then(res => res.json())
+        .then(json => {
+          const dropdown = document.getElementById('importance-select');
+    
+          function updateChart(label) {
+            const selectedData = json.find(section => section.label === label)?.data || [];
+            drawCharacterImportanceChart(selectedData);
+          }
+    
+          dropdown.addEventListener('change', () => {
+            updateChart(dropdown.value);
+          });
+    
+          updateChart('Overall'); 
+        });
+    </script>
+    
+    
     <script>
       const modal = document.getElementById("myModal");
       const btn = document.getElementById("openModalButton");

@@ -1,0 +1,1913 @@
+[
+  {
+    "season": 1,
+    "episode": 0,
+    "title": "Unaired pilot",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 583,
+        "sentenceCount": 100
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 325,
+        "sentenceCount": 59
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 160,
+        "sentenceCount": 31
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 1,
+    "title": "The Boy in the Iceberg",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 755,
+        "sentenceCount": 146
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 341,
+        "sentenceCount": 40
+      },
+      {
+        "character": "Katara",
+        "wordCount": 890,
+        "sentenceCount": 158
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 703,
+        "sentenceCount": 119
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 303,
+        "sentenceCount": 42
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 2,
+    "title": "The Avatar Returns",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 522,
+        "sentenceCount": 96
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 50,
+        "sentenceCount": 8
+      },
+      {
+        "character": "Katara",
+        "wordCount": 456,
+        "sentenceCount": 97
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 395,
+        "sentenceCount": 104
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 180,
+        "sentenceCount": 36
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 3,
+    "title": "The Southern Air Temple",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 950,
+        "sentenceCount": 178
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 271,
+        "sentenceCount": 50
+      },
+      {
+        "character": "Katara",
+        "wordCount": 594,
+        "sentenceCount": 96
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 592,
+        "sentenceCount": 110
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 369,
+        "sentenceCount": 66
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 4,
+    "title": "The Warriors of Kyoshi",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 926,
+        "sentenceCount": 174
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 95,
+        "sentenceCount": 11
+      },
+      {
+        "character": "Katara",
+        "wordCount": 626,
+        "sentenceCount": 126
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 828,
+        "sentenceCount": 172
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 268,
+        "sentenceCount": 38
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 5,
+    "title": "The King of Omashu",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 967,
+        "sentenceCount": 176
+      },
+      {
+        "character": "Katara",
+        "wordCount": 270,
+        "sentenceCount": 46
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 134,
+        "sentenceCount": 29
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 6,
+    "title": "Imprisoned",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 226,
+        "sentenceCount": 55
+      },
+      {
+        "character": "Katara",
+        "wordCount": 933,
+        "sentenceCount": 163
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 613,
+        "sentenceCount": 106
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 7,
+    "title": "Winter Solstice, Part 1: The Spirit World",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 970,
+        "sentenceCount": 169
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 210,
+        "sentenceCount": 34
+      },
+      {
+        "character": "Katara",
+        "wordCount": 414,
+        "sentenceCount": 68
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 251,
+        "sentenceCount": 54
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 143,
+        "sentenceCount": 30
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 8,
+    "title": "Winter Solstice, Part 2: Avatar Roku",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 659,
+        "sentenceCount": 126
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 133,
+        "sentenceCount": 21
+      },
+      {
+        "character": "Katara",
+        "wordCount": 293,
+        "sentenceCount": 67
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 352,
+        "sentenceCount": 65
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 309,
+        "sentenceCount": 56
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 9,
+    "title": "The Waterbending Scroll",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 642,
+        "sentenceCount": 119
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 303,
+        "sentenceCount": 41
+      },
+      {
+        "character": "Katara",
+        "wordCount": 1084,
+        "sentenceCount": 147
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 755,
+        "sentenceCount": 106
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 393,
+        "sentenceCount": 57
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 10,
+    "title": "Jet",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 631,
+        "sentenceCount": 93
+      },
+      {
+        "character": "Katara",
+        "wordCount": 598,
+        "sentenceCount": 127
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 773,
+        "sentenceCount": 137
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 11,
+    "title": "The Great Divide",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 1109,
+        "sentenceCount": 132
+      },
+      {
+        "character": "Katara",
+        "wordCount": 347,
+        "sentenceCount": 50
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 370,
+        "sentenceCount": 50
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 12,
+    "title": "The Storm",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 581,
+        "sentenceCount": 95
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 516,
+        "sentenceCount": 63
+      },
+      {
+        "character": "Katara",
+        "wordCount": 418,
+        "sentenceCount": 64
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 274,
+        "sentenceCount": 49
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 149,
+        "sentenceCount": 21
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 13,
+    "title": "The Blue Spirit",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 498,
+        "sentenceCount": 80
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 111,
+        "sentenceCount": 17
+      },
+      {
+        "character": "Katara",
+        "wordCount": 176,
+        "sentenceCount": 33
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 88,
+        "sentenceCount": 24
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 97,
+        "sentenceCount": 16
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 14,
+    "title": "The Fortuneteller",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 871,
+        "sentenceCount": 192
+      },
+      {
+        "character": "Katara",
+        "wordCount": 592,
+        "sentenceCount": 119
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 883,
+        "sentenceCount": 142
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 15,
+    "title": "Bato of the Water Tribe",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 30,
+        "sentenceCount": 5
+      },
+      {
+        "character": "Katara",
+        "wordCount": 51,
+        "sentenceCount": 8
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 69,
+        "sentenceCount": 10
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 16,
+    "title": "The Deserter",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 746,
+        "sentenceCount": 148
+      },
+      {
+        "character": "Katara",
+        "wordCount": 233,
+        "sentenceCount": 41
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 398,
+        "sentenceCount": 92
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 17,
+    "title": "The Northern Air Temple",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 663,
+        "sentenceCount": 107
+      },
+      {
+        "character": "Katara",
+        "wordCount": 344,
+        "sentenceCount": 67
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 532,
+        "sentenceCount": 89
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 18,
+    "title": "The Waterbending Master",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 197,
+        "sentenceCount": 48
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 254,
+        "sentenceCount": 68
+      },
+      {
+        "character": "Katara",
+        "wordCount": 457,
+        "sentenceCount": 99
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 419,
+        "sentenceCount": 94
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 58,
+        "sentenceCount": 17
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 19,
+    "title": "The Siege of the North, Part 1",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 234,
+        "sentenceCount": 49
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 161,
+        "sentenceCount": 31
+      },
+      {
+        "character": "Katara",
+        "wordCount": 150,
+        "sentenceCount": 32
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 499,
+        "sentenceCount": 112
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 179,
+        "sentenceCount": 33
+      }
+    ]
+  },
+  {
+    "season": 1,
+    "episode": 20,
+    "title": "The Siege of the North, Part 2",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 410,
+        "sentenceCount": 71
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 137,
+        "sentenceCount": 21
+      },
+      {
+        "character": "Katara",
+        "wordCount": 102,
+        "sentenceCount": 18
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 159,
+        "sentenceCount": 28
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 164,
+        "sentenceCount": 28
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 1,
+    "title": "The Avatar State",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 395,
+        "sentenceCount": 78
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 245,
+        "sentenceCount": 33
+      },
+      {
+        "character": "Katara",
+        "wordCount": 308,
+        "sentenceCount": 61
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 166,
+        "sentenceCount": 40
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 178,
+        "sentenceCount": 41
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 2,
+    "title": "The Cave of Two Lovers",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 331,
+        "sentenceCount": 92
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 307,
+        "sentenceCount": 51
+      },
+      {
+        "character": "Katara",
+        "wordCount": 600,
+        "sentenceCount": 115
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 435,
+        "sentenceCount": 74
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 219,
+        "sentenceCount": 48
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 3,
+    "title": "Return to Omashu",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 456,
+        "sentenceCount": 91
+      },
+      {
+        "character": "Katara",
+        "wordCount": 163,
+        "sentenceCount": 26
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 196,
+        "sentenceCount": 44
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 4,
+    "title": "The Swamp",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 457,
+        "sentenceCount": 78
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 102,
+        "sentenceCount": 14
+      },
+      {
+        "character": "Katara",
+        "wordCount": 192,
+        "sentenceCount": 52
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 671,
+        "sentenceCount": 111
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 23,
+        "sentenceCount": 6
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 5,
+    "title": "Avatar Day",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 365,
+        "sentenceCount": 94
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 224,
+        "sentenceCount": 41
+      },
+      {
+        "character": "Katara",
+        "wordCount": 409,
+        "sentenceCount": 85
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 870,
+        "sentenceCount": 144
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 93,
+        "sentenceCount": 16
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 6,
+    "title": "The Blind Bandit",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 417,
+        "sentenceCount": 71
+      },
+      {
+        "character": "Katara",
+        "wordCount": 295,
+        "sentenceCount": 51
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 308,
+        "sentenceCount": 68
+      },
+      {
+        "character": "Toph",
+        "wordCount": 538,
+        "sentenceCount": 90
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 7,
+    "title": "Zuko Alone",
+    "characters": [
+      {
+        "character": "Iroh",
+        "wordCount": 36,
+        "sentenceCount": 4
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 234,
+        "sentenceCount": 51
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 8,
+    "title": "The Chase",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 416,
+        "sentenceCount": 80
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 193,
+        "sentenceCount": 26
+      },
+      {
+        "character": "Katara",
+        "wordCount": 572,
+        "sentenceCount": 109
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 493,
+        "sentenceCount": 93
+      },
+      {
+        "character": "Toph",
+        "wordCount": 579,
+        "sentenceCount": 106
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 32,
+        "sentenceCount": 16
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 9,
+    "title": "Bitter Work",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 614,
+        "sentenceCount": 129
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 748,
+        "sentenceCount": 93
+      },
+      {
+        "character": "Katara",
+        "wordCount": 251,
+        "sentenceCount": 37
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 429,
+        "sentenceCount": 73
+      },
+      {
+        "character": "Toph",
+        "wordCount": 511,
+        "sentenceCount": 77
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 267,
+        "sentenceCount": 40
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 10,
+    "title": "The Library",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 398,
+        "sentenceCount": 75
+      },
+      {
+        "character": "Katara",
+        "wordCount": 269,
+        "sentenceCount": 49
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 1022,
+        "sentenceCount": 149
+      },
+      {
+        "character": "Toph",
+        "wordCount": 463,
+        "sentenceCount": 80
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 11,
+    "title": "The Desert",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 205,
+        "sentenceCount": 64
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 254,
+        "sentenceCount": 46
+      },
+      {
+        "character": "Katara",
+        "wordCount": 571,
+        "sentenceCount": 108
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 362,
+        "sentenceCount": 81
+      },
+      {
+        "character": "Toph",
+        "wordCount": 234,
+        "sentenceCount": 45
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 109,
+        "sentenceCount": 15
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 12,
+    "title": "The Serpent's Pass",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 358,
+        "sentenceCount": 56
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 105,
+        "sentenceCount": 20
+      },
+      {
+        "character": "Katara",
+        "wordCount": 320,
+        "sentenceCount": 71
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 474,
+        "sentenceCount": 88
+      },
+      {
+        "character": "Toph",
+        "wordCount": 210,
+        "sentenceCount": 42
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 55,
+        "sentenceCount": 10
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 13,
+    "title": "The Drill",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 329,
+        "sentenceCount": 56
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 79,
+        "sentenceCount": 21
+      },
+      {
+        "character": "Katara",
+        "wordCount": 239,
+        "sentenceCount": 44
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 476,
+        "sentenceCount": 100
+      },
+      {
+        "character": "Toph",
+        "wordCount": 119,
+        "sentenceCount": 22
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 51,
+        "sentenceCount": 9
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 14,
+    "title": "City of Walls and Secrets",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 303,
+        "sentenceCount": 56
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 257,
+        "sentenceCount": 37
+      },
+      {
+        "character": "Katara",
+        "wordCount": 317,
+        "sentenceCount": 66
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 558,
+        "sentenceCount": 95
+      },
+      {
+        "character": "Toph",
+        "wordCount": 307,
+        "sentenceCount": 55
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 76,
+        "sentenceCount": 15
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 15,
+    "title": "The Tales of Ba Sing Se",
+    "characters": [
+      {
+        "character": "Katara",
+        "wordCount": 118,
+        "sentenceCount": 32
+      },
+      {
+        "character": "Toph",
+        "wordCount": 199,
+        "sentenceCount": 35
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 16,
+    "title": "Appa's Lost Days",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 66,
+        "sentenceCount": 13
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 15,
+        "sentenceCount": 4
+      },
+      {
+        "character": "Toph",
+        "wordCount": 41,
+        "sentenceCount": 8
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 17,
+        "sentenceCount": 4
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 17,
+    "title": "Lake Laogai",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 382,
+        "sentenceCount": 68
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 337,
+        "sentenceCount": 46
+      },
+      {
+        "character": "Katara",
+        "wordCount": 317,
+        "sentenceCount": 49
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 294,
+        "sentenceCount": 48
+      },
+      {
+        "character": "Toph",
+        "wordCount": 206,
+        "sentenceCount": 46
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 128,
+        "sentenceCount": 21
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 18,
+    "title": "The Earth King",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 367,
+        "sentenceCount": 58
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 168,
+        "sentenceCount": 22
+      },
+      {
+        "character": "Katara",
+        "wordCount": 379,
+        "sentenceCount": 62
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 798,
+        "sentenceCount": 140
+      },
+      {
+        "character": "Toph",
+        "wordCount": 189,
+        "sentenceCount": 40
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 33,
+        "sentenceCount": 8
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 19,
+    "title": "The Guru",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 375,
+        "sentenceCount": 73
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 112,
+        "sentenceCount": 22
+      },
+      {
+        "character": "Katara",
+        "wordCount": 100,
+        "sentenceCount": 18
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 88,
+        "sentenceCount": 24
+      },
+      {
+        "character": "Toph",
+        "wordCount": 101,
+        "sentenceCount": 19
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 104,
+        "sentenceCount": 20
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episode": 20,
+    "title": "The Crossroads of Destiny",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 186,
+        "sentenceCount": 33
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 393,
+        "sentenceCount": 52
+      },
+      {
+        "character": "Katara",
+        "wordCount": 238,
+        "sentenceCount": 43
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 210,
+        "sentenceCount": 32
+      },
+      {
+        "character": "Toph",
+        "wordCount": 127,
+        "sentenceCount": 20
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 160,
+        "sentenceCount": 37
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 0,
+    "title": "Escape from the Spirit World",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 20,
+        "sentenceCount": 6
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 1,
+    "title": "The Awakening",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 445,
+        "sentenceCount": 89
+      },
+      {
+        "character": "Katara",
+        "wordCount": 464,
+        "sentenceCount": 80
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 359,
+        "sentenceCount": 48
+      },
+      {
+        "character": "Toph",
+        "wordCount": 75,
+        "sentenceCount": 16
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 106,
+        "sentenceCount": 19
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 2,
+    "title": "The Headband",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 916,
+        "sentenceCount": 165
+      },
+      {
+        "character": "Katara",
+        "wordCount": 186,
+        "sentenceCount": 34
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 366,
+        "sentenceCount": 74
+      },
+      {
+        "character": "Toph",
+        "wordCount": 163,
+        "sentenceCount": 27
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 370,
+        "sentenceCount": 49
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 3,
+    "title": "The Painted Lady",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 580,
+        "sentenceCount": 96
+      },
+      {
+        "character": "Katara",
+        "wordCount": 561,
+        "sentenceCount": 87
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 818,
+        "sentenceCount": 106
+      },
+      {
+        "character": "Toph",
+        "wordCount": 168,
+        "sentenceCount": 27
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 4,
+    "title": "Sokka's Master",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 294,
+        "sentenceCount": 49
+      },
+      {
+        "character": "Katara",
+        "wordCount": 304,
+        "sentenceCount": 52
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 767,
+        "sentenceCount": 146
+      },
+      {
+        "character": "Toph",
+        "wordCount": 172,
+        "sentenceCount": 35
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 5,
+    "title": "The Beach",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 131,
+        "sentenceCount": 20
+      },
+      {
+        "character": "Katara",
+        "wordCount": 30,
+        "sentenceCount": 6
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 16,
+        "sentenceCount": 2
+      },
+      {
+        "character": "Toph",
+        "wordCount": 100,
+        "sentenceCount": 11
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 704,
+        "sentenceCount": 148
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 6,
+    "title": "The Avatar and the Fire Lord",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 262,
+        "sentenceCount": 42
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 141,
+        "sentenceCount": 19
+      },
+      {
+        "character": "Katara",
+        "wordCount": 40,
+        "sentenceCount": 6
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 27,
+        "sentenceCount": 7
+      },
+      {
+        "character": "Toph",
+        "wordCount": 63,
+        "sentenceCount": 10
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 149,
+        "sentenceCount": 24
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 7,
+    "title": "The Runaway",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 277,
+        "sentenceCount": 39
+      },
+      {
+        "character": "Katara",
+        "wordCount": 869,
+        "sentenceCount": 142
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 800,
+        "sentenceCount": 128
+      },
+      {
+        "character": "Toph",
+        "wordCount": 1101,
+        "sentenceCount": 186
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 8,
+    "title": "The Puppetmaster",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 207,
+        "sentenceCount": 40
+      },
+      {
+        "character": "Katara",
+        "wordCount": 706,
+        "sentenceCount": 118
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 502,
+        "sentenceCount": 89
+      },
+      {
+        "character": "Toph",
+        "wordCount": 163,
+        "sentenceCount": 35
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 9,
+    "title": "Nightmares and Daydreams",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 1044,
+        "sentenceCount": 193
+      },
+      {
+        "character": "Katara",
+        "wordCount": 359,
+        "sentenceCount": 67
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 301,
+        "sentenceCount": 59
+      },
+      {
+        "character": "Toph",
+        "wordCount": 131,
+        "sentenceCount": 24
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 186,
+        "sentenceCount": 32
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 10,
+    "title": "The Day of Black Sun, Part 1: The Invasion",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 323,
+        "sentenceCount": 59
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 86,
+        "sentenceCount": 12
+      },
+      {
+        "character": "Katara",
+        "wordCount": 259,
+        "sentenceCount": 39
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 516,
+        "sentenceCount": 76
+      },
+      {
+        "character": "Toph",
+        "wordCount": 128,
+        "sentenceCount": 18
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 40,
+        "sentenceCount": 3
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 11,
+    "title": "The Day of Black Sun, Part 2: The Eclipse",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 294,
+        "sentenceCount": 54
+      },
+      {
+        "character": "Katara",
+        "wordCount": 131,
+        "sentenceCount": 29
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 525,
+        "sentenceCount": 98
+      },
+      {
+        "character": "Toph",
+        "wordCount": 233,
+        "sentenceCount": 33
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 413,
+        "sentenceCount": 54
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 12,
+    "title": "The Western Air Temple",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 370,
+        "sentenceCount": 61
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 96,
+        "sentenceCount": 10
+      },
+      {
+        "character": "Katara",
+        "wordCount": 530,
+        "sentenceCount": 79
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 528,
+        "sentenceCount": 77
+      },
+      {
+        "character": "Toph",
+        "wordCount": 429,
+        "sentenceCount": 64
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 1037,
+        "sentenceCount": 146
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 13,
+    "title": "The Firebending Masters",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 1126,
+        "sentenceCount": 174
+      },
+      {
+        "character": "Katara",
+        "wordCount": 62,
+        "sentenceCount": 10
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 164,
+        "sentenceCount": 23
+      },
+      {
+        "character": "Toph",
+        "wordCount": 239,
+        "sentenceCount": 29
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 1592,
+        "sentenceCount": 229
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 14,
+    "title": "The Boiling Rock, Part 1",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 38,
+        "sentenceCount": 7
+      },
+      {
+        "character": "Katara",
+        "wordCount": 75,
+        "sentenceCount": 15
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 1087,
+        "sentenceCount": 195
+      },
+      {
+        "character": "Toph",
+        "wordCount": 20,
+        "sentenceCount": 4
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 994,
+        "sentenceCount": 183
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 15,
+    "title": "The Boiling Rock, Part 2",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 6,
+        "sentenceCount": 1
+      },
+      {
+        "character": "Katara",
+        "wordCount": 35,
+        "sentenceCount": 9
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 710,
+        "sentenceCount": 114
+      },
+      {
+        "character": "Toph",
+        "wordCount": 15,
+        "sentenceCount": 3
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 224,
+        "sentenceCount": 43
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 16,
+    "title": "The Southern Raiders",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 299,
+        "sentenceCount": 61
+      },
+      {
+        "character": "Katara",
+        "wordCount": 633,
+        "sentenceCount": 105
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 371,
+        "sentenceCount": 59
+      },
+      {
+        "character": "Toph",
+        "wordCount": 24,
+        "sentenceCount": 4
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 637,
+        "sentenceCount": 107
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 17,
+    "title": "The Ember Island Players",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 236,
+        "sentenceCount": 48
+      },
+      {
+        "character": "Katara",
+        "wordCount": 211,
+        "sentenceCount": 35
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 505,
+        "sentenceCount": 82
+      },
+      {
+        "character": "Toph",
+        "wordCount": 278,
+        "sentenceCount": 42
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 248,
+        "sentenceCount": 39
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 18,
+    "title": "Sozin's Comet, Part 1: The Phoenix King",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 455,
+        "sentenceCount": 79
+      },
+      {
+        "character": "Katara",
+        "wordCount": 244,
+        "sentenceCount": 40
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 550,
+        "sentenceCount": 93
+      },
+      {
+        "character": "Toph",
+        "wordCount": 265,
+        "sentenceCount": 49
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 750,
+        "sentenceCount": 109
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 19,
+    "title": "Sozin's Comet, Part 2: The Old Masters",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 695,
+        "sentenceCount": 107
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 402,
+        "sentenceCount": 58
+      },
+      {
+        "character": "Katara",
+        "wordCount": 128,
+        "sentenceCount": 24
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 176,
+        "sentenceCount": 42
+      },
+      {
+        "character": "Toph",
+        "wordCount": 122,
+        "sentenceCount": 24
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 539,
+        "sentenceCount": 92
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 20,
+    "title": "Sozin's Comet, Part 3: Into the Inferno",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 28,
+        "sentenceCount": 4
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 19,
+        "sentenceCount": 2
+      },
+      {
+        "character": "Katara",
+        "wordCount": 84,
+        "sentenceCount": 16
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 192,
+        "sentenceCount": 40
+      },
+      {
+        "character": "Toph",
+        "wordCount": 80,
+        "sentenceCount": 17
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 111,
+        "sentenceCount": 22
+      }
+    ]
+  },
+  {
+    "season": 3,
+    "episode": 21,
+    "title": "Sozin's Comet, Part 4: Avatar Aang",
+    "characters": [
+      {
+        "character": "Aang",
+        "wordCount": 154,
+        "sentenceCount": 14
+      },
+      {
+        "character": "Iroh",
+        "wordCount": 14,
+        "sentenceCount": 3
+      },
+      {
+        "character": "Katara",
+        "wordCount": 37,
+        "sentenceCount": 5
+      },
+      {
+        "character": "Sokka",
+        "wordCount": 278,
+        "sentenceCount": 36
+      },
+      {
+        "character": "Toph",
+        "wordCount": 121,
+        "sentenceCount": 20
+      },
+      {
+        "character": "Zuko",
+        "wordCount": 310,
+        "sentenceCount": 43
+      }
+    ]
+  }
+]
