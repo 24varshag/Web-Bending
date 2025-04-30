@@ -1,3 +1,6 @@
+<!-- index.html -->
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,13 +35,13 @@
     <div class="mainBody">
       <div class="TopCards">
         <div class="faces">
-          <img src="public/aang.png" class="charFace" onclick="" />
-          <img src="public/katara.png" class="charFace" onclick="" />
-          <img src="public/sokka.png" class="charFace" onclick="" />
-          <img src="public/toph.png" class="charFace" onclick="" />
-          <img src="public/zuko.png" class="charFace" onclick="" />
-          <img src="public/iroh.png" class="charFace" onclick="" />
-        </div>
+          <img src="public/aang.png" class="charFace" data-character="Aang" />
+          <img src="public/katara.png" class="charFace" data-character="Katara" />
+          <img src="public/sokka.png" class="charFace" data-character="Sokka" />
+          <img src="public/toph.png" class="charFace" data-character="Toph" />
+          <img src="public/zuko.png" class="charFace" data-character="Zuko" />
+          <img src="public/iroh.png" class="charFace" data-character="Iroh" />
+        </div>        
         <div class="charCard">Character card goes here</div>
       </div>
       <div class="TabsHolder">
@@ -449,9 +452,10 @@
 
     <script src="js/animations.js"></script>
     <script src="d3.v6.min.js"></script>
-    <script src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script>
     <script type="module" src="main.js"></script>
+    <script type="module" src="map-popup.js"></script>
+    <script type="module" src="phrases.js"></script>    
     <script src="map-popup.js"></script>
     <script src="js/CharacterDialouge.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -524,32 +528,120 @@
     </script>
     <script>
       let mapLoaded = false;
-
+    
+      function setGlowForTab(tabId) {
+        const allFaces = document.querySelectorAll(".charFace");
+        allFaces.forEach(f => f.classList.remove("glow", "active"));
+    
+        switch (tabId) {
+          case "tabf0-1": // Episodes
+          case "tabf0-3": // Cloud
+          case "tabf0-4": // Map
+          case "tabf0-5": // Network
+            allFaces.forEach(f => f.classList.add("glow", "active"));
+            break;
+          case "tabf0-2": // Phrases
+            const aangFace = document.querySelector('.charFace[data-character="Aang"]');
+            if (aangFace) aangFace.classList.add("glow", "active");
+            break;
+        }
+      }
+    
       document.querySelectorAll(".tabs a").forEach((tab) => {
         tab.addEventListener("click", async function () {
-          document
-            .querySelectorAll(".tabs a")
-            .forEach((t) => t.classList.remove("active"));
-          document
-            .querySelectorAll(".tab-content > div")
-            .forEach((div) => (div.style.display = "none"));
+          // Clear active tab & content
+          document.querySelectorAll(".tabs a").forEach((t) => t.classList.remove("active"));
+          document.querySelectorAll(".tab-content > div").forEach((div) => (div.style.display = "none"));
+    
+          // Set new active tab
           this.classList.add("active");
-          const tabId = this.getAttribute("data-tab");
-          const contentDiv = document.getElementById(tabId);
+          const currentTab = this.getAttribute("data-tab");
+          window.currentTab = currentTab;
+    
+          // Show current tab content
+          const contentDiv = document.getElementById(currentTab);
           contentDiv.style.display = "block";
-
-          if (tabId === "tabf0-4" && !mapLoaded) {
+    
+          // Apply glow/active face logic based on tab
+          setGlowForTab(currentTab);
+    
+          // Initialize map if needed
+          if (currentTab === "tabf0-4" && !mapLoaded) {
             await initializeMap();
             mapLoaded = true;
-          }
-
-          if (tabId === "tabf0-4" && mapLoaded) {
+          } else if (currentTab === "tabf0-4") {
             map.invalidateSize();
+          }
+    
+          // Word Cloud update (Cloud tab)
+          if (currentTab === "tabf0-3") {
+            // If none selected, select all by default
+            if (!selectedCharacters || selectedCharacters.size === 0) {
+              selectedCharacters = new Set(["Aang", "Katara", "Sokka", "Toph", "Zuko", "Iroh"]);
+            }
+          
+            setTimeout(() => updateWordCloud(), 50);
+          }
+          
+    
+          // Phrases tab update
+          if (currentTab === "tabf0-2") {
+            updateCharacterDropdownForPhrases(window.selectedCharacter);
+            updatePhrasesGraph();
           }
         });
       });
-
+    
+      // Show Episodes tab by default
       document.getElementById("tabf0-1").style.display = "block";
     </script>
+    
+    <script>
+      document.querySelectorAll(".charFace").forEach(face => {
+        face.addEventListener("click", () => {
+          const character = face.getAttribute("data-character");
+          face.classList.toggle("active");
+          face.classList.toggle("glow");
+      
+
+          
+      
+          // For single-select tabs, set only one active character
+          selectedCharacter = character;
+      
+          // Trigger updates based on current tab
+          switch (currentTab) {
+            case "tabf0-2": // phrases (single-select)
+              selectedCharacters.clear();
+              document.querySelectorAll(".charFace").forEach(f => f.classList.remove("active", "glow"));
+              face.classList.add("active", "glow");
+              if (typeof updateCharacterDropdownForPhrases === "function") {
+                updateCharacterDropdownForPhrases(character);
+                updatePhrasesGraph();
+              }
+              break;
+      
+            case "tabf0-3": // cloud (multi-select)
+              if (typeof updateWordCloud === "function") {
+                updateWordCloud();
+              }
+              break;
+      
+            case "tabf0-4": // map (multi-select)
+              if (typeof updateMapCharacters === "function") {
+                updateMapCharacters(character);
+              }
+              break;
+      
+            case "tabf0-5": // network
+              if (typeof updateNetworkDiagram === "function") {
+                updateNetworkDiagram(character);
+              }
+              break;
+          }
+        });
+      });
+      </script>
+      
   </body>
 </html>
