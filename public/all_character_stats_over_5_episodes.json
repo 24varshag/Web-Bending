@@ -1,0 +1,454 @@
+[
+  {
+    "label": "Overall",
+    "data": [
+      {
+        "character": "Aang",
+        "episodesAppeared": 61,
+        "wordCount": 27790,
+        "category": "Main"
+      },
+      {
+        "character": "Katara",
+        "episodesAppeared": 59,
+        "wordCount": 20634,
+        "category": "Main"
+      },
+      {
+        "character": "Sokka",
+        "episodesAppeared": 59,
+        "wordCount": 26820,
+        "category": "Main"
+      },
+      {
+        "character": "Zuko",
+        "episodesAppeared": 46,
+        "wordCount": 12961,
+        "category": "Main"
+      },
+      {
+        "character": "Toph",
+        "episodesAppeared": 35,
+        "wordCount": 7914,
+        "category": "Main"
+      },
+      {
+        "character": "Iroh",
+        "episodesAppeared": 34,
+        "wordCount": 6915,
+        "category": "Main"
+      },
+      {
+        "character": "Azula",
+        "episodesAppeared": 19,
+        "wordCount": 4530,
+        "category": "Main"
+      },
+      {
+        "character": "Mai",
+        "episodesAppeared": 12,
+        "wordCount": 1124,
+        "category": "Main"
+      },
+      {
+        "character": "Guard",
+        "episodesAppeared": 12,
+        "wordCount": 233,
+        "category": "Main"
+      },
+      {
+        "character": "Suki",
+        "episodesAppeared": 11,
+        "wordCount": 1816,
+        "category": "Main"
+      },
+      {
+        "character": "Ozai",
+        "episodesAppeared": 10,
+        "wordCount": 1237,
+        "category": "Main"
+      },
+      {
+        "character": "Ty Lee",
+        "episodesAppeared": 9,
+        "wordCount": 1190,
+        "category": "Main"
+      },
+      {
+        "character": "Soldier",
+        "episodesAppeared": 8,
+        "wordCount": 168,
+        "category": "Main"
+      },
+      {
+        "character": "Hakoda",
+        "episodesAppeared": 7,
+        "wordCount": 1435,
+        "category": "Main"
+      },
+      {
+        "character": "Zhao",
+        "episodesAppeared": 7,
+        "wordCount": 2203,
+        "category": "Main"
+      },
+      {
+        "character": "Li",
+        "episodesAppeared": 6,
+        "wordCount": 246,
+        "category": "Main"
+      },
+      {
+        "character": "Roku",
+        "episodesAppeared": 6,
+        "wordCount": 1593,
+        "category": "Main"
+      },
+      {
+        "character": "Pakku",
+        "episodesAppeared": 6,
+        "wordCount": 815,
+        "category": "Main"
+      }
+    ]
+  },
+  {
+    "label": "Season 1",
+    "data": [
+      {
+        "character": "Aang",
+        "episodesAppeared": 21,
+        "wordCount": 13170,
+        "category": "Main"
+      },
+      {
+        "character": "Katara",
+        "episodesAppeared": 20,
+        "wordCount": 9028,
+        "category": "Main"
+      },
+      {
+        "character": "Sokka",
+        "episodesAppeared": 21,
+        "wordCount": 9412,
+        "category": "Main"
+      },
+      {
+        "character": "Zuko",
+        "episodesAppeared": 13,
+        "wordCount": 2772,
+        "category": "Main"
+      },
+      {
+        "character": "Toph",
+        "episodesAppeared": 0,
+        "wordCount": 0,
+        "category": "Main"
+      },
+      {
+        "character": "Iroh",
+        "episodesAppeared": 12,
+        "wordCount": 2582,
+        "category": "Main"
+      },
+      {
+        "character": "Azula",
+        "episodesAppeared": 0,
+        "wordCount": 0,
+        "category": "Main"
+      },
+      {
+        "character": "Mai",
+        "episodesAppeared": 0,
+        "wordCount": 0,
+        "category": "Main"
+      },
+      {
+        "character": "Guard",
+        "episodesAppeared": 5,
+        "wordCount": 90,
+        "category": "Main"
+      },
+      {
+        "character": "Suki",
+        "episodesAppeared": 1,
+        "wordCount": 540,
+        "category": "Main"
+      },
+      {
+        "character": "Ozai",
+        "episodesAppeared": 2,
+        "wordCount": 85,
+        "category": "Main"
+      },
+      {
+        "character": "Ty Lee",
+        "episodesAppeared": 0,
+        "wordCount": 0,
+        "category": "Main"
+      },
+      {
+        "character": "Soldier",
+        "episodesAppeared": 4,
+        "wordCount": 98,
+        "category": "Main"
+      },
+      {
+        "character": "Hakoda",
+        "episodesAppeared": 0,
+        "wordCount": 0,
+        "category": "Main"
+      },
+      {
+        "character": "Zhao",
+        "episodesAppeared": 7,
+        "wordCount": 2203,
+        "category": "Main"
+      },
+      {
+        "character": "Li",
+        "episodesAppeared": 1,
+        "wordCount": 11,
+        "category": "Main"
+      },
+      {
+        "character": "Roku",
+        "episodesAppeared": 3,
+        "wordCount": 483,
+        "category": "Main"
+      },
+      {
+        "character": "Pakku",
+        "episodesAppeared": 3,
+        "wordCount": 586,
+        "category": "Main"
+      }
+    ]
+  },
+  {
+    "label": "Season 2",
+    "data": [
+      {
+        "character": "Aang",
+        "episodesAppeared": 18,
+        "wordCount": 6420,
+        "category": "Main"
+      },
+      {
+        "character": "Katara",
+        "episodesAppeared": 18,
+        "wordCount": 5658,
+        "category": "Main"
+      },
+      {
+        "character": "Sokka",
+        "episodesAppeared": 17,
+        "wordCount": 7850,
+        "category": "Main"
+      },
+      {
+        "character": "Zuko",
+        "episodesAppeared": 16,
+        "wordCount": 1779,
+        "category": "Main"
+      },
+      {
+        "character": "Toph",
+        "episodesAppeared": 14,
+        "wordCount": 3824,
+        "category": "Main"
+      },
+      {
+        "character": "Iroh",
+        "episodesAppeared": 16,
+        "wordCount": 3575,
+        "category": "Main"
+      },
+      {
+        "character": "Azula",
+        "episodesAppeared": 8,
+        "wordCount": 2088,
+        "category": "Main"
+      },
+      {
+        "character": "Mai",
+        "episodesAppeared": 6,
+        "wordCount": 350,
+        "category": "Main"
+      },
+      {
+        "character": "Guard",
+        "episodesAppeared": 4,
+        "wordCount": 93,
+        "category": "Main"
+      },
+      {
+        "character": "Suki",
+        "episodesAppeared": 2,
+        "wordCount": 639,
+        "category": "Main"
+      },
+      {
+        "character": "Ozai",
+        "episodesAppeared": 1,
+        "wordCount": 107,
+        "category": "Main"
+      },
+      {
+        "character": "Ty Lee",
+        "episodesAppeared": 6,
+        "wordCount": 454,
+        "category": "Main"
+      },
+      {
+        "character": "Soldier",
+        "episodesAppeared": 3,
+        "wordCount": 59,
+        "category": "Main"
+      },
+      {
+        "character": "Hakoda",
+        "episodesAppeared": 1,
+        "wordCount": 146,
+        "category": "Main"
+      },
+      {
+        "character": "Zhao",
+        "episodesAppeared": 0,
+        "wordCount": 0,
+        "category": "Main"
+      },
+      {
+        "character": "Li",
+        "episodesAppeared": 2,
+        "wordCount": 22,
+        "category": "Main"
+      },
+      {
+        "character": "Roku",
+        "episodesAppeared": 1,
+        "wordCount": 149,
+        "category": "Main"
+      },
+      {
+        "character": "Pakku",
+        "episodesAppeared": 1,
+        "wordCount": 122,
+        "category": "Main"
+      }
+    ]
+  },
+  {
+    "label": "Season 3",
+    "data": [
+      {
+        "character": "Aang",
+        "episodesAppeared": 22,
+        "wordCount": 8200,
+        "category": "Main"
+      },
+      {
+        "character": "Katara",
+        "episodesAppeared": 21,
+        "wordCount": 5948,
+        "category": "Main"
+      },
+      {
+        "character": "Sokka",
+        "episodesAppeared": 21,
+        "wordCount": 9558,
+        "category": "Main"
+      },
+      {
+        "character": "Zuko",
+        "episodesAppeared": 17,
+        "wordCount": 8410,
+        "category": "Main"
+      },
+      {
+        "character": "Toph",
+        "episodesAppeared": 21,
+        "wordCount": 4090,
+        "category": "Main"
+      },
+      {
+        "character": "Iroh",
+        "episodesAppeared": 6,
+        "wordCount": 758,
+        "category": "Main"
+      },
+      {
+        "character": "Azula",
+        "episodesAppeared": 11,
+        "wordCount": 2442,
+        "category": "Main"
+      },
+      {
+        "character": "Mai",
+        "episodesAppeared": 6,
+        "wordCount": 774,
+        "category": "Main"
+      },
+      {
+        "character": "Guard",
+        "episodesAppeared": 3,
+        "wordCount": 50,
+        "category": "Main"
+      },
+      {
+        "character": "Suki",
+        "episodesAppeared": 8,
+        "wordCount": 637,
+        "category": "Main"
+      },
+      {
+        "character": "Ozai",
+        "episodesAppeared": 7,
+        "wordCount": 1045,
+        "category": "Main"
+      },
+      {
+        "character": "Ty Lee",
+        "episodesAppeared": 3,
+        "wordCount": 736,
+        "category": "Main"
+      },
+      {
+        "character": "Soldier",
+        "episodesAppeared": 1,
+        "wordCount": 11,
+        "category": "Main"
+      },
+      {
+        "character": "Hakoda",
+        "episodesAppeared": 6,
+        "wordCount": 1289,
+        "category": "Main"
+      },
+      {
+        "character": "Zhao",
+        "episodesAppeared": 0,
+        "wordCount": 0,
+        "category": "Main"
+      },
+      {
+        "character": "Li",
+        "episodesAppeared": 3,
+        "wordCount": 213,
+        "category": "Main"
+      },
+      {
+        "character": "Roku",
+        "episodesAppeared": 2,
+        "wordCount": 961,
+        "category": "Main"
+      },
+      {
+        "character": "Pakku",
+        "episodesAppeared": 2,
+        "wordCount": 107,
+        "category": "Main"
+      }
+    ]
+  }
+]

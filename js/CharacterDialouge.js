@@ -67,8 +67,8 @@ function drawChart() {
       .append("div")
       .attr("class", "dot-warning")
       .style("font-family", "Forum")
-      .style("font-size", "16px")
-      .style("color", "#888")
+      .style("font-size", "30px")
+      .style("color", "#c9cdd2")
       .style("margin", "20px")
       .text("Dot plot is only available when a single episode is selected.");
     return;

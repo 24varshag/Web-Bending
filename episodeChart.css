@@ -1,0 +1,33 @@
+.episode-table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: transparent;
+  }
+  
+  .episode-table th,
+  .episode-table td {
+    border: 1px solid #ccc;
+    padding: 4px;
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .episode-table th {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-weight: bold;
+  }
+  
+  .dot-tooltip {
+    font-family: 'Forum', sans-serif;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    max-width: 200px;
+  }
+  .character-legend {
+    margin-bottom: 10px;
+    font-family: 'Forum', sans-serif;
+  }
+  
