@@ -15,42 +15,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Character data
   const characterStats = {
-    aang: {
+    Aang: {
       episodes: 61,
       spoken_percent: 18.23,
       first_appearance: "Season 1 Ep 1: The Boy in the Iceberg",
       bender: "Avatar",
       link: "https://avatar.fandom.com/wiki/Aang",
     },
-    katara: {
+    Katara: {
       episodes: 59,
       spoken_percent: 14.35,
       first_appearance: "Season 1 Ep 1: The Boy in the Iceberg",
       bender: "Waterbender",
       link: "https://avatar.fandom.com/wiki/katara",
     },
-    sokka: {
+    Sokka: {
       episodes: 59,
       spoken_percent: 16.45,
       first_appearance: "Season 1 Ep 1: The Boy in the Iceberg",
       bender: "Non-bender",
       link: "https://avatar.fandom.com/wiki/sokka",
     },
-    toph: {
+    Toph: {
       episodes: 35,
       spoken_percent: 5.19,
       first_appearance: "Season 2 Ep 6: The Blind Bandit",
       bender: "Earthbender",
       link: "https://avatar.fandom.com/wiki/toph",
     },
-    zuko: {
+    Zuko: {
       episodes: 46,
       spoken_percent: 7.65,
       first_appearance: "Season 1 Ep 1: The Boy in the Iceberg",
       bender: "Firebender",
       link: "https://avatar.fandom.com/wiki/zuko",
     },
-    iroh: {
+    Iroh: {
       episodes: 34,
       spoken_percent: 3.22,
       first_appearance: "Season 1 Ep 1: The Boy in the Iceberg",

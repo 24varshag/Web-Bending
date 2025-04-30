@@ -30,7 +30,6 @@ window.onload = async () => {
 
 let phrasesCooldown = false;
 
-// --- Character face logic ---
 function initializeCharacterFaces() {
   d3.selectAll(".charFace").on("click", function () {
     const character = d3.select(this).attr("data-character");
@@ -41,11 +40,18 @@ function initializeCharacterFaces() {
         if (phrasesCooldown) return;
 
         phrasesCooldown = true;
-        setTimeout(() => phrasesCooldown = false, 1244);
+        setTimeout(() => (phrasesCooldown = false), 1244);
 
         window.selectedCharacter = character;
-        d3.selectAll(".charFace").classed("active", false).classed("glow", false);
-        d3.select(this).classed("active", true).classed("glow", true);
+        selectedCharacters = new Set([character]);
+
+        d3.selectAll(".charFace").each(function () {
+          const char = d3.select(this).attr("data-character");
+          d3.select(this)
+            .classed("active", char === character)
+            .classed("glow", char === character)
+            .classed(char, char === character); // character-specific class
+        });
 
         updateCharacterDropdownForPhrases(character);
         updatePhrasesGraph();
@@ -57,39 +63,45 @@ function initializeCharacterFaces() {
         } else {
           selectedCharacters.add(character);
         }
-      
+
         // Failsafe: if all deselected, reselect all
         if (selectedCharacters.size === 0) {
           selectedCharacters = new Set(["Aang", "Katara", "Sokka", "Toph", "Zuko", "Iroh"]);
-          updateWordCloud();
         }
 
-        // Re-apply glow state to all faces
         d3.selectAll(".charFace").each(function () {
           const char = d3.select(this).attr("data-character");
-          const active = selectedCharacters.has(char);
-          d3.select(this).classed("glow", active).classed("active", active);
+          const isActive = selectedCharacters.has(char);
+          d3.select(this)
+            .classed("active", isActive)
+            .classed("glow", isActive)
+            .classed(char, isActive); // apply character class when glowing
         });
-      
+
         updateWordCloud();
         break;
-      
-    
-        
 
       case "tabf0-4": // Map (multi-select)
         if (selectedCharacters.has(character)) {
           selectedCharacters.delete(character);
-          face.classList.remove("active", "glow");
         } else {
           selectedCharacters.add(character);
-          face.classList.add("active", "glow");
         }
+
+        d3.selectAll(".charFace").each(function () {
+          const char = d3.select(this).attr("data-character");
+          const isActive = selectedCharacters.has(char);
+          d3.select(this)
+            .classed("active", isActive)
+            .classed("glow", isActive)
+            .classed(char, isActive);
+        });
+
         updateMapCharacters(character);
         break;
 
       case "tabf0-5": // Network
-        // Do absolutely nothing
+        // Do nothing
         break;
     }
   });
