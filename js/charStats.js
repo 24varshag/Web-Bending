@@ -59,24 +59,18 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   };
 
-  faces.forEach((face) => {
-    face.addEventListener("mouseenter", () => {
-      const characterName = face.dataset.name;
-      const stats = characterStats[characterName];
+  // Function to update card content
+  const updateCard = (characterName) => {
+    const stats = characterStats[characterName];
+    const elementImg = elementImages[stats.bender]
+      ? `<img src="images/${elementImages[stats.bender]}" class="element-icon">`
+      : "";
 
-      // Get element image
-      const elementImg = elementImages[stats.bender]
-        ? `<img src="images/${
-            elementImages[stats.bender]
-          }" class="element-icon">`
-        : "";
-
-      // Update card content
-      charCard.innerHTML = `
+    charCard.innerHTML = `
           <div id="charStats">
           <div style="display:flex; justify-content: space-between; align-items:center"> 
             <div class="cardName" style="margin: 0; font-size: 4em; color: brown; display:flex; justify-content: space-around; align-items:center; margin-left:2px;">
-                ${face.dataset.name}
+                ${characterName}
                                 <a href="${stats.link}" target="_blank" style="color:brown; font-size:14px; "><span style="font-size:14px">wiki</span></a>
 
             </div>
@@ -88,13 +82,22 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div style="margin: 0px 2px; text-align:left"> Episodes present: ${stats.episodes}</div>
                     <div style="margin:0px;text-align:right"> ${stats.bender}</div>
                 </div>
-                <div style="margin: 4px 0px">First Seen: ${stats.first_appearance}</div>
+                <div style="margin: 4px 2px">First Seen: ${stats.first_appearance}</div>
 
                             
 
             </div>
           </div>
         `;
+  };
+
+  // Show Aang initially
+  updateCard("aang");
+
+  // Add hover functionality
+  faces.forEach((face) => {
+    face.addEventListener("mouseenter", () => {
+      updateCard(face.dataset.name);
     });
   });
 });
