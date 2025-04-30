@@ -3,7 +3,7 @@
 let phraseData = null;
 let selectedSeason = "Season 1";
 let selectedEpisode = "All";
-let selectedCharacter = "Aang";
+window.selectedCharacter = "Aang";
 
 const mainCharacters = ["Aang", "Katara", "Sokka", "Toph", "Zuko", "Iroh"];
 
@@ -267,3 +267,4 @@ function updatePhrasesGraph() {
   }, fadeDuration - 10); // Wait for old fadeout to finish but with a smallll minus to duration
   // (so that the parent folder doesn't collapse on itself during the time that there is NO SVG at all)
 }
+window.updatePhrasesGraph = updatePhrasesGraph;

@@ -1,42 +1,153 @@
 // main.js
+
+
 import { createWordCloud } from "./wordcloud.js";
 import { initializePhrases } from "./phrases.js";
-let selectedCharacters = new Set();
-let characterData = {};
+const mainCharacters = ["Aang", "Katara", "Sokka", "Toph", "Zuko", "Iroh"];
+window.selectedCharacters = new Set();
+window.selectedCharacter = "Aang";
+window.currentTab = "tabf0-1";
+let characterData = null;
+let lastWordCloudData = null;
+
 
 window.onload = async () => {
-  // on(); // Show overlay
-  // setTimeout(slideDoors, 500); // Slide doors after a delay
+  //on(); // Show overlay
+  //setTimeout(slideDoors, 500); // Slide doors after a delay
+
   characterData = await d3.json("character_top_words.json");
+  window.selectedCharacters = new Set(["Aang", "Katara", "Sokka", "Toph", "Zuko", "Iroh"]);
+  window.selectedCharacter = "Aang";
+  window.currentTab = "tabf0-1";
+
   initializePhrases();
-  initializeCharacterButtons();
-  createWordCloud("top_global_words.json", "#wordcloud");
+  initializeCharacterFaces();
+  updateWordCloud();
+
+  // Set glow for default tab
+  setGlowForTab("tabf0-1");
 };
-// Get character selection
-function initializeCharacterButtons() {
-  d3.selectAll(".char-btn").on("click", function () {
+
+let phrasesCooldown = false;
+
+// --- Character face logic ---
+function initializeCharacterFaces() {
+  d3.selectAll(".charFace").on("click", function () {
     const character = d3.select(this).attr("data-character");
+    const face = this;
 
-    if (selectedCharacters.has(character)) {
-      selectedCharacters.delete(character);
-      d3.select(this).classed("active", false);
-    } else {
-      selectedCharacters.add(character);
-      d3.select(this).classed("active", true);
+    switch (currentTab) {
+      case "tabf0-2": // Phrases (single-select)
+        if (phrasesCooldown) return;
+
+        phrasesCooldown = true;
+        setTimeout(() => phrasesCooldown = false, 1244);
+
+        window.selectedCharacter = character;
+        d3.selectAll(".charFace").classed("active", false).classed("glow", false);
+        d3.select(this).classed("active", true).classed("glow", true);
+
+        updateCharacterDropdownForPhrases(character);
+        updatePhrasesGraph();
+        break;
+
+      case "tabf0-3": // Cloud (multi-select)
+        if (selectedCharacters.has(character)) {
+          selectedCharacters.delete(character);
+        } else {
+          selectedCharacters.add(character);
+        }
+      
+        // Reapply glow based on current selection
+        d3.selectAll(".charFace").each(function () {
+          const char = d3.select(this).attr("data-character");
+          const isActive = selectedCharacters.has(char);
+          d3.select(this).classed("active", isActive).classed("glow", isActive);
+        });
+      
+        updateWordCloud();
+        break;
+    
+        
+
+      case "tabf0-4": // Map (multi-select)
+        if (selectedCharacters.has(character)) {
+          selectedCharacters.delete(character);
+          face.classList.remove("active", "glow");
+        } else {
+          selectedCharacters.add(character);
+          face.classList.add("active", "glow");
+        }
+        updateMapCharacters(character);
+        break;
+
+      case "tabf0-5": // Network
+        // Do absolutely nothing
+        console.log("Face interaction disabled in Network tab.");
+        break;
     }
-
-    updateWordCloud();
   });
+}
+
+
+function setGlowForTab(tabId) {
+  const allFaces = document.querySelectorAll(".charFace");
+  allFaces.forEach(f => f.classList.remove("glow", "active"));
+
+  switch (tabId) {
+    case "tabf0-1": // Episodes
+    case "tabf0-3":
+      // Only apply glow for characters currently in selectedCharacters
+      allFaces.forEach(f => {
+        const charName = f.getAttribute("data-character");
+        if (selectedCharacters.has(charName)) {
+          f.classList.add("glow", "active");
+        } else {
+          f.classList.remove("glow", "active");
+        }
+      });
+      break;
+
+    case "tabf0-4": // Map
+
+      allFaces.forEach(f => f.classList.add("glow", "active"));
+      break;
+
+    case "tabf0-5": // Network — force all faces on regardless of selection
+    allFaces.forEach(f => {
+      const charName = f.getAttribute("data-character");
+      if (selectedCharacters && selectedCharacters.has(charName)) {
+        f.classList.add("glow", "active");
+      }
+    });
+    break;
+    case "tabf0-2": // Phrases
+      const aangFace = document.querySelector('.charFace[data-character="Aang"]');
+      if (aangFace) aangFace.classList.add("glow", "active");
+      break;
+  }
+}
+
+
+function updateNetworkDiagram(character) {
+  console.log(`Network update triggered for ${character}`);
+  // Add your chord diagram update logic here.
+}
+
+function updateCharacterDropdownForPhrases(character) {
+  const dropdown = d3.select("#characterDropdownPhrases");
+  if (!dropdown.empty()) dropdown.property("value", character);
 }
 
 function updateWordCloud() {
   if (selectedCharacters.size === 0) {
-    createWordCloud("top_global_words.json", "#wordcloud");
+    if (lastWordCloudData !== "global") {
+      createWordCloud("top_global_words.json", "#wordcloud");
+      lastWordCloudData = "global";
+    }
     return;
   }
-
   const mergedWords = {};
-
   selectedCharacters.forEach((character) => {
     const topWords = characterData[character];
     if (topWords) {
@@ -51,8 +162,16 @@ function updateWordCloud() {
     value: count,
   }));
 
+  // Only update if it's new
+  const newDataKey = JSON.stringify(mergedData);
+  if (newDataKey === lastWordCloudData) return;
+
+  lastWordCloudData = newDataKey;
+  console.log("Word Cloud Data:", mergedData); // You can keep this
   createWordCloud(null, "#wordcloud", mergedData);
 }
+window.updateWordCloud = updateWordCloud;
+
 // Get the modal
 const modal = document.getElementById("myModal");
 
@@ -125,3 +244,4 @@ imageButton.onclick = function () {
     videoContainer.style.display = "block"; // Show the video container
   }, 1000); // Wait for the fade-out animation to finish before showing the video
 };
+export { updateWordCloud };

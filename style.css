@@ -627,3 +627,8 @@ body {
   color: white;
   transform: scale(1.1);
 }
+.charFace.glow {
+  box-shadow: 0 0 12px 4px rgba(255, 255, 100, 0.85);
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease;
+}

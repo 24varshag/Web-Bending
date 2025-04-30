@@ -1,9 +1,11 @@
+//map-popup.js
+
 const MAP_WIDTH = 3840;
 const MAP_HEIGHT = 2160;
 let map;
 let markerLayers = [];
 let characterData = []; // hold character info (NOT markers)
-let activeCharacters = new Set([
+window.selectedCharacters = window.selectedCharacters || new Set([
   "Aang",
   "Katara",
   "Sokka",
@@ -11,6 +13,7 @@ let activeCharacters = new Set([
   "Zuko",
   "Iroh",
 ]);
+
 let currentCharacterMarkers = []; // heads currently shown on map
 
 async function initializeMap() {
@@ -77,6 +80,11 @@ async function initializeMap() {
   await loadCharacterData();
   setupCharacterSelection();
   setupTimeline();
+  
+
+  const currentEpisode = parseInt(document.getElementById("episode-slider").value);
+  moveCharactersToEpisode(currentEpisode);
+  
 }
 
 function setupFilters() {
@@ -143,7 +151,7 @@ function moveCharactersToEpisode(targetEpisode) {
   characterData.forEach((entry) => {
     if (
       parseInt(entry.episode) === targetEpisode &&
-      activeCharacters.has(entry.character)
+      selectedCharacters.has(entry.character)
     ) {
       const [x, y] = entry.position;
       const offsetX = (Math.random() - 0.5) * 40; // medium cluster
@@ -262,9 +270,9 @@ function setupCharacterSelection() {
     characterCheckboxes.forEach((cb) => {
       cb.checked = checked;
       if (checked) {
-        activeCharacters.add(cb.value);
+        selectedCharacters.add(cb.value);
       } else {
-        activeCharacters.delete(cb.value);
+        selectedCharacters.delete(cb.value);
       }
     });
     const currentEpisode = parseInt(
@@ -276,9 +284,9 @@ function setupCharacterSelection() {
   characterCheckboxes.forEach((cb) => {
     cb.addEventListener("change", () => {
       if (cb.checked) {
-        activeCharacters.add(cb.value);
+        selectedCharacters.add(cb.value);
       } else {
-        activeCharacters.delete(cb.value);
+        selectedCharacters.delete(cb.value);
       }
       const currentEpisode = parseInt(
         document.getElementById("episode-slider").value
@@ -306,3 +314,18 @@ function setupTimeline() {
 }
 
 window.initializeMap = initializeMap;
+window.updateMapCharacters = function (character) {
+  const face = document.querySelector(`.charFace[data-character="${character}"]`);
+  const isActive = selectedCharacters.has(character);
+
+  if (isActive) {
+    selectedCharacters.delete(character);
+    face.classList.remove("active", "glow");
+  } else {
+    selectedCharacters.add(character);
+    face.classList.add("active", "glow");
+  }
+
+  const currentEpisode = parseInt(document.getElementById("episode-slider").value);
+  moveCharactersToEpisode(currentEpisode);
+};
