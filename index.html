@@ -34,14 +34,18 @@
     <div class="mainBody">
       <div class="TopCards">
         <div class="faces">
-          <img src="public/aang.png" class="charFace" onclick="" />
-          <img src="public/katara.png" class="charFace" onclick="" />
-          <img src="public/sokka.png" class="charFace" onclick="" />
-          <img src="public/toph.png" class="charFace" onclick="" />
-          <img src="public/zuko.png" class="charFace" onclick="" />
-          <img src="public/iroh.png" class="charFace" onclick="" />
+          <img src="public/aang.png" class="charFace" data-name="aang" />
+          <img src="public/katara.png" class="charFace" data-name="katara" />
+          <img src="public/sokka.png" class="charFace" data-name="sokka" />
+          <img src="public/toph.png" class="charFace" data-name="toph" />
+          <img src="public/zuko.png" class="charFace" data-name="zuko" />
+          <img src="public/iroh.png" class="charFace" data-name="iroh" />
         </div>
-        <div class="charCard">Character card goes here</div>
+        <div class="charCard" id="charCard">
+          <div id="charStats">
+            <div id="element"></div>
+          </div>
+        </div>
       </div>
       <div class="TabsHolder">
         <div id="content">
@@ -477,6 +481,7 @@
       </div>
     </div>
 
+    <script src="js/charStats.js"></script>
     <script src="js/animations.js"></script>
     <script src="d3.v6.min.js"></script>
     <script src="main.js"></script>

@@ -1,0 +1,38 @@
+{
+  "aang": {
+    "episodes": 61,
+    "spoken_percent": 18.23,
+    "first_appearance": "Season 1 Ep 0: Unaired pilot",
+    "bender": "Avatar"
+  },
+  "katara": {
+    "episodes": 59,
+    "spoken_percent": 14.35,
+    "first_appearance": "Season 1 Ep 1: The Boy in the Iceberg",
+    "bender": "Waterbender"
+  },
+  "sokka": {
+    "episodes": 59,
+    "spoken_percent": 16.45,
+    "first_appearance": "Season 1 Ep 0: Unaired pilot",
+    "bender": "Non-bender"
+  },
+  "toph": {
+    "episodes": 35,
+    "spoken_percent": 5.19,
+    "first_appearance": "Season 2 Ep 6: The Blind Bandit",
+    "bender": "Earthbender"
+  },
+  "zuko": {
+    "episodes": 46,
+    "spoken_percent": 7.65,
+    "first_appearance": "Season 1 Ep 0: Unaired pilot",
+    "bender": "Firebender"
+  },
+  "iroh": {
+    "episodes": 34,
+    "spoken_percent": 3.22,
+    "first_appearance": "Season 1 Ep 1: The Boy in the Iceberg",
+    "bender": "Firebender"
+  }
+}
