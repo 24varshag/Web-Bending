@@ -627,26 +627,8 @@ body {
   color: white;
   transform: scale(1.1);
 }
-.charFace.glow.Aang {
-  filter: drop-shadow(0 0 14px rgba(255, 255, 170, 0.9)); /* pastel yellow */
-}
-
-.charFace.glow.Katara {
-  filter: drop-shadow(0 0 14px rgba(173, 216, 230, 0.9)); /* pastel blue */
-}
-
-.charFace.glow.Sokka {
-  filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.85)); /* soft white */
-}
-
-.charFace.glow.Toph {
-  filter: drop-shadow(0 0 14px rgba(144, 238, 144, 0.9)); /* pastel green */
-}
-
-.charFace.glow.Zuko {
-  filter: drop-shadow(0 0 14px rgba(255, 160, 122, 0.9)); /* coral pastel */
-}
-
-.charFace.glow.Iroh {
-  filter: drop-shadow(0 0 14px rgba(255, 200, 140, 0.9)); /* pastel orange */
+.charFace.glow {
+  box-shadow: 0 0 12px 4px rgba(255, 255, 100, 0.85);
+  border-radius: 40%;
+  transition: box-shadow 0.3s ease;
 }

@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // Show Aang initially
-  updateCard("aang");
+  updateCard("Aang");
 
   // Add hover functionality
   faces.forEach((face) => {
