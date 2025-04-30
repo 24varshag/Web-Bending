@@ -1,6 +1,5 @@
-// chordchart.js
-
-let chordData; // Global variable to store JSON data
+let chordData;
+let selectedName = null;
 
 const svg = d3.select("#chordDiagram")
     .attr("width", 700)
@@ -26,7 +25,6 @@ const arc = d3.arc()
 const ribbon = d3.ribbon()
     .radius(innerRadius);
 
-// Load JSON
 d3.json("public/character_interactions.json").then(data => {
     chordData = data;
 
@@ -37,7 +35,7 @@ d3.json("public/character_interactions.json").then(data => {
     document.getElementById("episode-select").value = "The Boy in the Iceberg";
 
     drawChordDiagram("Season 1", "The Boy in the Iceberg");
-    drawChart(); // update the dot plot too
+    drawChart(); 
 
     document.getElementById("season-select").addEventListener("change", (e) => {
         const selectedSeason = e.target.value;
@@ -49,12 +47,10 @@ d3.json("public/character_interactions.json").then(data => {
         const selectedSeason = document.getElementById("season-select").value;
         const selectedEpisode = e.target.value;
         drawChordDiagram(selectedSeason, selectedEpisode);
-        drawChart(); // keep the other chart synced
+        drawChart(); 
     });
 });
 
-
-// Populate Seasons
 function populateSeasonDropdown() {
     const seasonSelect = document.getElementById("season-select");
     seasonSelect.innerHTML = "";
@@ -66,7 +62,6 @@ function populateSeasonDropdown() {
     });
 }
 
-// Populate Episodes
 function populateEpisodeDropdown(season) {
     const episodeSelect = document.getElementById("episode-select");
     episodeSelect.innerHTML = "";
@@ -74,7 +69,7 @@ function populateEpisodeDropdown(season) {
     const episodes = Object.keys(chordData[season]).sort((a, b) => {
         if (a === "All") return -1;
         if (b === "All") return 1;
-        return 0; // Keep titles alphabetical by default (or you could custom sort if needed)
+        return 0;
     });
 
     episodes.forEach(ep => {
@@ -84,13 +79,23 @@ function populateEpisodeDropdown(season) {
         episodeSelect.appendChild(option);
     });
 
-    // Default to "All" if available
     episodeSelect.value = "All";
 }
 
-// Draw Chord Diagram
 function drawChordDiagram(season, episode) {
-    svg.selectAll("*").remove(); // Clear previous drawing
+    svg.selectAll("*").remove();
+    selectedName = null;
+
+    // Title
+    svg.append("text")
+        .attr("x", width / 2)
+        .attr("y", 30)
+        .attr("text-anchor", "middle")
+        .style("font-size", "22px")
+        .style("fill", "white")
+        .style("font-family", "Forum")
+        .style("font-weight", "bold")
+        .text("Character Interaction Chord Diagram");
 
     const data = chordData[season][episode];
     const nodes = data.nodes;
@@ -108,13 +113,13 @@ function drawChordDiagram(season, episode) {
         const source = indexByName.get(link.source);
         const target = indexByName.get(link.target);
         matrix[source][target] = link.value;
-        matrix[target][source] = link.value; // undirected
+        matrix[target][source] = link.value;
     });
 
     const chords = chordLayout(matrix);
 
     const g = svg.append("g")
-        .attr("transform", `translate(${width / 2},${height / 2})`);
+        .attr("transform", `translate(${width / 2},${height / 2 + 20})`);
 
     const ribbons = g.append("g")
         .attr("fill-opacity", 0.7)
@@ -127,48 +132,57 @@ function drawChordDiagram(season, episode) {
         .on("mouseover", (event, d) => {
             const source = nameByIndex.get(d.source.index);
             const target = nameByIndex.get(d.target.index);
-            const tooltipText = `${source} ↔ ${target}: ${matrix[d.source.index][d.target.index]} times`;
-            showTooltip(event, tooltipText);
+            showTooltip(event, `${source} ↔ ${target}: ${matrix[d.source.index][d.target.index]} times`);
         })
-        .on("mousemove", (event) => {
-            moveTooltip(event);
-        })
-        .on("mouseout", () => {
-            hideTooltip();
-        });
+        .on("mousemove", moveTooltip)
+        .on("mouseout", hideTooltip);
 
     const group = g.append("g")
         .selectAll("g")
         .data(chords.groups)
-        .join("g");
+        .join("g")
+        .on("click", (event, d) => {
+            const name = nameByIndex.get(d.index);
+            selectedName = selectedName === name ? null : name;
+
+            ribbons
+                .style("opacity", r =>
+                    !selectedName || nameByIndex.get(r.source.index) === selectedName || nameByIndex.get(r.target.index) === selectedName
+                        ? 0.9
+                        : 0.1
+                );
+
+            group.selectAll("path")
+                .style("opacity", g =>
+                    !selectedName || nameByIndex.get(g.index) === selectedName ? 1 : 0.2
+                );
+
+            group.selectAll("text")
+                .style("opacity", g =>
+                    !selectedName || nameByIndex.get(g.index) === selectedName ? 1 : 0.2
+                );
+        });
 
     group.append("path")
         .attr("fill", d => color(nameByIndex.get(d.index)))
         .attr("stroke", d => d3.rgb(color(nameByIndex.get(d.index))).darker())
         .attr("d", arc);
 
-        group.append("text")
+    group.append("text")
         .each(d => { d.angle = (d.startAngle + d.endAngle) / 2; })
         .attr("dy", ".35em")
         .attr("transform", d => {
             const angle = (d.angle * 180 / Math.PI - 90);
-            return `
-                rotate(${angle})
-                translate(${outerRadius + 10})
-                rotate(90)
-            `;
+            return `rotate(${angle}) translate(${outerRadius + 10}) rotate(90)`;
         })
         .attr("text-anchor", "middle")
         .style("font-weight", "bold")
         .text(d => nameByIndex.get(d.index))
         .style("font-family", "Forum")
-        .style("fill", "white") // SVG uses 'fill', not 'color'
+        .style("fill", "white")
         .style("font-size", "16px");
-    
-    
 }
 
-// Tooltip functions
 const tooltip = d3.select("body").append("div")
     .attr("class", "tooltip")
     .style("opacity", 0)
