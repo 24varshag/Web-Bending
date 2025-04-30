@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Add hover functionality
   faces.forEach((face) => {
     face.addEventListener("mouseenter", () => {
-      updateCard(face.dataset.name);
+      updateCard(face.dataset.character);
     });
   });
 });

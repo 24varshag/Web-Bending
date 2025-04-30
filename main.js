@@ -23,7 +23,7 @@ window.onload = async () => {
   initializePhrases();
   initializeCharacterFaces();
   updateWordCloud();
-
+  window.updateCard = updateCard;
   // Set glow for default tab
   setGlowForTab("tabf0-1");
 };
