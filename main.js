@@ -58,15 +58,21 @@ function initializeCharacterFaces() {
           selectedCharacters.add(character);
         }
       
-        // Reapply glow based on current selection
+        // Failsafe: if all deselected, reselect all
+        if (selectedCharacters.size === 0) {
+          selectedCharacters = new Set(["Aang", "Katara", "Sokka", "Toph", "Zuko", "Iroh"]);
+        }
+        updateWordCloud();
+        // Re-apply glow state to all faces
         d3.selectAll(".charFace").each(function () {
           const char = d3.select(this).attr("data-character");
-          const isActive = selectedCharacters.has(char);
-          d3.select(this).classed("active", isActive).classed("glow", isActive);
+          const active = selectedCharacters.has(char);
+          d3.select(this).classed("glow", active).classed("active", active);
         });
       
         updateWordCloud();
         break;
+      
     
         
 

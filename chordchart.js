@@ -1,15 +1,5 @@
-// chordchart.js
-
-let chordData; // Global variable to store JSON data
-window.selectedCharacters = window.selectedCharacters || new Set([
-    "Aang",
-    "Katara",
-    "Sokka",
-    "Toph",
-    "Zuko",
-    "Iroh",
-  ]);
-  
+let chordData;
+let selectedName = null;
 
 const svg = d3.select("#chordDiagram")
     .attr("width", 500)
