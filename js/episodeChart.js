@@ -16,17 +16,19 @@ fetch("public/main_character_dialogue_by_episode.json")
 
     // Create global tooltip
     const tooltip = d3.select("body").append("div")
-      .attr("class", "dot-tooltip")
-      .style("position", "absolute")
-      .style("padding", "6px 10px")
-      .style("background", "white")
-      .style("color", "black")
-      .style("border", "1px solid #999")
-      .style("border-radius", "4px")
-      .style("font-size", "12px")
-      .style("pointer-events", "none")
-      .style("opacity", 0)
-      .style("z-index", 1000);
+    .attr("class", "dot-tooltip")
+    .style("position", "absolute")
+    .style("padding", "12px 16px")
+    .style("background", "white")
+    .style("color", "black")
+    .style("border", "2px solid #666")
+    .style("border-radius", "8px")
+    .style("font-size", "16px")
+    .style("pointer-events", "none")
+    .style("opacity", 0)
+    .style("z-index", 1000)
+    .style("box-shadow", "0px 4px 12px rgba(0, 0, 0, 0.2)");
+  
 
     // Group episodes by season
     const seasonMap = new Map();

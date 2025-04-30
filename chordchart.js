@@ -2,8 +2,8 @@ let chordData;
 let selectedName = null;
 
 const svg = d3.select("#chordDiagram")
-    .attr("width", 700)
-    .attr("height", 700);
+    .attr("width", 500)
+    .attr("height", 500);
 
 const width = +svg.attr("width");
 const height = +svg.attr("height");
@@ -12,7 +12,7 @@ const innerRadius = outerRadius - 30;
 
 const color = d3.scaleOrdinal()
     .domain(["Aang", "Katara", "Sokka", "Toph", "Iroh", "Zuko"])
-    .range(["#ff7f0e", "#9467bd", "#1f77b4", "#2ca02c", "#d62728", "#8c564b"]);
+    .range(["#ff7f0e", "#9467bd", "#1f77b4", "#2ca02c", "#8c564b", "#d62728"]);
 
 const chordLayout = d3.chord()
     .padAngle(0.05)
